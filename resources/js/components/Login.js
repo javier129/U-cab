@@ -17,12 +17,10 @@ class Login extends Component {
             email: this.state.Email,
             password: this.state.password
         };
-        let uri = 'http://127.0.0.1:8000/login';
+        let uri = 'http://192.168.1.48:8080/login';
         axios.post(uri, userInfo).then((response) => {
-            console.log(response.data);
-        }).catch(response=>{
-            console.log(response.data);
-        });
+            sessionStorage.setItem('user', JSON.stringify(response.data.user));
+        })
     }
 
     handleImputChange = event=> {
@@ -43,20 +41,20 @@ class Login extends Component {
                             <img src={logo} />
                             </div>  
             
-                            <form className="p-2 ">
+                            <div className="p-2 ">
                                 <div className="form-group">
-                                    <input type="text" className="form-control" placeholder="Enter UserName"/>    
+                                    <input type="text" name='Email' value={this.state.Email} onChange={this.handleImputChange} className="form-control" placeholder="Email"/>    
                                 </div>
                                 <div className="form-group">
-                                    <input type="password" className="form-control" placeholder="Enter Password"/>    
+                                    <input type="password" name='password' value={this.state.password} onChange={this.handleImputChange} className="form-control" placeholder="Password"/>    
                                 </div>
                                 <div className=" d-flex justify-content-center">
-                                    <button type="submit" className="btn ">
+                                    <button className="btn" onClick={this.handlelogin}>
                                     <i className="fas fa-sign-in-alt "></i>
                                     Login
                                     </button>
                                 </div>
-                            </form>
+                            </div>
             
                             <div className="d-flex flex-column forgot p-2 justify-content-center">
                                 <div className="p-2 d-flex justify-content-center">
