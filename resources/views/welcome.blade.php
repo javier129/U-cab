@@ -17,7 +17,7 @@
 
      </div>
 
-     <script src="/js/app.js"></script>
+     <script src="/js/app.js"></script> 
      <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     </body>
 </html>

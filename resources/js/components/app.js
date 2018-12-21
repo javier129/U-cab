@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Login from './Login';
+//import Registro from './Registro';
+import Navbar from './Navbar';
+import CardsView from './CardsView'
+//import Login from './Login';
 export default class Example extends Component {
     render() {
        let x = document.getElementsByTagName("META")[2].attributes.content.nodeValue;
        console.log(x);
         return (
             <div className="container">
-                   <Login></Login>
+                   <Navbar></Navbar>
+                   <CardsView/>
             </div>
 
         );

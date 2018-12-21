@@ -1,0 +1,41 @@
+.card-body{
+    padding-top: 50px;
+    position: relative;    
+}
+
+pre {
+    tab-size: 8;
+}
+
+.card-img {
+    width: 100px ;
+    height: 100px;
+    margin-top: 10px;
+    border-radius:150px;
+}
+
+.card {
+    background-color: #fff;
+    margin-top: 10px;
+    box-shadow: 1px 1px 8px #999;
+    cursor: pointer;
+
+}
+.card-title {
+    margin-top: 10px;
+	text-transform: uppercase;
+	color: #E44424;
+}
+
+.cardimage{
+    position: fixed;
+    display: inline-block;
+}
+.cardbody{
+    position: relative;
+    width: 50%;
+    left: 120px; 
+    height: 120px;
+    display: inline-block;
+
+}

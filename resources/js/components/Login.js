@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './login.css';
 import logo from './face.png';
 class Login extends Component {
+
+    
     
     constructor(){
         super();
@@ -31,7 +33,10 @@ class Login extends Component {
         })
     }
     render() {
-        return (
+        
+        
+        return (            
+
                 <div className="row d-flex flex-column">
                   
                     <div className=" col-sm-12 col-lg-4 main-section p-2 justify-content-center offset-lg-4">
