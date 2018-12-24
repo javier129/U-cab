@@ -60,7 +60,7 @@ class Registro extends Component {
                                 </div>
 
                                 <div id="divFile" className="form-group registro">
-                                        <input type="file" id='file' className="form-control" onChange={this.fileChangedHandler} placeholder="imagen"/>       
+                                        <input type="file" id='file' className="form-control text-center center-block" onChange={this.fileChangedHandler} placeholder="imagen"/>       
                                 </div> 
 
                                 <div id="userName" className="form-group registro">

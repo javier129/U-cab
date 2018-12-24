@@ -59646,7 +59646,7 @@ var Registro = function (_Component) {
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
                                 { id: 'divFile', className: 'form-group registro' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'file', id: 'file', className: 'form-control', onChange: this.fileChangedHandler, placeholder: 'imagen' })
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'file', id: 'file', className: 'form-control text-center center-block', onChange: this.fileChangedHandler, placeholder: 'imagen' })
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
