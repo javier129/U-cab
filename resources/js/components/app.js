@@ -1,27 +1,35 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import Registro from './Registro';
-//import Navbar from './Navbar';
-//import CardsView from './CardsView'
-//import Registro from './Registro';
-//import Navbar from './Navbar';
-//import CardsView from './CardsView'
-import CardAventon from './CardAventon';
-//import Login from './Login';
-export default class Example extends Component {
+import Login from './Login';
+export default class App extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+            user:this.props.user
+        }
+    }
+    componentDidMount(){
+            let dato=null;
+            let uri = 'http://127.0.0.1:8000/ajax/usuario';
+            axios(uri).then(response=>{
+                console.log(response.data);
+                if(response.data){
+                   this.setState({
+                    user :response.data
+                   })
+                }
+            })
+    }
     render() {
        let x = document.getElementsByTagName("META")[2].attributes.content.nodeValue;
        console.log(x);
+       if(sessionStorage.getItem('user')){
+            
+       }
         return (
             <div className="container">
-                   <Registro/>
-  
+                 esta logeado
+                 { this.state.user && <img src={`/storage/${this.state.user.img}`}  alt=""/>}
             </div>
-
         );
     }
-}
-
-if (document.getElementById('example')) {
-    ReactDOM.render(<Example />, document.getElementById('example'));
 }

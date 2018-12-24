@@ -16,9 +16,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/usuario', function () {
-    return Auth::user();
-});
+
 /*Route::post('/login', 'Auth\LoginController@authenticate');
 Auth::routes();*/
 
@@ -26,6 +24,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['prefix' => 'ajax'], function() {
     Auth::routes();
+    Route::get('/usuario', function () {
+        return Auth::user();
+    });
 });
 
 Route::get('/{path?}', function () {

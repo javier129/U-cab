@@ -13,4 +13,66 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-require('./components/app');
+import { BrowserRouter, Route,Router, Switch, Redirect } from 'react-router-dom'
+import PrivateRoute from './components/PrivateRoute';
+import Login from './components/Login';
+import Registro from './components/Registro';
+import App from './components/app';
+//import Error from './components/Error';
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+
+
+export default class Example extends Component {
+    constructor(){
+        super();
+        this.state={
+            loginSuscess: false,
+            user: null
+        }
+    }
+     revisarStatus = ()=>{
+        let dato=null;
+        let uri = 'http://127.0.0.1:8000/ajax/usuario';
+        axios(uri).then(response=>{
+            if(response.data){
+               this.setState({
+                loginSuscess :true
+               })
+            }
+        })
+    }
+    componentWillMount(){
+        this.revisarStatus();
+    }
+    handleUserLogin = (userInfo)=>{
+        let uri = 'http://127.0.0.1:8000/ajax/login';
+        axios.post(uri, userInfo).then((response) => {
+            this.setState({
+                loginSuscess:true,
+                user:response.data.user
+            })
+            console.log(this.state.user);
+            sessionStorage.setItem('user', JSON.stringify(response.data.user));
+        })
+    }
+    render() {
+       let x = document.getElementsByTagName("META")[2].attributes.content.nodeValue;
+       console.log(x);
+      console.log(this.state.loginSuscess);
+        return (
+            <BrowserRouter>
+                <div>
+                    <Route exact path='/login' render={()=>
+                        !this.state.loginSuscess ? <Login handleLoginForUser={this.handleUserLogin}/> : <Redirect to={'/'}/>  }/> 
+                    <PrivateRoute user={this.state.user} userStatus={this.state.loginSuscess} exact path='/' component={App}/>
+                    <Route exact path='/Registro' component={Registro}/>
+                </div>
+            </BrowserRouter>
+        );
+    }
+}
+
+if (document.getElementById('example')) {
+    ReactDOM.render(<Example />, document.getElementById('example'));
+}

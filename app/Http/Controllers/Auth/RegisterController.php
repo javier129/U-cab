@@ -87,12 +87,13 @@ class RegisterController extends Controller
      */
     protected function create(Request $data)
     {
-       
+        $imagen=$data->file('file')->store('public');
+        $nombre=explode("public/", $imagen);
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'cedula' => $data['cedula'],
-            'img'=> $data->file('file')->store('public'),
+            'img'=>   $nombre[1] ,
             'direccion'=>'safsafas',
             'password' => Hash::make($data['password']),
         ]);

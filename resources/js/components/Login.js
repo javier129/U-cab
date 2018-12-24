@@ -19,11 +19,9 @@ class Login extends Component {
             email: this.state.Email,
             password: this.state.password
         };
-        let uri = 'http://192.168.1.48:8080/login';
-        axios.post(uri, userInfo).then((response) => {
-            sessionStorage.setItem('user', JSON.stringify(response.data.user));
-        })
+       this.props.handleLoginForUser(userInfo);
     }
+
 
     handleImputChange = event=> {
         event.preventDefault();
