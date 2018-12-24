@@ -36645,8 +36645,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Navbar__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__CardsView__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CardAventon__ = __webpack_require__(60);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -36658,7 +36657,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 //import Registro from './Registro';
-
+//import Navbar from './Navbar';
+//import CardsView from './CardsView'
 
 //import Login from './Login';
 
@@ -36676,12 +36676,7 @@ var Example = function (_Component) {
         value: function render() {
             var x = document.getElementsByTagName("META")[2].attributes.content.nodeValue;
             console.log(x);
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'container' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Navbar__["a" /* default */], null),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__CardsView__["a" /* default */], null)
-            );
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'container' });
         }
     }]);
 
@@ -59553,8 +59548,8 @@ module.exports = function (css) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navbar_css__ = __webpack_require__(61);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navbar_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__navbar_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cardAventon_css__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cardAventon_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__cardAventon_css__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -59566,93 +59561,97 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-var Navbar = function (_Component) {
-    _inherits(Navbar, _Component);
+var CardAventon = function (_Component) {
+    _inherits(CardAventon, _Component);
 
-    function Navbar() {
-        _classCallCheck(this, Navbar);
+    function CardAventon() {
+        _classCallCheck(this, CardAventon);
 
-        return _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (CardAventon.__proto__ || Object.getPrototypeOf(CardAventon)).apply(this, arguments));
     }
 
-    _createClass(Navbar, [{
+    _createClass(CardAventon, [{
         key: 'render',
         value: function render() {
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
-                { className: 'bodyNavar' },
+                { className: 'container bodyAventon' },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'nav',
-                    { className: 'navbar fixed-top navbar-expand-lg navbar-dark  fluid ' },
+                    'div',
+                    { className: 'row d-flex flex-column justify-content-center align-items-center ' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'div',
-                        { className: 'container' },
+                        { className: 'card col-11 col-sm-11 col-xs-11 col-lg-5 col-md-5 align-self-center p-2 text-center' },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'button',
-                            { className: 'navbar-toggler', id: 'logo', type: 'button', 'data-toggle': 'collapse', 'data-target': '#navbarTogglerDemo03', 'aria-controls': 'navbarTogglerDemo03', 'aria-expanded': 'false', 'aria-label': 'Toggle navigation' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', { className: 'navbar-toggler-icon' })
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'a',
-                            { className: 'navbar-brand', href: '#' },
-                            'Ucab'
+                            'h5',
+                            { className: 'centro' },
+                            'Nuevo Aventon'
                         ),
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'div',
-                            { className: 'collapse navbar-collapse', id: 'navbarTogglerDemo03' },
+                            null,
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'navbar-nav mr-auto mt-2 mt-lg-0' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    { className: 'nav-item active' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'a',
-                                        { className: 'nav-link', href: '#' },
-                                        'Historial ',
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'span',
-                                            { className: 'sr-only' },
-                                            '(current)'
-                                        )
-                                    )
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    { className: 'nav-item active' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'a',
-                                        { className: 'nav-link', href: '#' },
-                                        'Perfil'
-                                    )
-                                )
+                                'div',
+                                { className: 'form-group formulario' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', className: 'form-control', id: 'formGroupExampleInput2', placeholder: 'Destino' })
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { className: 'dropdown' },
+                                { className: 'form-group' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'button',
-                                    { className: 'btn btn-outline-light dropdown-toggle', type: 'button', id: 'dropdownMenuButton', 'data-toggle': 'dropdown', 'aria-haspopup': 'true', 'aria-expanded': 'false' },
-                                    'NombreUsuario'
+                                    'label',
+                                    { id: 'textPass', htmlFor: 'exampleFormControlSelect1' },
+                                    'Numero De Pasajeros'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'select',
+                                    { className: 'form-control', id: 'FormControlSelect1' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'option',
+                                        null,
+                                        '1'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'option',
+                                        null,
+                                        '2'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'option',
+                                        null,
+                                        '3'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'option',
+                                        null,
+                                        '4'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'option',
+                                        null,
+                                        '5'
+                                    )
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
-                                    { className: 'dropdown-menu', 'aria-labelledby': 'dropdownMenuButton' },
+                                    { className: 'row' },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'a',
-                                        { className: 'dropdown-item', href: '#' },
-                                        'Nombre'
+                                        'div',
+                                        { className: 'col-6' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'button',
+                                            { type: 'button', className: 'btn btn-warning btnAceptar' },
+                                            'Cancelar'
+                                        )
                                     ),
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'a',
-                                        { className: 'dropdown-item', href: '#' },
-                                        'Correo'
-                                    ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'dropdown-divider' }),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'button',
-                                        { id: 'cerrars', className: ' btn btn-danger', type: 'button' },
-                                        'Cerrar Sesion'
+                                        'div',
+                                        { className: 'col-6 col-offset-1' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'button',
+                                            { type: 'button', className: 'btn btn-warning btnAceptar' },
+                                            'Aceptar'
+                                        )
                                     )
                                 )
                             )
@@ -59663,20 +59662,10 @@ var Navbar = function (_Component) {
         }
     }]);
 
-    return Navbar;
+    return CardAventon;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-$(document).ready(function () {
-    var sideslider = $('[data-toggle=collapse-side]');
-    var sel = sideslider.attr('data-target');
-    var sel2 = sideslider.attr('data-target-2');
-    sideslider.click(function (event) {
-        $(sel).toggleclassName('in');
-        $(sel2).toggleclassName('out');
-    });
-});
-
-/* harmony default export */ __webpack_exports__["a"] = (Navbar);
+/* unused harmony default export */ var _unused_webpack_default_export = (CardAventon);
 
 /***/ }),
 /* 61 */
@@ -59699,8 +59688,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!./navbar.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!./navbar.css");
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!./cardAventon.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!./cardAventon.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -59718,181 +59707,7 @@ exports = module.exports = __webpack_require__(13)(false);
 
 
 // module
-exports.push([module.i, ".body-navbar {\r\n    font-family: 'Roboto', sans-serif;\r\n    padding-top: 50px;\r\n    position: relative;\r\n}\r\n\r\nnav {\r\n    background-color: #0072ff;\r\n}\r\n\r\n#cerrars{\r\n    position: relative;\r\n    margin-left: 20px;\r\n}\r\n\r\n\r\npre {\r\n    tab-size: 8;\r\n}\r\n\r\n.card-img {\r\n    width: 100px ;\r\n    height: 100px;\r\n    margin-top: 10px;\r\n    border-radius:150px;\r\n}\r\n\r\n.card {\r\n    background-color: #fff;\r\n    margin-top: 10px;\r\n    box-shadow: 1px 1px 8px #999;\r\n    cursor: pointer;\r\n\r\n}\r\n.card-title {\r\n\ttext-transform: uppercase;\r\n\tcolor: #E44424;\r\n}\r\n\r\n.cardimage{\r\n    position: fixed;\r\n    display: inline-block;\r\n}\r\n.cardbody{\r\n    position: relative;\r\n    width: 50%;\r\n    left: 120px; \r\n    height: 12rem;\r\n    display: inline-block;\r\n\r\n}\r\n\r\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 63 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Card__ = __webpack_require__(64);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__card_css__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__card_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__card_css__);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-var petciones = [{
-    nombre: 'carlos',
-    destino: 'Campo a2 de ferrominera'
-}, {
-    nombre: 'javier',
-    destino: 'altavista norte'
-}, {
-    nombre: 'juan',
-    destino: 'Villa colombia'
-}];
-
-var CardsView = function (_Component) {
-    _inherits(CardsView, _Component);
-
-    function CardsView() {
-        _classCallCheck(this, CardsView);
-
-        return _possibleConstructorReturn(this, (CardsView.__proto__ || Object.getPrototypeOf(CardsView)).call(this));
-    }
-
-    _createClass(CardsView, [{
-        key: 'render',
-        value: function render() {
-
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'container card-body' },
-                petciones.map(function (usuario) {
-                    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Card__["a" /* default */], { persona: usuario, key: usuario.nombre });
-                }),
-                ' '
-            );
-        }
-    }]);
-
-    return CardsView;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-
-/* harmony default export */ __webpack_exports__["a"] = (CardsView);
-
-/***/ }),
-/* 64 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-var Card = function (_Component) {
-    _inherits(Card, _Component);
-
-    function Card(props) {
-        _classCallCheck(this, Card);
-
-        return _possibleConstructorReturn(this, (Card.__proto__ || Object.getPrototypeOf(Card)).call(this));
-    }
-
-    _createClass(Card, [{
-        key: "render",
-        value: function render() {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "div",
-                null,
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "div",
-                    { className: "row" },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        "div",
-                        { className: "card col-sm-12 col-xs-12 col-lg-5 col-md-5" },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            "div",
-                            { className: "cardimage" },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "card-img", src: "https://www.ngenespanol.com/wp-content/uploads/2018/08/La-primera-imagen-de-la-historia.jpg" })
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            "div",
-                            { className: "cardbody" },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                "h6",
-                                { className: "card-title" },
-                                this.props.persona.nombre
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                "p",
-                                null,
-                                this.props.persona.destino
-                            )
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Card;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-
-/* harmony default export */ __webpack_exports__["a"] = (Card);
-
-/***/ }),
-/* 65 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(66);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(14)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!./card.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!./card.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 66 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(13)(false);
-// imports
-
-
-// module
-exports.push([module.i, ".card-body{\r\n    padding-top: 50px;\r\n    position: relative;    \r\n}\r\n\r\npre {\r\n    tab-size: 8;\r\n}\r\n\r\n.card-img {\r\n    width: 100px ;\r\n    height: 100px;\r\n    margin-top: 10px;\r\n    border-radius:150px;\r\n}\r\n\r\n.card {\r\n    background-color: #fff;\r\n    margin-top: 10px;\r\n    box-shadow: 1px 1px 8px #999;\r\n    cursor: pointer;\r\n\r\n}\r\n.card-title {\r\n    margin-top: 10px;\r\n\ttext-transform: uppercase;\r\n\tcolor: #E44424;\r\n}\r\n\r\n.cardimage{\r\n    position: fixed;\r\n    display: inline-block;\r\n}\r\n.cardbody{\r\n    position: relative;\r\n    width: 50%;\r\n    left: 120px; \r\n    height: 120px;\r\n    display: inline-block;\r\n\r\n}", ""]);
+exports.push([module.i, ".bodyAventon{\r\n    margin-top: 90px\r\n}\r\n\r\n.card {\r\n    background-color: #fff;\r\n    margin-top: 10px;\r\n    box-shadow: 1px 1px 8px #999;\r\n    cursor: pointer;\r\n    background-color: #f8333c;\r\n}\r\n.centro{\r\n    font-weight: bold;\r\n    margin-top: 20px;\r\n    color: rgba(255, 255, 0, 0.876);\r\n    text-align: center;\r\n}\r\n.formulario{\r\n    margin-top: 30px\r\n}\r\n.btnAceptar{\r\n    width: 100%;\r\n    margin-top: 20px;\r\n}\r\n#textPass{\r\n    color: rgba(255, 255, 0, 0.876)\r\n}", ""]);
 
 // exports
 

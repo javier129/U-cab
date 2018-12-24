@@ -8,8 +8,8 @@ class Card extends Component {
     render() {
         return ( 
             <div>
-                    <div className="row">
-                        <div className="card col-sm-12 col-xs-12 col-lg-5 col-md-5">
+                    <div className="row justify-content-center">
+                        <div className="card col-sm-12 col-xs-12 col-lg-8 col-md-8">
                             <div className="cardimage">
                                 <img className="card-img" src="https://www.ngenespanol.com/wp-content/uploads/2018/08/La-primera-imagen-de-la-historia.jpg"/>    
                             </div>

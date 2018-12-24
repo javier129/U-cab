@@ -24,7 +24,8 @@ pre {
 .card-title {
     margin-top: 10px;
 	text-transform: uppercase;
-	color: #E44424;
+    color: #E44424;
+    font-weight: 800;
 }
 
 .cardimage{
