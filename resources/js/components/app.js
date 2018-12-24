@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-//import Registro from './Registro';
-import Navbar from './Navbar';
-import CardsView from './CardsView'
+import Registro from './Registro';
+//import Navbar from './Navbar';
+//import CardsView from './CardsView'
 //import Login from './Login';
 export default class Example extends Component {
     render() {
@@ -10,8 +10,7 @@ export default class Example extends Component {
        console.log(x);
         return (
             <div className="container">
-                   <Navbar></Navbar>
-                   <CardsView/>
+                   <Registro/>
             </div>
 
         );

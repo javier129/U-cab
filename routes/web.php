@@ -1,5 +1,6 @@
 <?php
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,7 +19,25 @@ Route::get('/', function () {
 Route::get('/usuario', function () {
     return Auth::user();
 });
-Route::post('/login', 'Auth\LoginController@authenticate');
-//Auth::routes();
+/*Route::post('/login', 'Auth\LoginController@authenticate');
+Auth::routes();*/
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['prefix' => 'ajax'], function() {
+    Auth::routes();
+});
+
+Route::get('/{path?}', function () {
+    return view('welcome');
+});
+
+Route::post('/registro', function(Request $request){
+    return $request;
+    if($request->hasFile('file')){
+        return 'file';//$request->file('file')->store('public');
+    }
+   
+
+  return 'no file';
+});
