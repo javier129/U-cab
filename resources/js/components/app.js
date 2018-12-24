@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Registro from './Registro';
 //import Navbar from './Navbar';
-//import CardsView from './CardsView'
-import Registro from './Registro';
-//import CardsView from './CardsView'
+//import CardsView from './CardsView';
 //import CardAventon from './CardAventon';
 //import Chat from './chat';
 import Login from './Login';
