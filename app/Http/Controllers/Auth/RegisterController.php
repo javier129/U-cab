@@ -7,7 +7,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
-
+use Illuminate\Http\Request;
+use Illuminate\Auth\Events\Registered;
 class RegisterController extends Controller
 {
     /*
@@ -28,7 +29,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/login';
 
     /**
      * Create a new controller instance.
@@ -40,6 +41,24 @@ class RegisterController extends Controller
         $this->middleware('guest');
     }
 
+    public function register(Request $request)
+    {
+        $this->validator($request->all());
+
+        event(new Registered($user = $this->create($request)));
+
+        $this->guard()->login($user);
+
+        return response()->json(['data' => $user->toArray()], 201);
+    }
+
+    protected function registered(Request $request, $user)
+    {
+        $user->generateToken();
+    
+        return response()->json(['data' => $user->toArray()], 201);
+    }
+
     /**
      * Get a validator for an incoming registration request.
      *
@@ -48,11 +67,16 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
-        return Validator::make($data, [
+        $validator = Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:6', 'confirmed'],
         ]);
+        if ($validator->fails()) {
+            return response()->json([
+                'error'  => $validator->errors()->all()
+            ],400);
+        }
     }
 
     /**
@@ -61,11 +85,15 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
-    protected function create(array $data)
+    protected function create(Request $data)
     {
+       
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
+            'cedula' => $data['cedula'],
+            'img'=> $data->file('file')->store('public'),
+            'direccion'=>'safsafas',
             'password' => Hash::make($data['password']),
         ]);
     }
