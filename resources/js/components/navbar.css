@@ -4,6 +4,11 @@
     position: relative;
 }
 
+#plusbutton{
+    margin-right: 30px;
+    height: 36px;
+}
+
 nav {
     background-color: #0072ff;
 }
@@ -49,4 +54,16 @@ pre {
     display: inline-block;
 
 }
+
+@media screen and (max-width: 990px) {
+    #plusbutton{
+        visibility: hidden;    
+    }
+}
+@media screen and (min-width: 990px) {
+    #plusbutton2{
+        visibility: hidden;    
+    }
+}
+
 

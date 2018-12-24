@@ -36646,6 +36646,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Registro__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__CardAventon__ = __webpack_require__(63);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -36659,6 +36660,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 //import Navbar from './Navbar';
 //import CardsView from './CardsView'
+//import Registro from './Registro';
+//import Navbar from './Navbar';
+//import CardsView from './CardsView'
+
 //import Login from './Login';
 
 var Example = function (_Component) {
@@ -59766,6 +59771,177 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Rob
 
 // module
 exports.push([module.i, "body{\r\n    font-family: 'Roboto', sans-serif;\r\n}\r\n\r\ninput[type=number]::-webkit-inner-spin-button {\r\n    -webkit-appearance: none;\r\n  }\r\n\r\n.modal-content{\r\n    height: 500px;\r\n    background-color: #3b4652;\r\n    opacity: 0.95;\r\n    box-shadow: 0px 0px 3px #848484;\r\n}\r\n\r\n.main-section{\r\n\r\n    margin-top: 0;\r\n    padding: 0\r\n}\r\n\r\n.form-group{\r\n    margin-bottom: 25px \r\n }\r\n\r\n .form-groupp{\r\n    margin-bottom: 25px \r\n }\r\n\r\n#p1{\r\n    margin-top: 5%;\r\n}\r\n\r\n.form-group{\r\n    margin-bottom: 25px \r\n }\r\n\r\n .form-group input{\r\n    height: 42px;\r\n    border-radius: 5px;\r\n    border: 0;\r\n    font-size: 18px;\r\n    padding-left: 54px\r\n}\r\n\r\n.form-group::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\\F007\";\r\n    position: absolute;\r\n    font-size: 22px;\r\n    color: #555e60;\r\n    left: 28px;\r\n    padding-top: 4px;\r\n}\r\n.form-group#email::before{\r\n    content: \"\\F1FA\";\r\n}\r\n.form-group#dni::before{\r\n    content: \"\\F2C2\";\r\n}\r\n\r\n\r\n/* boton show de las password */\r\n\r\n.form-group.pass_show::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\\F023\";\r\n    position: absolute;\r\n    font-size: 22px;\r\n    color: #555e60;\r\n    left: 14px;\r\n    padding-top: 4px;\r\n}\r\n\r\n.pass_show{position: relative} \r\n\r\n.pass_show .ptxt { \r\n\r\nposition: absolute; \r\n\r\ntop: 50%; \r\n\r\nright: 10px; \r\n\r\nz-index: 1; \r\n\r\ncolor: #f36c01; \r\n\r\nmargin-top: -10px; \r\n\r\ncursor: pointer; \r\n\r\ntransition: .3s ease all; \r\n\r\n} \r\n\r\n.pass_show .ptxt:hover{color: #333333;} \r\n\r\n/* -------------------- */\r\n\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 63 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cardAventon_css__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__cardAventon_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__cardAventon_css__);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+var CardAventon = function (_Component) {
+    _inherits(CardAventon, _Component);
+
+    function CardAventon() {
+        _classCallCheck(this, CardAventon);
+
+        return _possibleConstructorReturn(this, (CardAventon.__proto__ || Object.getPrototypeOf(CardAventon)).apply(this, arguments));
+    }
+
+    _createClass(CardAventon, [{
+        key: 'render',
+        value: function render() {
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'container bodyAventon' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'row d-flex flex-column justify-content-center align-items-center ' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'card col-11 col-sm-11 col-xs-11 col-lg-5 col-md-5 align-self-center p-2 text-center' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'h5',
+                            { className: 'centro' },
+                            'Nuevo Aventon'
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            null,
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { className: 'form-group formulario' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', className: 'form-control', id: 'formGroupExampleInput2', placeholder: 'Destino' })
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { className: 'form-group' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'label',
+                                    { id: 'textPass', htmlFor: 'exampleFormControlSelect1' },
+                                    'Numero De Pasajeros'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'select',
+                                    { className: 'form-control', id: 'FormControlSelect1' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'option',
+                                        null,
+                                        '1'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'option',
+                                        null,
+                                        '2'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'option',
+                                        null,
+                                        '3'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'option',
+                                        null,
+                                        '4'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'option',
+                                        null,
+                                        '5'
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'row' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-6' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'button',
+                                            { type: 'button', className: 'btn btn-warning btnAceptar' },
+                                            'Cancelar'
+                                        )
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-6 col-offset-1' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'button',
+                                            { type: 'button', className: 'btn btn-warning btnAceptar' },
+                                            'Aceptar'
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return CardAventon;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+/* unused harmony default export */ var _unused_webpack_default_export = (CardAventon);
+
+/***/ }),
+/* 64 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(65);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(14)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!./cardAventon.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!./cardAventon.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 65 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(13)(false);
+// imports
+
+
+// module
+exports.push([module.i, ".bodyAventon{\r\n    margin-top: 90px\r\n}\r\n\r\n.card {\r\n    background-color: #fff;\r\n    margin-top: 10px;\r\n    box-shadow: 1px 1px 8px #999;\r\n    cursor: pointer;\r\n    background-color: #f8333c;\r\n}\r\n.centro{\r\n    font-weight: bold;\r\n    margin-top: 20px;\r\n    color: rgba(255, 255, 0, 0.876);\r\n    text-align: center;\r\n}\r\n.formulario{\r\n    margin-top: 30px\r\n}\r\n.btnAceptar{\r\n    width: 100%;\r\n    margin-top: 20px;\r\n}\r\n#textPass{\r\n    color: rgba(255, 255, 0, 0.876)\r\n}", ""]);
 
 // exports
 

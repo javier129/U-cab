@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import Registro from './Registro';
 //import Navbar from './Navbar';
 //import CardsView from './CardsView'
+//import Registro from './Registro';
+//import Navbar from './Navbar';
+//import CardsView from './CardsView'
+import CardAventon from './CardAventon';
 //import Login from './Login';
 export default class Example extends Component {
     render() {
@@ -11,6 +15,7 @@ export default class Example extends Component {
         return (
             <div className="container">
                    <Registro/>
+  
             </div>
 
         );
