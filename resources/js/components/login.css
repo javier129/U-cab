@@ -32,7 +32,7 @@
     margin-bottom: 25px 
  }
 
- .form-group input{
+ .form-group.login input{
     height: 42px;
     border-radius: 5px;
     border: 0;

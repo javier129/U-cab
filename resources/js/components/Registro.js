@@ -46,39 +46,36 @@ class Registro extends Component {
     render() {
         return (
                 <div className=" row  d-flex justify-content-center  align-items-center">
-                    <div className=" col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5  main-section  ">
-                        <div className="modal-content "> 
+                    <div className=" col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5  main-section  registro">
+                        <div className="modal-content registro"> 
 
                                 <div className="col-12">
 
-                                <div id="p1" className=" form-group">
+                                <div id="p1" className=" form-group registro">
                                     <input type="text" className="form-control" onChange={this.handleImputChange} name='name' placeholder="Nombre Completo"/>    
                                 </div>
 
-                                <div id="dni" className="form-group">
+                                <div id="dni" className="form-group registro">
                                     <input type="number" className="form-control" onChange={this.handleImputChange} name='cedula' placeholder="Cedula"/>    
                                 </div>
 
-                                <div className="row">
-                                <div className="col">
-                                <input type="file" id='file' className="form-control" onChange={this.fileChangedHandler} placeholder="imagen"/>   
-                                </div>
-                                    
+                                <div id="divFile" className="form-group registro">
+                                        <input type="file" id='file' className="form-control" onChange={this.fileChangedHandler} placeholder="imagen"/>       
                                 </div> 
 
-                                <div id="userName" className="form-group">
+                                <div id="userName" className="form-group registro">
                                     <input type="text" className="form-control" name='user' placeholder="Nombre de Usuario"/>    
                                 </div>
 
-                                <div id="email" className="form-group">
+                                <div id="email" className="form-group registro">
                                     <input type="email" className="form-control" onChange={this.handleImputChange} name='email' placeholder="Email"/>    
                                 </div>
 
-                                <div className="form-group pass_show">
+                                <div className="form-group registro pass_show">
                                     <input type="password" className="form-control" onChange={this.handleImputChange} name='password' placeholder="Contraseña"/>    
                                 </div>
 
-                                <div className="form-group pass_show">
+                                <div className="form-group registro pass_show">
                                     <input type="password" className="form-control" name='passwordR' placeholder="Repita Contraseña"/>    
                                 </div>   
                                 
@@ -87,13 +84,13 @@ class Registro extends Component {
                                 <div className="d-flex ">
                                     <div className=" mr-auto">
                                         <button type="button" className="btn ">
-                                            <i className="fas fa-sign-in-alt "></i>
+                                            <i className="fas fa-ban "></i>
                                             Cancel
                                         </button>
                                     </div>
                                     <div className=" ml-auto">
                                         <button onClick={this.registrar} type="submit" className="btn ">
-                                        <i className="fas fa-sign-in-alt "></i>
+                                        <i className="fas fa-check "></i>
                                         Registrar
                                         </button>
                                     </div>

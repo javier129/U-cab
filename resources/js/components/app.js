@@ -9,10 +9,10 @@ import Login from './Login';
 export default class Example extends Component {
     render() {
        let x = document.getElementsByTagName("META")[2].attributes.content.nodeValue;
-       console.log(x);
+       console.log(x);  
         return (
             <div className="container">
-                   <Registro/>
+                   <Registro></Registro>
   
             </div>
 

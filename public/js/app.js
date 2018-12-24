@@ -59626,50 +59626,46 @@ var Registro = function (_Component) {
                 { className: ' row  d-flex justify-content-center  align-items-center' },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
-                    { className: ' col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5  main-section  ' },
+                    { className: ' col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5  main-section  registro' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'div',
-                        { className: 'modal-content ' },
+                        { className: 'modal-content registro' },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'div',
                             { className: 'col-12' },
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { id: 'p1', className: ' form-group' },
+                                { id: 'p1', className: ' form-group registro' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', className: 'form-control', onChange: this.handleImputChange, name: 'name', placeholder: 'Nombre Completo' })
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { id: 'dni', className: 'form-group' },
+                                { id: 'dni', className: 'form-group registro' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'number', className: 'form-control', onChange: this.handleImputChange, name: 'cedula', placeholder: 'Cedula' })
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { className: 'row' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'col' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'file', id: 'file', className: 'form-control', onChange: this.fileChangedHandler, placeholder: 'imagen' })
-                                )
+                                { id: 'divFile', className: 'form-group registro' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'file', id: 'file', className: 'form-control', onChange: this.fileChangedHandler, placeholder: 'imagen' })
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { id: 'userName', className: 'form-group' },
+                                { id: 'userName', className: 'form-group registro' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', className: 'form-control', name: 'user', placeholder: 'Nombre de Usuario' })
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { id: 'email', className: 'form-group' },
+                                { id: 'email', className: 'form-group registro' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'email', className: 'form-control', onChange: this.handleImputChange, name: 'email', placeholder: 'Email' })
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { className: 'form-group pass_show' },
+                                { className: 'form-group registro pass_show' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'password', className: 'form-control', onChange: this.handleImputChange, name: 'password', placeholder: 'Contrase\xF1a' })
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { className: 'form-group pass_show' },
+                                { className: 'form-group registro pass_show' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'password', className: 'form-control', name: 'passwordR', placeholder: 'Repita Contrase\xF1a' })
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -59681,7 +59677,7 @@ var Registro = function (_Component) {
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         'button',
                                         { type: 'button', className: 'btn ' },
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fas fa-sign-in-alt ' }),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fas fa-ban ' }),
                                         'Cancel'
                                     )
                                 ),
@@ -59691,7 +59687,7 @@ var Registro = function (_Component) {
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         'button',
                                         { onClick: this.registrar, type: 'submit', className: 'btn ' },
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fas fa-sign-in-alt ' }),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fas fa-check ' }),
                                         'Registrar'
                                     )
                                 )
@@ -59761,7 +59757,7 @@ exports = module.exports = __webpack_require__(39)(false);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto);", ""]);
 
 // module
-exports.push([module.i, "body.registro{\r\n    font-family: 'Roboto', sans-serif;\r\n}\r\n\r\ninput[type=number]::-webkit-inner-spin-button {\r\n    -webkit-appearance: none;\r\n  }\r\n\r\n.modal-content.registro{\r\n    height: 500px;\r\n    background-color: #3b4652;\r\n    opacity: 0.95;\r\n    box-shadow: 0px 0px 3px #848484;\r\n}\r\n\r\n.main-section.registro{\r\n\r\n    margin-top: 0;\r\n    padding: 0\r\n}\r\n\r\n.form-group.registro{\r\n    margin-bottom: 25px \r\n }\r\n\r\n#p1{\r\n    margin-top: 5%;\r\n}\r\n\r\n.form-group.registro{\r\n    margin-bottom: 25px \r\n }\r\n\r\n .form-group.registro input{\r\n    height: 42px;\r\n    border-radius: 5px;\r\n    border: 0;\r\n    font-size: 18px;\r\n    padding-left: 54px\r\n}\r\n\r\n.form-group::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\\F007\";\r\n    position: absolute;\r\n    font-size: 22px;\r\n    color: #555e60;\r\n    left: 28px;\r\n    padding-top: 4px;\r\n}\r\n.form-group#email::before{\r\n    content: \"\\F1FA\";\r\n}\r\n.form-group#dni::before{\r\n    content: \"\\F2C2\";\r\n}\r\n\r\n\r\n/* boton show de las password */\r\n\r\n.form-group.pass_show::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\\F023\";\r\n    position: absolute;\r\n    font-size: 22px;\r\n    color: #555e60;\r\n    left: 14px;\r\n    padding-top: 4px;\r\n}\r\n\r\n.pass_show{position: relative} \r\n\r\n.pass_show .ptxt { \r\n\r\nposition: absolute; \r\n\r\ntop: 50%; \r\n\r\nright: 10px; \r\n\r\nz-index: 1; \r\n\r\ncolor: #f36c01; \r\n\r\nmargin-top: -10px; \r\n\r\ncursor: pointer; \r\n\r\ntransition: .3s ease all; \r\n\r\n} \r\n\r\n.pass_show .ptxt:hover{color: #333333;} \r\n\r\n/* -------------------- */\r\n\r\n", ""]);
+exports.push([module.i, "body.registro{\r\n    font-family: 'Roboto', sans-serif;\r\n}\r\n\r\ninput[type=number]::-webkit-inner-spin-button {\r\n    -webkit-appearance: none;\r\n  }\r\n\r\n.modal-content.registro{\r\n    height: 500px;\r\n    background-color: #0072ff;\r\n    opacity: 0.95;\r\n    box-shadow: 0px 0px 3px #848484;\r\n}\r\n\r\n.main-section.registro{\r\n    margin-top: 3.5rem;\r\n    padding: 0\r\n}\r\n\r\n#p1{\r\n    margin-top: 5%;\r\n}\r\n\r\n.form-group.registro input{\r\n    height: 42px;\r\n    border-radius: 5px;\r\n    border: 0;\r\n    font-size: 18px;\r\n    padding-left: 54px\r\n}\r\n#divFile.form-group.registro input{\r\n    height: 46px;\r\n    border-radius: 5px;\r\n    border: 0;\r\n    font-size: 18px;\r\n    padding-left: 12px\r\n}\r\n\r\n.form-group.registro::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\\F007\";\r\n    position: absolute;\r\n    font-size: 22px;\r\n    color: #f36c01;\r\n    left: 28px;\r\n    padding-top: 4px;\r\n}\r\n\r\n#divFile.form-group.registro::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\";\r\n}\r\n\r\n.form-group#email::before{\r\n    content: \"\\F1FA\";\r\n}\r\n.form-group#dni::before{\r\n    content: \"\\F2C2\";\r\n}\r\n.form-group#dni::before{\r\n    content: \"\\F2C2\";\r\n}\r\n\r\n/* boton show de las password */\r\n\r\n.form-group.pass_show::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\\F023\";\r\n    position: absolute;\r\n    font-size: 22px;\r\n    color: #f36c01;\r\n    left: 14px;\r\n    padding-top: 4px;\r\n}\r\n\r\n.pass_show{position: relative} \r\n\r\n.pass_show .ptxt { \r\n\r\nposition: absolute; \r\n\r\ntop: 50%; \r\n\r\nright: 10px; \r\n\r\nz-index: 1; \r\n\r\ncolor: #f36c01; \r\n\r\nmargin-top: -10px; \r\n\r\ncursor: pointer; \r\n\r\ntransition: .3s ease all; \r\n\r\n} \r\n\r\n.pass_show .ptxt:hover{color: #333333;} \r\n\r\n/* -------------------- */\r\n\r\n", ""]);
 
 // exports
 
@@ -59939,7 +59935,7 @@ exports = module.exports = __webpack_require__(39)(false);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto);", ""]);
 
 // module
-exports.push([module.i, ".bodyLogin{\r\n    font-family: 'Roboto', sans-serif;\r\n}\r\n\r\n.main-section.login{\r\n\r\n    margin-top: 130px;\r\n    padding: 0\r\n}\r\n\r\n.modal-content.login{ \r\n    background-color: #0072ff;\r\n    opacity: 0.95;\r\n    box-shadow: 0px 0px 3px #848484;\r\n}\r\n\r\n.user-img{\r\n    margin-top: -50px;\r\n    margin-bottom: 35px;\r\n}\r\n\r\n.user-img img{\r\n    height: 150px;\r\n    width: 150px;\r\n    border-radius: 5px;\r\n    box-shadow: 0px 0px 2px #848484;\r\n}\r\n\r\n#login.form-group{\r\n    margin-bottom: 25px \r\n }\r\n\r\n .form-group input{\r\n    height: 42px;\r\n    border-radius: 5px;\r\n    border: 0;\r\n    font-size: 18px;\r\n    padding-left: 54px\r\n}\r\n\r\n.form-group.login::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\\F007\";\r\n    position: absolute;\r\n    font-size: 22px;\r\n    color: #ff7830;\r\n    left: 28px;\r\n    padding-top: 4px;\r\n    \r\n}\r\n\r\n.form-group:last-od-type::before{\r\n    content: \"\\F023\"\r\n}\r\n\r\n.button.login{\r\n    width: 80%;\r\n    margin: 5px 0 25px\r\n}\r\n\r\n.btn{\r\n    background-color: #ff7830;\r\n    color: #fff;\r\n    font-size: 19px;\r\n    border-radius: 5px;\r\n    padding: 7px 14px;\r\n    border-bottom: 4px solid #ad4d1900\r\n}\r\n\r\n.btn:hover, .btn:focus{\r\n    background-color: #b3480f ! important;\r\n    border-bottom: 4px solid #ff783000 ! important\r\n}\r\n\r\n.svg-inline--fa{\r\n    font-size: 20px;\r\n    margin-right: 7px\r\n}\r\n\r\n.forgot{\r\n    padding: 5px 0 25px\r\n}\r\n\r\n.forgot a {\r\n    color:#c2fbfe\r\n}\r\n", ""]);
+exports.push([module.i, ".bodyLogin{\r\n    font-family: 'Roboto', sans-serif;\r\n}\r\n\r\n.main-section.login{\r\n\r\n    margin-top: 130px;\r\n    padding: 0\r\n}\r\n\r\n.modal-content.login{ \r\n    background-color: #0072ff;\r\n    opacity: 0.95;\r\n    box-shadow: 0px 0px 3px #848484;\r\n}\r\n\r\n.user-img{\r\n    margin-top: -50px;\r\n    margin-bottom: 35px;\r\n}\r\n\r\n.user-img img{\r\n    height: 150px;\r\n    width: 150px;\r\n    border-radius: 5px;\r\n    box-shadow: 0px 0px 2px #848484;\r\n}\r\n\r\n#login.form-group{\r\n    margin-bottom: 25px \r\n }\r\n\r\n .form-group.login input{\r\n    height: 42px;\r\n    border-radius: 5px;\r\n    border: 0;\r\n    font-size: 18px;\r\n    padding-left: 54px\r\n}\r\n\r\n.form-group.login::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\\F007\";\r\n    position: absolute;\r\n    font-size: 22px;\r\n    color: #ff7830;\r\n    left: 28px;\r\n    padding-top: 4px;\r\n    \r\n}\r\n\r\n.form-group:last-od-type::before{\r\n    content: \"\\F023\"\r\n}\r\n\r\n.button.login{\r\n    width: 80%;\r\n    margin: 5px 0 25px\r\n}\r\n\r\n.btn{\r\n    background-color: #ff7830;\r\n    color: #fff;\r\n    font-size: 19px;\r\n    border-radius: 5px;\r\n    padding: 7px 14px;\r\n    border-bottom: 4px solid #ad4d1900\r\n}\r\n\r\n.btn:hover, .btn:focus{\r\n    background-color: #b3480f ! important;\r\n    border-bottom: 4px solid #ff783000 ! important\r\n}\r\n\r\n.svg-inline--fa{\r\n    font-size: 20px;\r\n    margin-right: 7px\r\n}\r\n\r\n.forgot{\r\n    padding: 5px 0 25px\r\n}\r\n\r\n.forgot a {\r\n    color:#c2fbfe\r\n}\r\n", ""]);
 
 // exports
 
@@ -59949,12 +59945,6 @@ exports.push([module.i, ".bodyLogin{\r\n    font-family: 'Roboto', sans-serif;\r
 /***/ (function(module, exports) {
 
 module.exports = "/images/face.png?486275ea2f9332e5f637a0c6b3c16aaf";
-
-/***/ })
-/******/ ]);over{color: #333333;} \r\n\r\n/* -------------------- */\r\n\r\n", ""]);
-
-// exports
-
 
 /***/ })
 /******/ ]);
