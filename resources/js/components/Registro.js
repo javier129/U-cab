@@ -7,33 +7,33 @@ class Registro extends Component {
     render() {
         return (
                 
-                <div className=" row  d-flex justify-content-center  align-items-center">
-                    <div className=" col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5  main-section  ">
-                        <div className="modal-content "> 
+                <div className=" row  d-flex justify-content-center  align-items-center registro">
+                    <div className=" col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5  main-section  registro">
+                        <div className="modal-content registro"> 
 
                                 <div className="col-12">
 
-                                <div id="p1" className=" form-group">
+                                <div id="p1" className=" form-group registro">
                                     <input type="text" className="form-control" placeholder="Nombre Completo"/>    
                                 </div>
 
-                                <div id="dni" className="form-group">
+                                <div id="dni" className="form-group registro">
                                     <input type="number" className="form-control" placeholder="Cedula"/>    
                                 </div>
 
-                                <div id="userName" className="form-group">
+                                <div id="userName" className="form-group registro">
                                     <input type="text" className="form-control" placeholder="Nombre de Usuario"/>    
                                 </div>
 
-                                <div id="email" className="form-group">
+                                <div id="email" className="form-group registro">
                                     <input type="email" className="form-control" placeholder="Email"/>    
                                 </div>
 
-                                <div className="form-group pass_show">
+                                <div className="form-group registro pass_show ">
                                     <input type="password" className="form-control" placeholder="Contraseña"/>    
                                 </div>
 
-                                <div className="form-group pass_show">
+                                <div className="form-group registro pass_show">
                                     <input type="password" className="form-control" placeholder="Repita Contraseña"/>    
                                 </div>   
                                 
