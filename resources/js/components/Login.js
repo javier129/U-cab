@@ -35,24 +35,24 @@ class Login extends Component {
         
         return (            
 
-                <div className="row d-flex flex-column">
+                <div className="row d-flex flex-column bodyLogin">
                   
-                    <div className=" col-sm-12 col-lg-4 main-section p-2 justify-content-center offset-lg-4">
+                    <div className=" col-sm-12 col-lg-4 main-section login p-2 justify-content-center offset-lg-4">
                         
-                        <div className="modal-content  ">
+                        <div className="modal-content login">
                             <div className="d-flex justify-content-center  user-img" >
                             <img src={logo} />
                             </div>  
             
                             <div className="p-2 ">
-                                <div className="form-group">
+                                <div id="login" className="form-group login">
                                     <input type="text" name='Email' value={this.state.Email} onChange={this.handleImputChange} className="form-control" placeholder="Email"/>    
                                 </div>
-                                <div className="form-group">
+                                <div id="login" className="form-group login">
                                     <input type="password" name='password' value={this.state.password} onChange={this.handleImputChange} className="form-control" placeholder="Password"/>    
                                 </div>
                                 <div className=" d-flex justify-content-center">
-                                    <button className="btn" onClick={this.handlelogin}>
+                                    <button className="btn login" onClick={this.handlelogin}>
                                     <i className="fas fa-sign-in-alt "></i>
                                     Login
                                     </button>
