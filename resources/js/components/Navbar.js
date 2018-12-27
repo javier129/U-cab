@@ -47,49 +47,50 @@ class Navbar extends Component {
 
 
                 {/* Modal */}
+ 
+                 <div className="modal fade navbar" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                     <div className="modal-dialog" role="document">
+                         <div className="modal-content">
+                             <div className="modal-header">
+                                 <h5 className="modal-title" id="exampleModalLabel">Nuevo Aventon</h5>
+                                 <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                                     <span aria-hidden="true">&times;</span>
+                                 </button>
+                             </div>
+                         <div className="modal-body">
 
-                <div className="modal fade navbar" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div className="modal-dialog" role="document">
-                        <div className="modal-content">
-                            <div className="modal-header">
-                                <h5 className="modal-title" id="exampleModalLabel">Nuevo Aventon</h5>
-                                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                        <div className="modal-body">
+                             <div className="form-group ">
+                                 <label id="textPass" htmlFor="exampleFormControlSelect1">Zona Destino</label>
+                                 <select className="form-control " id="FormControlSelect1">
+                                     <option>unare</option>
 
-                            <div className="form-group ">
-                                <label id="textPass" htmlFor="exampleFormControlSelect1">Zona Destino</label>
-                                <select className="form-control " id="FormControlSelect1">
-                                    <option>unare</option>
+                                 </select>
+                             </div>
+                             <label id="textPass" htmlFor="exampleFormControlSelect1">Direccion Destino</label>
+                             <div className="form-group formulario">
+                                 <input type="text" className="form-control" id="formGroupExampleInput2" placeholder="Destino"/>
+                             </div>   
+                             <div className="form-group">
+                                 <label id="textPass" htmlFor="exampleFormControlSelect1">Numero De Pasajeros</label>
+                                 <select className="form-control" id="FormControlSelect1">
+                                     <option>1</option>
+                                     <option>2</option>
+                                     <option>3</option>
+                                     <option>4</option>
+                                     <option>5</option>
+                                 </select>
+                             </div>        
 
-                                </select>
-                            </div>
-                            <label id="textPass" htmlFor="exampleFormControlSelect1">Direccion Destino</label>
-                            <div className="form-group formulario">
-                                <input type="text" className="form-control" id="formGroupExampleInput2" placeholder="Destino"/>
-                            </div>   
-                            <div className="form-group">
-                                <label id="textPass" htmlFor="exampleFormControlSelect1">Numero De Pasajeros</label>
-                                <select className="form-control" id="FormControlSelect1">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>        
-
-                        </div>
-                            <div className="modal-footer">
-                                <button type="button" className="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                                <button type="button" className="btn btn-danger">Aceptar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                         </div>
+                             <div className="modal-footer">
+                                 <button type="button" className="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                                 <button type="button" className="btn btn-danger">Aceptar</button>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
                 {/* ------- */}
+
             </div>
            
         );
