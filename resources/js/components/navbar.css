@@ -55,6 +55,15 @@ pre {
 
 }
 
+.modal-title{
+    font-weight: 800;
+}
+
+.modal.navbar{
+    color: #0072ff;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 990px) {
     #plusbutton{
         visibility: hidden;    

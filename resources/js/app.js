@@ -21,6 +21,9 @@ import App from './components/app';
 //import Error from './components/Error';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import Ajustes from './components/ajustes';
+import Navbar from './components/Navbar';
+
 
 
 export default class Example extends Component {
@@ -62,12 +65,8 @@ export default class Example extends Component {
       console.log(this.state.loginSuscess);
         return (
             <BrowserRouter>
-                <div>
-                    <Route exact path='/login' render={()=>
-                        !this.state.loginSuscess ? <Login handleLoginForUser={this.handleUserLogin}/> : <Redirect to={'/'}/>  }/> 
-                    <PrivateRoute user={this.state.user} userStatus={this.state.loginSuscess} exact path='/' component={App}/>
-                    <Route exact path='/Registro' component={Registro}/>
-                </div>
+                <Navbar></Navbar>
+                
             </BrowserRouter>
         );
     }

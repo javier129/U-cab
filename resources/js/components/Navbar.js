@@ -10,7 +10,7 @@ class Navbar extends Component {
                         <button className="navbar-toggler" id="logo" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
-                        <button type="button" id="plusbutton2" className="btn btn-danger"><i className="far fa-plus-square fa-lg "></i></button>
+                        <button type="button" id="plusbutton2" data-toggle="modal" data-target="#exampleModal" data-toggle="modal" data-target="#exampleModal"className="btn btn-danger"><i className="far fa-plus-square fa-lg "></i></button>
                         
 
                         <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
@@ -27,7 +27,7 @@ class Navbar extends Component {
                                 </li>
                             </ul>
 
-                            <button type="button" id="plusbutton" className="btn btn-danger"><i className="far fa-plus-square fa-lg "></i></button>
+                            <button type="button" id="plusbutton" data-toggle="modal" data-target="#exampleModal" className="btn btn-danger"><i className="far fa-plus-square fa-lg "></i></button>
 
                             <div className="dropdown">
                                 <button className="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -44,20 +44,58 @@ class Navbar extends Component {
                         </div>
                     </div>
                 </nav>
+
+
+                {/* Modal */}
+
+                <div className="modal fade navbar" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog" role="document">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <h5 className="modal-title" id="exampleModalLabel">Nuevo Aventon</h5>
+                                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        <div className="modal-body">
+
+                            <div className="form-group ">
+                                <label id="textPass" htmlFor="exampleFormControlSelect1">Zona Destino</label>
+                                <select className="form-control " id="FormControlSelect1">
+                                    <option>unare</option>
+
+                                </select>
+                            </div>
+                            <label id="textPass" htmlFor="exampleFormControlSelect1">Direccion Destino</label>
+                            <div className="form-group formulario">
+                                <input type="text" className="form-control" id="formGroupExampleInput2" placeholder="Destino"/>
+                            </div>   
+                            <div className="form-group">
+                                <label id="textPass" htmlFor="exampleFormControlSelect1">Numero De Pasajeros</label>
+                                <select className="form-control" id="FormControlSelect1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>        
+
+                        </div>
+                            <div className="modal-footer">
+                                <button type="button" className="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                                <button type="button" className="btn btn-danger">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* ------- */}
             </div>
            
         );
     }
 }
 
-$(document).ready(function() {   
-    let sideslider = $('[data-toggle=collapse-side]');
-    let sel = sideslider.attr('data-target');
-    let sel2 = sideslider.attr('data-target-2');
-    sideslider.click(function(event){
-        $(sel).toggleclassName('in');
-        $(sel2).toggleclassName('out');
-    });
-});
+
 
 export default Navbar;
