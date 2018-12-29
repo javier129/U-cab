@@ -21,6 +21,10 @@ import App from './components/app';
 //import Error from './components/Error';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import Ajustes from './components/ajustes';
+import Navbar from './components/Navbar';
+import AventonDetalles from './components/AventonDetalles';
+
 
 
 export default class Example extends Component {

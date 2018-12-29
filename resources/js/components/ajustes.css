@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.bodyAjustes{
+    margin-top: 70px;
+    padding:0;
+    color:white;
+}
+
+#foto.ajustes img{
+    width: 140px ;
+    height: 140px;
+    margin-top: -50px;
+    border-radius:150px;
+}
+
+body.ajustes{
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+.modal-content.ajustes{
+    background-color: #0072ff;
+    opacity: 0.95;
+    box-shadow: 0px 0px 3px #848484;
+}
+
+.form-group.ajustes input{
+    height: 42px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 18px;
+    padding-left: 54px
+}
+#divFile.form-group.ajustes input{
+    height: 46px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 18px;
+    padding-left: 12px
+}
+
+.form-group.ajustes::before{
+    font-family:  'Font Awesome\ 5 Free';
+    content: "\f007";
+    position: absolute;
+    font-size: 22px;
+    color: #f36c01;
+    left: 28px;
+    padding-top: 4px;
+}
+
+#divFile.form-group.ajustes::before{
+    font-family:  'Font Awesome\ 5 Free';
+    content: "";
+}
+#foto.form-group.ajustes::before{
+    font-family:  'Font Awesome\ 5 Free';
+    content: "";
+}
+
+.form-group#email::before{
+    content: "\f1fa";
+}
+.form-group#dni::before{
+    content: "\f2c2";
+}
+.form-group#dni::before{
+    content: "\f2c2";
+}
+
+/* boton show de las password */
+
+.form-group.pass_show::before{
+    font-family:  'Font Awesome\ 5 Free';
+    content: "\f023";
+    position: absolute;
+    font-size: 22px;
+    color: #f36c01;
+    left: 14px;
+    padding-top: 4px;
+}
+
+.pass_show{position: relative} 
+
+.pass_show .ptxt { 
+
+position: absolute; 
+
+top: 50%; 
+
+right: 10px; 
+
+z-index: 1; 
+
+color: #f36c01; 
+
+margin-top: -10px; 
+
+cursor: pointer; 
+
+transition: .3s ease all; 
+
+} 
+
+.pass_show .ptxt:hover{color: #333333;} 
+
+.btn.ajustes{
+    width: 120px;
+    background-color:#f36c01;
+    color: aliceblue;
+}
+
+
+/* -------------------- */

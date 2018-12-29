@@ -51,7 +51,7 @@
     
 }
 
-.form-group:last-od-type::before{
+.form-group.login:last-od-type::before{
     content: "\f023"
 }
 
@@ -74,7 +74,7 @@
     border-bottom: 4px solid #ff783000 ! important
 }
 
-.svg-inline--fa{
+.svg-inline.login--fa{
     font-size: 20px;
     margin-right: 7px
 }

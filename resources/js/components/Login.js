@@ -35,9 +35,9 @@ class Login extends Component {
         
         return (            
 
-                <div className="row d-flex flex-column bodyLogin">
+                <div className="row d-flex flex-column bodyLogin login">
                   
-                    <div className=" col-sm-12 col-lg-4 main-section login p-2 justify-content-center offset-lg-4">
+                    <div className="col-sm-12 col-lg-4 main-section login p-2 justify-content-center offset-lg-4">
                         
                         <div className="modal-content login">
                             <div className="d-flex justify-content-center  user-img" >
