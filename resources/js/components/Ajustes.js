@@ -55,23 +55,22 @@ class Ajustes extends Component {
                                     <img src="https://www.ngenespanol.com/wp-content/uploads/2018/08/La-primera-imagen-de-la-historia.jpg"/>
                                 </div>
 
+                                <div>
+                                    <label>Cambiar imagen</label>
+                                </div>
+
                                 <div id="divFile" className="form-group ajustes">
                                         <input type="file" id='file' className="form-control text-center center-block" onChange={this.fileChangedHandler} placeholder="imagen"/>       
                                 </div> 
 
                                 <div>
-                                    <label>direccion para crear aventones</label>
+                                    <label>Registre direccion de domicilio</label>
                                 </div>
 
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Zona
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                    </div>
+                                <div className="form-group ">
+                                 <select className="form-control " id="FormControlSelect1">
+                                     <option>unare</option>
+                                 </select>
                                 </div>
 
                                 <div>
@@ -91,14 +90,14 @@ class Ajustes extends Component {
                                 </div>   
                     
                                 <div className="d-flex ">
-                                    <div className=" mr-auto">
-                                        <button type="button" className="btn ">
+                                    <div className="p-2 mr-auto">
+                                        <button type="button" className="btn ajustes">
                                             <i className="fas fa-ban "></i>
                                             Cancel
                                         </button>
                                     </div>
-                                    <div className=" ml-auto">
-                                        <button onClick={this.registrar} type="submit" className="btn ">
+                                    <div className="p-2 ml-auto">
+                                        <button onClick={this.registrar} type="submit" className="btn ajustes">
                                         <i className="fas fa-check "></i>
                                         Aplicar
                                         </button>

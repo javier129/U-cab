@@ -23,6 +23,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Ajustes from './components/ajustes';
 import Navbar from './components/Navbar';
+import AventonDetalles from './components/AventonDetalles';
 
 
 
@@ -65,7 +66,8 @@ export default class Example extends Component {
       console.log(this.state.loginSuscess);
         return (
             <BrowserRouter>
-                <Navbar></Navbar>
+
+                <AventonDetalles></AventonDetalles>
                 
             </BrowserRouter>
         );

@@ -1,0 +1,43 @@
+.card.detalles {
+    text-transform: uppercase;
+    font-weight: bolder ;
+    color:white;
+    background-color: #0072ff;
+    box-shadow: 1px 1px 8px #999;
+    cursor: pointer;
+}
+
+.card2.detalles {
+    text-transform: uppercase;
+    color:white;
+    font-weight: bolder ;
+    margin-top: 10px;
+    background-color: #14aa0093;
+    box-shadow: 1px 1px 8px #999;
+    cursor: pointer;
+}
+
+#foto.detalles img{
+    margin-top: 10px;
+    width: 100px ;
+    height: 100px;
+    border-radius:150px;
+}
+
+.detalles .form-control-plaintext{
+    color:white;
+
+}
+.detalles #textPass{
+    text-transform: uppercase;
+    margin-top: 10px
+}
+
+hr {
+    height:1px; 
+    border:none; 
+    color:#000; 
+    background-color:#000; 
+    width:100%; 
+    margin: 0 auto;
+}

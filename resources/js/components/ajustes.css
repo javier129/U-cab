@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 .bodyAjustes{
-    margin-top: 100px;
+    margin-top: 70px;
     padding:0;
+    color:white;
 }
 
-#foto img{
+#foto.ajustes img{
     width: 140px ;
     height: 140px;
     margin-top: -50px;
@@ -105,5 +106,12 @@ transition: .3s ease all;
 } 
 
 .pass_show .ptxt:hover{color: #333333;} 
+
+.btn.ajustes{
+    width: 120px;
+    background-color:#f36c01;
+    color: aliceblue;
+}
+
 
 /* -------------------- */

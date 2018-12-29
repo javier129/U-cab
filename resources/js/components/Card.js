@@ -34,15 +34,15 @@ class Card extends Component {
                         <div className="modal-body">
                             <div className="form-group ">
                                 <label id="textPass" htmlFor="exampleFormControlSelect1">Nombre Del Conductor</label>
-                                <input type="text" readonly class="form-control-plaintext" id="staticNombreConductor" value="Javier Gil"/>
+                                <input type="text" readOnly className="form-control-plaintext" id="staticNombreConductor" value="Javier Gil"/>
                             </div>
                             <div className="form-group ">
                                 <label id="textPass" htmlFor="exampleFormControlSelect1">Zona Destino</label>
-                                <input type="text" readonly class="form-control-plaintext" id="staticzona" value="unare"/>
+                                <input type="text" readOnly className="form-control-plaintext" id="staticzona" value="unare"/>
                             </div>
                             <label id="textPass" htmlFor="exampleFormControlSelect1">Direccion Destino</label>
                             <div className="form-group formulario">
-                                <input type="text" readonly class="form-control-plaintext" id="staticdireccion" value="calle 23a"/>
+                                <input type="text" readOnly className="form-control-plaintext" id="staticdireccion" value="calle 23a"/>
                             </div>         
 
                         </div>
