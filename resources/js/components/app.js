@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Navbar from './Navbar';
+import CardsView from './CardsView';
 export default class App extends Component {
     constructor(props){
         super(props);
@@ -22,12 +24,12 @@ export default class App extends Component {
        let x = document.getElementsByTagName("META")[2].attributes.content.nodeValue;
        console.log(x);
        if(sessionStorage.getItem('user')){
-            
+            // { this.state.user && <img src={`/storage/${this.state.user.img}`}  alt=""/>}
        }
         return (
             <div className="container">
-                 esta logeado
-                 { this.state.user && <img src={`/storage/${this.state.user.img}`}  alt=""/>}
+                <Navbar/>
+                <CardsView/>
             </div>
         );
     }

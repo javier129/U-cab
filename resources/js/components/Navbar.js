@@ -50,14 +50,6 @@ class Navbar extends Component {
     }
 }
 
-$(document).ready(function() {   
-    let sideslider = $('[data-toggle=collapse-side]');
-    let sel = sideslider.attr('data-target');
-    let sel2 = sideslider.attr('data-target-2');
-    sideslider.click(function(event){
-        $(sel).toggleclassName('in');
-        $(sel2).toggleclassName('out');
-    });
-});
+
 
 export default Navbar;

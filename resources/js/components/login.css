@@ -60,7 +60,7 @@
     margin: 5px 0 25px
 }
 
-.btn{
+.btn.login{
     background-color: #ff7830;
     color: #fff;
     font-size: 19px;
@@ -69,7 +69,7 @@
     border-bottom: 4px solid #ad4d1900
 }
 
-.btn:hover, .btn:focus{
+.btn.login:hover, .btn.login:focus{
     background-color: #b3480f ! important;
     border-bottom: 4px solid #ff783000 ! important
 }

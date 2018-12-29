@@ -26,8 +26,13 @@ import ReactDOM from 'react-dom';
 export default class Example extends Component {
     constructor(){
         super();
+        let login=false;
+        console.log(sessionStorage.getItem('user'));
+        if(sessionStorage.getItem('user')){
+            login= true
+        }
         this.state={
-            loginSuscess: false,
+            loginSuscess:login,
             user: null
         }
     }
@@ -42,12 +47,13 @@ export default class Example extends Component {
             }
         })
     }
-    componentWillMount(){
+    /*componentWillMount(){
         this.revisarStatus();
-    }
+    }*/
     handleUserLogin = (userInfo)=>{
         let uri = 'http://127.0.0.1:8000/ajax/login';
         axios.post(uri, userInfo).then((response) => {
+            console.log(response.data);
             this.setState({
                 loginSuscess:true,
                 user:response.data.user
@@ -63,7 +69,7 @@ export default class Example extends Component {
         return (
             <BrowserRouter>
                 <div>
-                    <Route exact path='/login' render={()=>
+                <Route exact path='/login' render={()=>
                         !this.state.loginSuscess ? <Login handleLoginForUser={this.handleUserLogin}/> : <Redirect to={'/'}/>  }/> 
                     <PrivateRoute user={this.state.user} userStatus={this.state.loginSuscess} exact path='/' component={App}/>
                     <Route exact path='/Registro' component={Registro}/>
