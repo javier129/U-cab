@@ -30,8 +30,13 @@ import AventonDetalles from './components/AventonDetalles';
 export default class Example extends Component {
     constructor(){
         super();
+        let login=false;
+        console.log(sessionStorage.getItem('user'));
+        if(sessionStorage.getItem('user')){
+            login= true
+        }
         this.state={
-            loginSuscess: false,
+            loginSuscess:login,
             user: null
         }
     }
@@ -46,12 +51,13 @@ export default class Example extends Component {
             }
         })
     }
-    componentWillMount(){
+    /*componentWillMount(){
         this.revisarStatus();
-    }
+    }*/
     handleUserLogin = (userInfo)=>{
         let uri = 'http://127.0.0.1:8000/ajax/login';
         axios.post(uri, userInfo).then((response) => {
+            console.log(response.data);
             this.setState({
                 loginSuscess:true,
                 user:response.data.user

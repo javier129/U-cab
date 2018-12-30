@@ -1,7 +1,5 @@
-import { BrowserRouter, Route, Switch,Redirect } from 'react-router-dom'
-
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import {Route,Redirect } from 'react-router-dom'
+import React from 'react';
 
 const PrivateRoute = ({component: Component,...rest,userStatus})=>{
     return(
