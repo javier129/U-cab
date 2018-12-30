@@ -67,7 +67,7 @@ export default class Example extends Component {
         return (
             <BrowserRouter>
 
-                <AventonDetalles></AventonDetalles>
+                <Registro></Registro>
                 
             </BrowserRouter>
         );

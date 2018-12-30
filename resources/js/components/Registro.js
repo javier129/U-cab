@@ -12,7 +12,7 @@ class Registro extends Component {
             name:null,
             cedula: null,
             email:null,
-            password:null
+            password:null,
         }
     }
     handleImputChange = event=> {
@@ -59,13 +59,13 @@ class Registro extends Component {
                                     <input type="number" className="form-control" onChange={this.handleImputChange} name='cedula' placeholder="Cedula"/>    
                                 </div>
 
+                                <div id="tlf" className="form-group registro">
+                                    <input type="number" className="form-control" onChange={this.handleImputChange} name='tlf' placeholder="Numero telefonico"/>    
+                                </div>
+
                                 <div id="divFile" className="form-group registro">
                                         <input type="file" id='file' className="form-control text-center center-block" onChange={this.fileChangedHandler} placeholder="imagen"/>       
                                 </div> 
-
-                                <div id="userName" className="form-group registro">
-                                    <input type="text" className="form-control" name='user' placeholder="Nombre de Usuario"/>    
-                                </div>
 
                                 <div id="email" className="form-group registro">
                                     <input type="email" className="form-control" onChange={this.handleImputChange} name='email' placeholder="Email"/>    
@@ -74,22 +74,17 @@ class Registro extends Component {
                                 <div className="form-group registro pass_show">
                                     <input type="password" className="form-control" onChange={this.handleImputChange} name='password' placeholder="Contraseña"/>    
                                 </div>
-
-                                <div className="form-group registro pass_show">
-                                    <input type="password" className="form-control" name='passwordR' placeholder="Repita Contraseña"/>    
-                                </div>   
-                                
-        
+                                       
                     
                                 <div className="d-flex ">
                                     <div className=" mr-auto">
-                                        <button type="button" className="btn ">
+                                        <button type="button" className="btn registro">
                                             <i className="fas fa-ban "></i>
                                             Cancel
                                         </button>
                                     </div>
                                     <div className=" ml-auto">
-                                        <button onClick={this.registrar} type="submit" className="btn ">
+                                        <button onClick={this.registrar} type="submit" className="btn registro">
                                         <i className="fas fa-check "></i>
                                         Registrar
                                         </button>

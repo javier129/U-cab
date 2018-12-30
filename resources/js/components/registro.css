@@ -10,8 +10,13 @@ input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
   }
 
+  .btn.registro{
+      color: aliceblue;
+      background-color: #f36c01;
+  }
+
 .modal-content.registro{
-    height: 500px;
+    height: 450px;
     background-color: #0072ff;
     opacity: 0.95;
     box-shadow: 0px 0px 3px #848484;
@@ -19,7 +24,6 @@ input[type=number]::-webkit-inner-spin-button {
 
 .main-section.registro{
     margin-top: 3.5rem;
-    padding: 0
 }
 
 #p1{
