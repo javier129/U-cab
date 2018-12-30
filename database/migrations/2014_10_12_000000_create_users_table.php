@@ -18,6 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('cedula')->unique();
             $table->string('email')->unique();
+            $table->string('tlf')->unique();
             $table->string('img');
             $table->text('direccion');
             $table->timestamp('email_verified_at')->nullable();
