@@ -84,7 +84,7 @@ if (false) {
 "use strict";
 
 
-var bind = __webpack_require__(23);
+var bind = __webpack_require__(22);
 var isBuffer = __webpack_require__(43);
 
 /*global toString:true*/
@@ -773,7 +773,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(91);
+var	fixUrls = __webpack_require__(96);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -1259,6 +1259,12 @@ module.exports = g;
 /* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__(42);
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
@@ -1279,10 +1285,10 @@ function getDefaultAdapter() {
   var adapter;
   if (typeof XMLHttpRequest !== 'undefined') {
     // For browsers use XHR adapter
-    adapter = __webpack_require__(24);
+    adapter = __webpack_require__(23);
   } else if (typeof process !== 'undefined') {
     // For node use HTTP adapter
-    adapter = __webpack_require__(24);
+    adapter = __webpack_require__(23);
   }
   return adapter;
 }
@@ -1358,68 +1364,6 @@ utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
 module.exports = defaults;
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(45)))
-
-/***/ }),
-/* 13 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(61);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(69);
-/* unused harmony reexport HashRouter */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(30);
-/* unused harmony reexport Link */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(70);
-/* unused harmony reexport MemoryRouter */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(72);
-/* unused harmony reexport NavLink */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(74);
-/* unused harmony reexport Prompt */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(76);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(31);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(17);
-/* unused harmony reexport Router */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(78);
-/* unused harmony reexport StaticRouter */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(80);
-/* unused harmony reexport Switch */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__generatePath__ = __webpack_require__(82);
-/* unused harmony reexport generatePath */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__matchPath__ = __webpack_require__(83);
-/* unused harmony reexport matchPath */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__withRouter__ = __webpack_require__(84);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_13__withRouter__["a"]; });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /***/ }),
 /* 14 */
@@ -14867,12 +14811,6 @@ return jQuery;
 /* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(42);
-
-/***/ }),
-/* 23 */
-/***/ (function(module, exports, __webpack_require__) {
-
 "use strict";
 
 
@@ -14888,7 +14826,7 @@ module.exports = function bind(fn, thisArg) {
 
 
 /***/ }),
-/* 24 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14899,7 +14837,7 @@ var settle = __webpack_require__(47);
 var buildURL = __webpack_require__(49);
 var parseHeaders = __webpack_require__(50);
 var isURLSameOrigin = __webpack_require__(51);
-var createError = __webpack_require__(25);
+var createError = __webpack_require__(24);
 var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(52);
 
 module.exports = function xhrAdapter(config) {
@@ -15075,7 +15013,7 @@ module.exports = function xhrAdapter(config) {
 
 
 /***/ }),
-/* 25 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15100,7 +15038,7 @@ module.exports = function createError(message, config, code, request, response) 
 
 
 /***/ }),
-/* 26 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15112,7 +15050,7 @@ module.exports = function isCancel(value) {
 
 
 /***/ }),
-/* 27 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15135,6 +15073,68 @@ Cancel.prototype.toString = function toString() {
 Cancel.prototype.__CANCEL__ = true;
 
 module.exports = Cancel;
+
+
+/***/ }),
+/* 27 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(61);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(69);
+/* unused harmony reexport HashRouter */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(30);
+/* unused harmony reexport Link */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(70);
+/* unused harmony reexport MemoryRouter */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(72);
+/* unused harmony reexport NavLink */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(74);
+/* unused harmony reexport Prompt */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(76);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(31);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(17);
+/* unused harmony reexport Router */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(78);
+/* unused harmony reexport StaticRouter */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(80);
+/* unused harmony reexport Switch */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__generatePath__ = __webpack_require__(82);
+/* unused harmony reexport generatePath */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__matchPath__ = __webpack_require__(83);
+/* unused harmony reexport matchPath */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__withRouter__ = __webpack_require__(84);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_13__withRouter__["a"]; });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /***/ }),
@@ -15985,43 +15985,53 @@ var generatePath = function generatePath() {
 /* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// style-loader: Adds some css to the DOM by adding a <style> tag
+"use strict";
 
-// load the styles
-var content = __webpack_require__(102);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
 
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(10)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!./card.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!./card.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
+function checkDCE() {
+  /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */
+  if (
+    typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === 'undefined' ||
+    typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== 'function'
+  ) {
+    return;
+  }
+  if (true) {
+    // This branch is unreachable because this function is only called
+    // in production, but the condition is true only in development.
+    // Therefore if the branch is still here, dead code elimination wasn't
+    // properly applied.
+    // Don't change the message. React DevTools relies on it. Also make sure
+    // this message doesn't occur elsewhere in this function, or it will cause
+    // a false positive.
+    throw new Error('^_^');
+  }
+  try {
+    // Verify that the code above has been dead code eliminated (DCE'd).
+    __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE(checkDCE);
+  } catch (err) {
+    // DevTools shouldn't crash React, no matter what.
+    // We should still report in case we break this code.
+    console.error(err);
+  }
 }
+
+if (false) {
+  // DCE check should happen before ReactDOM bundle executes so that
+  // DevTools can report bad minification during injection.
+  checkDCE();
+  module.exports = require('./cjs/react-dom.production.min.js');
+} else {
+  module.exports = __webpack_require__(88);
+}
+
 
 /***/ }),
 /* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(37);
-<<<<<<< HEAD
 module.exports = __webpack_require__(111);
-=======
-module.exports = __webpack_require__(109);
->>>>>>> 76ba21cb7416a14891ce00b1665fa5452a84c631
 
 
 /***/ }),
@@ -16030,24 +16040,18 @@ module.exports = __webpack_require__(109);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_dom__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_dom__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_PrivateRoute__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Login__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Registro__ = __webpack_require__(93);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_app__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Login__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Registro__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_app__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react_dom__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react_dom__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_react_dom__);
-<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_ajustes__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_Navbar__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_AventonDetalles__ = __webpack_require__(108);
-=======
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_ajustes__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_Navbar__ = __webpack_require__(97);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_AventonDetalles__ = __webpack_require__(114);
->>>>>>> 76ba21cb7416a14891ce00b1665fa5452a84c631
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -16134,27 +16138,13 @@ var Example = function (_Component) {
     _createClass(Example, [{
         key: 'render',
         value: function render() {
-            var _this2 = this;
-
             var x = document.getElementsByTagName("META")[2].attributes.content.nodeValue;
             console.log(x);
             console.log(this.state.loginSuscess);
             return __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
                 __WEBPACK_IMPORTED_MODULE_0_react_router_dom__["a" /* BrowserRouter */],
                 null,
-<<<<<<< HEAD
                 __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_Registro__["a" /* default */], null)
-=======
-                __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
-                    'div',
-                    null,
-                    __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react_router_dom__["c" /* Route */], { exact: true, path: '/login', render: function render() {
-                            return !_this2.state.loginSuscess ? __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_Login__["a" /* default */], { handleLoginForUser: _this2.handleUserLogin }) : __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react_router_dom__["b" /* Redirect */], { to: '/' });
-                        } }),
-                    __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__components_PrivateRoute__["a" /* default */], { user: this.state.user, userStatus: this.state.loginSuscess, exact: true, path: '/', component: __WEBPACK_IMPORTED_MODULE_4__components_app__["a" /* default */] }),
-                    __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react_router_dom__["c" /* Route */], { exact: true, path: '/Registro', component: __WEBPACK_IMPORTED_MODULE_3__components_Registro__["a" /* default */] })
-                )
->>>>>>> 76ba21cb7416a14891ce00b1665fa5452a84c631
             );
         }
     }]);
@@ -16195,7 +16185,7 @@ try {
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 
-window.axios = __webpack_require__(22);
+window.axios = __webpack_require__(12);
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
@@ -37331,9 +37321,9 @@ module.exports = function(module) {
 
 
 var utils = __webpack_require__(1);
-var bind = __webpack_require__(23);
+var bind = __webpack_require__(22);
 var Axios = __webpack_require__(44);
-var defaults = __webpack_require__(12);
+var defaults = __webpack_require__(13);
 
 /**
  * Create an instance of Axios
@@ -37366,9 +37356,9 @@ axios.create = function create(instanceConfig) {
 };
 
 // Expose Cancel & CancelToken
-axios.Cancel = __webpack_require__(27);
+axios.Cancel = __webpack_require__(26);
 axios.CancelToken = __webpack_require__(59);
-axios.isCancel = __webpack_require__(26);
+axios.isCancel = __webpack_require__(25);
 
 // Expose all/spread
 axios.all = function all(promises) {
@@ -37416,7 +37406,7 @@ function isSlowBuffer (obj) {
 "use strict";
 
 
-var defaults = __webpack_require__(12);
+var defaults = __webpack_require__(13);
 var utils = __webpack_require__(1);
 var InterceptorManager = __webpack_require__(54);
 var dispatchRequest = __webpack_require__(55);
@@ -37711,7 +37701,7 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 "use strict";
 
 
-var createError = __webpack_require__(25);
+var createError = __webpack_require__(24);
 
 /**
  * Resolve or reject a Promise based on response status.
@@ -38144,8 +38134,8 @@ module.exports = InterceptorManager;
 
 var utils = __webpack_require__(1);
 var transformData = __webpack_require__(56);
-var isCancel = __webpack_require__(26);
-var defaults = __webpack_require__(12);
+var isCancel = __webpack_require__(25);
+var defaults = __webpack_require__(13);
 var isAbsoluteURL = __webpack_require__(57);
 var combineURLs = __webpack_require__(58);
 
@@ -38304,7 +38294,7 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 "use strict";
 
 
-var Cancel = __webpack_require__(27);
+var Cancel = __webpack_require__(26);
 
 /**
  * A `CancelToken` is an object that can be used to request cancellation of an operation.
@@ -42704,7 +42694,7 @@ module.exports = hoistNonReactStatics;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_dom__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_dom__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -42729,1158 +42719,10 @@ var PrivateRoute = function PrivateRoute(_ref) {
      )}/>*/
 };
 
-/* harmony default export */ __webpack_exports__["a"] = (PrivateRoute);
+/* unused harmony default export */ var _unused_webpack_default_export = (PrivateRoute);
 
 /***/ }),
 /* 88 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__login_css__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__login_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__login_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__face_png__ = __webpack_require__(92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__face_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__face_png__);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-var Login = function (_Component) {
-    _inherits(Login, _Component);
-
-    function Login() {
-        _classCallCheck(this, Login);
-
-        var _this = _possibleConstructorReturn(this, (Login.__proto__ || Object.getPrototypeOf(Login)).call(this));
-
-        _this.handlelogin = function (event) {
-            var userInfo = {
-                email: _this.state.Email,
-                password: _this.state.password
-            };
-            _this.props.handleLoginForUser(userInfo);
-        };
-
-        _this.handleImputChange = function (event) {
-            event.preventDefault();
-            var name = event.target.name;
-            _this.setState(_defineProperty({}, name, event.target.value));
-        };
-
-        _this.state = {
-            Email: '',
-            password: ''
-        };
-
-        return _this;
-    }
-
-    _createClass(Login, [{
-        key: 'render',
-        value: function render() {
-
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'row d-flex flex-column bodyLogin login' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'col-sm-12 col-lg-4 main-section login p-2 justify-content-center offset-lg-4' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'modal-content login' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'd-flex justify-content-center  user-img' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__face_png___default.a })
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'p-2 ' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { id: 'login', className: 'form-group login' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', name: 'Email', value: this.state.Email, onChange: this.handleImputChange, className: 'form-control', placeholder: 'Email' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { id: 'login', className: 'form-group login' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'password', name: 'password', value: this.state.password, onChange: this.handleImputChange, className: 'form-control', placeholder: 'Password' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: ' d-flex justify-content-center' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'button',
-                                    { className: 'btn login', onClick: this.handlelogin },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fas fa-sign-in-alt ' }),
-                                    'Login'
-                                )
-                            )
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'd-flex flex-column forgot p-2 justify-content-center' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'p-2 d-flex justify-content-center' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'a',
-                                    { href: '#' },
-                                    'Forgot Password?'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'p-2 d-flex justify-content-center' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'a',
-                                    { href: '#' },
-                                    'Register'
-                                )
-                            )
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Login;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-
-/* harmony default export */ __webpack_exports__["a"] = (Login);
-
-/***/ }),
-/* 89 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(90);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(10)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!./login.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!./login.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 90 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(9)(false);
-// imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto);", ""]);
-
-// module
-exports.push([module.i, ".bodyLogin{\r\n    font-family: 'Roboto', sans-serif;\r\n}\r\n\r\n.main-section.login{\r\n\r\n    margin-top: 130px;\r\n    padding: 0\r\n}\r\n\r\n.modal-content.login{ \r\n    background-color: #0072ff;\r\n    opacity: 0.95;\r\n    box-shadow: 0px 0px 3px #848484;\r\n}\r\n\r\n.user-img{\r\n    margin-top: -50px;\r\n    margin-bottom: 35px;\r\n}\r\n\r\n.user-img img{\r\n    height: 150px;\r\n    width: 150px;\r\n    border-radius: 5px;\r\n    box-shadow: 0px 0px 2px #848484;\r\n}\r\n\r\n#login.form-group{\r\n    margin-bottom: 25px \r\n }\r\n\r\n .form-group.login input{\r\n    height: 42px;\r\n    border-radius: 5px;\r\n    border: 0;\r\n    font-size: 18px;\r\n    padding-left: 54px\r\n}\r\n\r\n.form-group.login::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\\F007\";\r\n    position: absolute;\r\n    font-size: 22px;\r\n    color: #ff7830;\r\n    left: 28px;\r\n    padding-top: 4px;\r\n    \r\n}\r\n\r\n.form-group.login:last-od-type::before{\r\n    content: \"\\F023\"\r\n}\r\n\r\n.button.login{\r\n    width: 80%;\r\n    margin: 5px 0 25px\r\n}\r\n\r\n.btn.login{\r\n    background-color: #ff7830;\r\n    color: #fff;\r\n    font-size: 19px;\r\n    border-radius: 5px;\r\n    padding: 7px 14px;\r\n    border-bottom: 4px solid #ad4d1900\r\n}\r\n\r\n.btn.login:hover, .btn.login:focus{\r\n    background-color: #b3480f ! important;\r\n    border-bottom: 4px solid #ff783000 ! important\r\n}\r\n\r\n.svg-inline.login--fa{\r\n    font-size: 20px;\r\n    margin-right: 7px\r\n}\r\n\r\n.forgot{\r\n    padding: 5px 0 25px\r\n}\r\n\r\n.forgot a {\r\n    color:#c2fbfe\r\n}\r\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 91 */
-/***/ (function(module, exports) {
-
-
-/**
- * When source maps are enabled, `style-loader` uses a link element with a data-uri to
- * embed the css on the page. This breaks all relative urls because now they are relative to a
- * bundle instead of the current page.
- *
- * One solution is to only use full urls, but that may be impossible.
- *
- * Instead, this function "fixes" the relative urls to be absolute according to the current page location.
- *
- * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.
- *
- */
-
-module.exports = function (css) {
-  // get current location
-  var location = typeof window !== "undefined" && window.location;
-
-  if (!location) {
-    throw new Error("fixUrls requires window.location");
-  }
-
-	// blank or null?
-	if (!css || typeof css !== "string") {
-	  return css;
-  }
-
-  var baseUrl = location.protocol + "//" + location.host;
-  var currentDir = baseUrl + location.pathname.replace(/\/[^\/]*$/, "/");
-
-	// convert each url(...)
-	/*
-	This regular expression is just a way to recursively match brackets within
-	a string.
-
-	 /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
-	   (  = Start a capturing group
-	     (?:  = Start a non-capturing group
-	         [^)(]  = Match anything that isn't a parentheses
-	         |  = OR
-	         \(  = Match a start parentheses
-	             (?:  = Start another non-capturing groups
-	                 [^)(]+  = Match anything that isn't a parentheses
-	                 |  = OR
-	                 \(  = Match a start parentheses
-	                     [^)(]*  = Match anything that isn't a parentheses
-	                 \)  = Match a end parentheses
-	             )  = End Group
-              *\) = Match anything and then a close parens
-          )  = Close non-capturing group
-          *  = Match anything
-       )  = Close capturing group
-	 \)  = Match a close parens
-
-	 /gi  = Get all matches, not the first.  Be case insensitive.
-	 */
-	var fixedCss = css.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function(fullMatch, origUrl) {
-		// strip quotes (if they exist)
-		var unquotedOrigUrl = origUrl
-			.trim()
-			.replace(/^"(.*)"$/, function(o, $1){ return $1; })
-			.replace(/^'(.*)'$/, function(o, $1){ return $1; });
-
-		// already a full url? no change
-		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/)/i.test(unquotedOrigUrl)) {
-		  return fullMatch;
-		}
-
-		// convert the url to a full url
-		var newUrl;
-
-		if (unquotedOrigUrl.indexOf("//") === 0) {
-		  	//TODO: should we add protocol?
-			newUrl = unquotedOrigUrl;
-		} else if (unquotedOrigUrl.indexOf("/") === 0) {
-			// path should be relative to the base url
-			newUrl = baseUrl + unquotedOrigUrl; // already starts with '/'
-		} else {
-			// path should be relative to current directory
-			newUrl = currentDir + unquotedOrigUrl.replace(/^\.\//, ""); // Strip leading './'
-		}
-
-		// send back the fixed url(...)
-		return "url(" + JSON.stringify(newUrl) + ")";
-	});
-
-	// send back the fixed css
-	return fixedCss;
-};
-
-
-/***/ }),
-/* 92 */
-/***/ (function(module, exports) {
-
-module.exports = "/images/face.png?486275ea2f9332e5f637a0c6b3c16aaf";
-
-/***/ }),
-/* 93 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__registro_css__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__registro_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__registro_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-var Registro = function (_Component) {
-    _inherits(Registro, _Component);
-
-    function Registro() {
-        _classCallCheck(this, Registro);
-
-        var _this = _possibleConstructorReturn(this, (Registro.__proto__ || Object.getPrototypeOf(Registro)).call(this));
-
-        _this.handleImputChange = function (event) {
-            event.preventDefault();
-            var name = event.target.name;
-            _this.setState(_defineProperty({}, name, event.target.value));
-        };
-
-        _this.fileChangedHandler = function (event) {
-            _this.setState({ file: event.target.files[0] });
-            console.log(event.target.files);
-        };
-
-        _this.registrar = function (e) {
-            e.preventDefault();
-            console.log(_this.state.file);
-            var _this$state = _this.state,
-                file = _this$state.file,
-                name = _this$state.name,
-                cedula = _this$state.cedula,
-                email = _this$state.email,
-                password = _this$state.password;
-
-            console.log(file);
-            var data = new FormData();
-            data.append('file', file);
-            data.append('name', name);
-            data.append('cedula', cedula);
-            data.append('email', email);
-            data.append('password', password);
-            __WEBPACK_IMPORTED_MODULE_2_axios___default.a.post('http://127.0.0.1:8000/ajax/register', data).then(function (response) {
-                if (response.data) {
-                    location.href = "http://127.0.0.1:8000/login";
-                }
-            });
-        };
-
-        _this.State = {
-            file: null,
-            name: null,
-            cedula: null,
-            email: null,
-            password: null
-        };
-        return _this;
-    }
-
-    _createClass(Registro, [{
-        key: 'render',
-        value: function render() {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: ' row  d-flex justify-content-center  align-items-center' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: ' col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5  main-section  registro' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'modal-content registro' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'col-12' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { id: 'p1', className: ' form-group registro' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', className: 'form-control', onChange: this.handleImputChange, name: 'name', placeholder: 'Nombre Completo' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { id: 'dni', className: 'form-group registro' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'number', className: 'form-control', onChange: this.handleImputChange, name: 'cedula', placeholder: 'Cedula' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { id: 'divFile', className: 'form-group registro' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'file', id: 'file', className: 'form-control text-center center-block', onChange: this.fileChangedHandler, placeholder: 'imagen' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { id: 'userName', className: 'form-group registro' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', className: 'form-control', name: 'user', placeholder: 'Nombre de Usuario' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { id: 'email', className: 'form-group registro' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'email', className: 'form-control', onChange: this.handleImputChange, name: 'email', placeholder: 'Email' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'form-group registro pass_show' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'password', className: 'form-control', onChange: this.handleImputChange, name: 'password', placeholder: 'Contrase\xF1a' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'form-group registro pass_show' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'password', className: 'form-control', name: 'passwordR', placeholder: 'Repita Contrase\xF1a' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'd-flex ' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: ' mr-auto' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'button',
-                                        { type: 'button', className: 'btn ' },
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fas fa-ban ' }),
-                                        'Cancel'
-                                    )
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: ' ml-auto' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'button',
-                                        { onClick: this.registrar, type: 'submit', className: 'btn ' },
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fas fa-check ' }),
-                                        'Registrar'
-                                    )
-                                )
-                            )
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Registro;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-
-/* harmony default export */ __webpack_exports__["a"] = (Registro);
-
-/***/ }),
-/* 94 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(95);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(10)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!./registro.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!./registro.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 95 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(9)(false);
-// imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto);", ""]);
-
-// module
-exports.push([module.i, "body.registro{\r\n    font-family: 'Roboto', sans-serif;\r\n}\r\n\r\ninput[type=number]::-webkit-inner-spin-button {\r\n    -webkit-appearance: none;\r\n  }\r\n\r\n.modal-content.registro{\r\n    height: 500px;\r\n    background-color: #0072ff;\r\n    opacity: 0.95;\r\n    box-shadow: 0px 0px 3px #848484;\r\n}\r\n\r\n.main-section.registro{\r\n    margin-top: 3.5rem;\r\n    padding: 0\r\n}\r\n\r\n#p1{\r\n    margin-top: 5%;\r\n}\r\n\r\n.form-group.registro input{\r\n    height: 42px;\r\n    border-radius: 5px;\r\n    border: 0;\r\n    font-size: 18px;\r\n    padding-left: 54px\r\n}\r\n#divFile.form-group.registro input{\r\n    height: 46px;\r\n    border-radius: 5px;\r\n    border: 0;\r\n    font-size: 18px;\r\n    padding-left: 12px\r\n}\r\n\r\n.form-group.registro::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\\F007\";\r\n    position: absolute;\r\n    font-size: 22px;\r\n    color: #f36c01;\r\n    left: 28px;\r\n    padding-top: 4px;\r\n}\r\n\r\n#divFile.form-group.registro::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\";\r\n}\r\n\r\n.form-group#email::before{\r\n    content: \"\\F1FA\";\r\n}\r\n.form-group#dni::before{\r\n    content: \"\\F2C2\";\r\n}\r\n.form-group#dni::before{\r\n    content: \"\\F2C2\";\r\n}\r\n\r\n/* boton show de las password */\r\n\r\n.form-group.pass_show::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\\F023\";\r\n    position: absolute;\r\n    font-size: 22px;\r\n    color: #f36c01;\r\n    left: 14px;\r\n    padding-top: 4px;\r\n}\r\n\r\n.pass_show{position: relative} \r\n\r\n.pass_show .ptxt { \r\n\r\nposition: absolute; \r\n\r\ntop: 50%; \r\n\r\nright: 10px; \r\n\r\nz-index: 1; \r\n\r\ncolor: #f36c01; \r\n\r\nmargin-top: -10px; \r\n\r\ncursor: pointer; \r\n\r\ntransition: .3s ease all; \r\n\r\n} \r\n\r\n.pass_show .ptxt:hover{color: #333333;} \r\n\r\n/* -------------------- */\r\n\r\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 96 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Navbar__ = __webpack_require__(97);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CardsView__ = __webpack_require__(100);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-var App = function (_Component) {
-    _inherits(App, _Component);
-
-    function App(props) {
-        _classCallCheck(this, App);
-
-        var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
-
-        _this.state = {
-            user: _this.props.user
-        };
-        return _this;
-    }
-
-    _createClass(App, [{
-        key: 'componentDidMount',
-        value: function componentDidMount() {
-            var _this2 = this;
-
-            var dato = null;
-            var uri = 'http://127.0.0.1:8000/ajax/usuario';
-            axios(uri).then(function (response) {
-                console.log(response.data);
-                if (response.data) {
-                    _this2.setState({
-                        user: response.data
-                    });
-                }
-            });
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            var x = document.getElementsByTagName("META")[2].attributes.content.nodeValue;
-            console.log(x);
-            if (sessionStorage.getItem('user')) {
-                // { this.state.user && <img src={`/storage/${this.state.user.img}`}  alt=""/>}
-            }
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'container' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Navbar__["a" /* default */], null),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__CardsView__["a" /* default */], null)
-            );
-        }
-    }]);
-
-    return App;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-
-/* harmony default export */ __webpack_exports__["a"] = (App);
-
-/***/ }),
-/* 97 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navbar_css__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navbar_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__navbar_css__);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-var Navbar = function (_Component) {
-    _inherits(Navbar, _Component);
-
-    function Navbar() {
-        _classCallCheck(this, Navbar);
-
-        return _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).apply(this, arguments));
-    }
-
-    _createClass(Navbar, [{
-        key: 'render',
-        value: function render() {
-            var _React$createElement;
-
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'bodyNavar' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'nav',
-                    { className: 'navbar fixed-top navbar-expand-lg navbar-dark  fluid ' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'container' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'button',
-                            { className: 'navbar-toggler', id: 'logo', type: 'button', 'data-toggle': 'collapse', 'data-target': '#navbarTogglerDemo03', 'aria-controls': 'navbarTogglerDemo03', 'aria-expanded': 'false', 'aria-label': 'Toggle navigation' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', { className: 'navbar-toggler-icon' })
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'button',
-                            (_React$createElement = { type: 'button', id: 'plusbutton2', 'data-toggle': 'modal', 'data-target': '#exampleModal' }, _defineProperty(_React$createElement, 'data-toggle', 'modal'), _defineProperty(_React$createElement, 'data-target', '#exampleModal'), _defineProperty(_React$createElement, 'className', 'btn btn-danger'), _React$createElement),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'far fa-plus-square fa-lg ' })
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'collapse navbar-collapse', id: 'navbarTogglerDemo03' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'a',
-                                { className: 'navbar-brand', href: '#' },
-                                'Ucab'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'navbar-nav mr-auto mt-2 mt-lg-0' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    { className: 'nav-item active' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'a',
-                                        { className: 'nav-link', href: '#' },
-                                        'Tablero ',
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'span',
-                                            { className: 'sr-only' },
-                                            '(current)'
-                                        )
-                                    )
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    { className: 'nav-item active' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'a',
-                                        { className: 'nav-link', href: '#' },
-                                        'Pendiente'
-                                    )
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    { className: 'nav-item active' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'a',
-                                        { className: 'nav-link', href: '#' },
-                                        'Completados'
-                                    )
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'button',
-                                { type: 'button', id: 'plusbutton', 'data-toggle': 'modal', 'data-target': '#exampleModal', className: 'btn btn-danger' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'far fa-plus-square fa-lg ' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'dropdown' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'button',
-                                    { className: 'btn btn-outline-light dropdown-toggle', type: 'button', id: 'dropdownMenuButton', 'data-toggle': 'dropdown', 'aria-haspopup': 'true', 'aria-expanded': 'false' },
-                                    'NombreUsuario'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'dropdown-menu', 'aria-labelledby': 'dropdownMenuButton' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'a',
-                                        { className: 'dropdown-item', href: '#' },
-                                        'Nombre'
-                                    ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'a',
-                                        { className: 'dropdown-item', href: '#' },
-                                        'Correo'
-                                    ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'a',
-                                        { className: 'dropdown-item', href: '#' },
-                                        'Perfil'
-                                    ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'dropdown-divider' }),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'button',
-                                        { id: 'cerrars', className: ' btn btn-danger', type: 'button' },
-                                        'Cerrar Sesion'
-                                    )
-                                )
-                            )
-                        )
-                    )
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'modal fade navbar', id: 'exampleModal', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'exampleModalLabel', 'aria-hidden': 'true' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'modal-dialog', role: 'document' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'modal-content' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'modal-header' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'h5',
-                                    { className: 'modal-title', id: 'exampleModalLabel' },
-                                    'Nuevo Aventon'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'button',
-                                    { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-label': 'Close' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'span',
-                                        { 'aria-hidden': 'true' },
-                                        '\xD7'
-                                    )
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'modal-body' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'form-group ' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'label',
-                                        { id: 'textPass', htmlFor: 'exampleFormControlSelect1' },
-                                        'Zona Destino'
-                                    ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'select',
-                                        { className: 'form-control ', id: 'FormControlSelect1' },
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'option',
-                                            null,
-                                            'unare'
-                                        )
-                                    )
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'label',
-                                    { id: 'textPass', htmlFor: 'exampleFormControlSelect1' },
-                                    'Direccion Destino'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'form-group formulario' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', className: 'form-control', id: 'formGroupExampleInput2', placeholder: 'Destino' })
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'form-group' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'label',
-                                        { id: 'textPass', htmlFor: 'exampleFormControlSelect1' },
-                                        'Numero De Pasajeros'
-                                    ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'select',
-                                        { className: 'form-control', id: 'FormControlSelect1' },
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'option',
-                                            null,
-                                            '1'
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'option',
-                                            null,
-                                            '2'
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'option',
-                                            null,
-                                            '3'
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'option',
-                                            null,
-                                            '4'
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'option',
-                                            null,
-                                            '5'
-                                        )
-                                    )
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'modal-footer' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'button',
-                                    { type: 'button', className: 'btn btn-danger', 'data-dismiss': 'modal' },
-                                    'Cancelar'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'button',
-                                    { type: 'button', className: 'btn btn-danger' },
-                                    'Aceptar'
-                                )
-                            )
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Navbar;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-
-/* harmony default export */ __webpack_exports__["a"] = (Navbar);
-
-/***/ }),
-/* 98 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(99);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(10)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!./navbar.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!./navbar.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 99 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(9)(false);
-// imports
-
-
-// module
-exports.push([module.i, ".body-navbar {\r\n    font-family: 'Roboto', sans-serif;\r\n    padding-top: 50px;\r\n    position: relative;\r\n}\r\n\r\n#plusbutton{\r\n    margin-right: 30px;\r\n    height: 36px;\r\n}\r\n\r\nnav {\r\n    background-color: #0072ff;\r\n}\r\n\r\n#cerrars{\r\n    position: relative;\r\n    margin-left: 20px;\r\n}\r\n\r\n\r\npre {\r\n    tab-size: 8;\r\n}\r\n\r\n.card-img {\r\n    width: 100px ;\r\n    height: 100px;\r\n    margin-top: 10px;\r\n    border-radius:150px;\r\n}\r\n\r\n.card {\r\n    background-color: #fff;\r\n    margin-top: 10px;\r\n    box-shadow: 1px 1px 8px #999;\r\n    cursor: pointer;\r\n\r\n}\r\n.card-title {\r\n\ttext-transform: uppercase;\r\n\tcolor: #E44424;\r\n}\r\n\r\n.cardimage{\r\n    position: fixed;\r\n    display: inline-block;\r\n}\r\n.cardbody{\r\n    position: relative;\r\n    width: 50%;\r\n    left: 120px; \r\n    height: 12rem;\r\n    display: inline-block;\r\n\r\n}\r\n\r\n.modal-title{\r\n    font-weight: 800;\r\n}\r\n\r\n.modal.navbar{\r\n    color: #0072ff;\r\n    font-weight: bold;\r\n}\r\n\r\n@media screen and (max-width: 990px) {\r\n    #plusbutton{\r\n        visibility: hidden;    \r\n    }\r\n}\r\n@media screen and (min-width: 990px) {\r\n    #plusbutton2{\r\n        visibility: hidden;    \r\n    }\r\n}\r\n\r\n\r\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 100 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Card__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__card_css__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__card_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__card_css__);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-var petciones = [{
-    nombre: 'carlos',
-    destino: 'Campo a2 de ferrominera'
-}, {
-    nombre: 'javier',
-    destino: 'altavista norte'
-}, {
-    nombre: 'juan',
-    destino: 'Villa colombia'
-}];
-
-var CardsView = function (_Component) {
-    _inherits(CardsView, _Component);
-
-    function CardsView() {
-        _classCallCheck(this, CardsView);
-
-        return _possibleConstructorReturn(this, (CardsView.__proto__ || Object.getPrototypeOf(CardsView)).call(this));
-    }
-
-    _createClass(CardsView, [{
-        key: 'render',
-        value: function render() {
-
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'container card-body' },
-                petciones.map(function (usuario) {
-                    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Card__["a" /* default */], { persona: usuario, key: usuario.nombre });
-                }),
-                ' '
-            );
-        }
-    }]);
-
-    return CardsView;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-
-/* harmony default export */ __webpack_exports__["a"] = (CardsView);
-
-/***/ }),
-/* 101 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router_dom__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__card_css__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__card_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__card_css__);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-var Card = function (_Component) {
-    _inherits(Card, _Component);
-
-    function Card(props) {
-        _classCallCheck(this, Card);
-
-        var _this = _possibleConstructorReturn(this, (Card.__proto__ || Object.getPrototypeOf(Card)).call(this, props));
-
-        _this.handleClick = function (e) {
-            _this.props.history.push('/registro');
-            console.log(_this.state.usuario);
-        };
-
-        _this.state = {
-            usuario: _this.props.persona
-        };
-        return _this;
-    }
-
-    _createClass(Card, [{
-        key: 'render',
-        value: function render() {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                null,
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'row justify-content-center' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { onClick: this.handleClick, className: 'card col-sm-12 col-xs-12 col-lg-8 col-md-8' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'cardimage' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'card-img', src: 'https://www.ngenespanol.com/wp-content/uploads/2018/08/La-primera-imagen-de-la-historia.jpg' })
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'cardbody' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'h6',
-                                { className: 'card-title' },
-                                this.props.persona.nombre
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'p',
-                                null,
-                                this.props.persona.destino
-                            )
-                        )
-                    )
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'modal fade navbar', id: 'exampleModal', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'exampleModalLabel', 'aria-hidden': 'true' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'modal-dialog', role: 'document' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'modal-content' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'modal-header' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'h5',
-                                    { className: 'modal-title', id: 'exampleModalLabel' },
-                                    'Aventon'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'button',
-                                    { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-label': 'Close' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'span',
-                                        { 'aria-hidden': 'true' },
-                                        '\xD7'
-                                    )
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'modal-body' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'form-group ' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'label',
-                                        { id: 'textPass', htmlFor: 'exampleFormControlSelect1' },
-                                        'Nombre Del Conductor'
-                                    ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', readOnly: true, className: 'form-control-plaintext', id: 'staticNombreConductor', value: 'Javier Gil' })
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'form-group ' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'label',
-                                        { id: 'textPass', htmlFor: 'exampleFormControlSelect1' },
-                                        'Zona Destino'
-                                    ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', readOnly: true, className: 'form-control-plaintext', id: 'staticzona', value: 'unare' })
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'label',
-                                    { id: 'textPass', htmlFor: 'exampleFormControlSelect1' },
-                                    'Direccion Destino'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'form-group formulario' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', readOnly: true, className: 'form-control-plaintext', id: 'staticdireccion', value: 'calle 23a' })
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'modal-footer' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'button',
-                                    { type: 'button', className: 'btn btn-danger', 'data-dismiss': 'modal' },
-                                    'Cancelar'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'button',
-                                    { type: 'button', className: 'btn btn-danger' },
-                                    'Aceptar'
-                                )
-                            )
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Card;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-
-/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["d" /* withRouter */])(Card));
-
-/***/ }),
-/* 102 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(9)(false);
-// imports
-
-
-// module
-exports.push([module.i, ".card-body{\r\n    padding-top: 50px;\r\n    position: relative;    \r\n}\r\n\r\npre {\r\n    tab-size: 8;\r\n}\r\n\r\n.card-img {\r\n    width: 100px ;\r\n    height: 100px;\r\n    margin-top: 10px;\r\n    border-radius:150px;\r\n}\r\n\r\n.card {\r\n    background-color: #fff;\r\n    margin-top: 10px;\r\n    box-shadow: 1px 1px 8px #999;\r\n    cursor: pointer;\r\n\r\n}\r\n.card-title {\r\n    margin-top: 10px;\r\n\ttext-transform: uppercase;\r\n    color: #E44424;\r\n    font-weight: 800;\r\n}\r\n\r\n.cardimage{\r\n    position: fixed;\r\n    display: inline-block;\r\n}\r\n.cardbody{\r\n    position: relative;\r\n    width: 50%;\r\n    left: 120px; \r\n    height: 120px;\r\n    display: inline-block;\r\n\r\n}", ""]);
-
-// exports
-
-
-/***/ }),
-/* 103 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-function checkDCE() {
-  /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */
-  if (
-    typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === 'undefined' ||
-    typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== 'function'
-  ) {
-    return;
-  }
-  if (true) {
-    // This branch is unreachable because this function is only called
-    // in production, but the condition is true only in development.
-    // Therefore if the branch is still here, dead code elimination wasn't
-    // properly applied.
-    // Don't change the message. React DevTools relies on it. Also make sure
-    // this message doesn't occur elsewhere in this function, or it will cause
-    // a false positive.
-    throw new Error('^_^');
-  }
-  try {
-    // Verify that the code above has been dead code eliminated (DCE'd).
-    __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE(checkDCE);
-  } catch (err) {
-    // DevTools shouldn't crash React, no matter what.
-    // We should still report in case we break this code.
-    console.error(err);
-  }
-}
-
-if (false) {
-  // DCE check should happen before ReactDOM bundle executes so that
-  // DevTools can report bad minification during injection.
-  checkDCE();
-  module.exports = require('./cjs/react-dom.production.min.js');
-} else {
-  module.exports = __webpack_require__(104);
-}
-
-
-/***/ }),
-/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43904,8 +42746,8 @@ if (true) {
 var React = __webpack_require__(0);
 var _assign = __webpack_require__(14);
 var checkPropTypes = __webpack_require__(15);
-var scheduler = __webpack_require__(105);
-var tracing = __webpack_require__(107);
+var scheduler = __webpack_require__(89);
+var tracing = __webpack_require__(91);
 
 /**
  * Use invariant() to assert state which your program assumes to be true.
@@ -63614,7 +62456,7 @@ module.exports = reactDom;
 
 
 /***/ }),
-/* 105 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -63623,12 +62465,12 @@ module.exports = reactDom;
 if (false) {
   module.exports = require('./cjs/scheduler.production.min.js');
 } else {
-  module.exports = __webpack_require__(106);
+  module.exports = __webpack_require__(90);
 }
 
 
 /***/ }),
-/* 106 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -64270,48 +63112,23 @@ exports.unstable_shouldYield = unstable_shouldYield;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(11)))
 
 /***/ }),
-/* 107 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-<<<<<<< HEAD
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(8)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!./login.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!./login.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-=======
 if (false) {
   module.exports = require('./cjs/scheduler-tracing.production.min.js');
 } else {
-  module.exports = __webpack_require__(108);
->>>>>>> 76ba21cb7416a14891ce00b1665fa5452a84c631
+  module.exports = __webpack_require__(92);
 }
 
 
 /***/ }),
-/* 108 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
-exports = module.exports = __webpack_require__(7)(false);
-// imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto);", ""]);
-=======
 "use strict";
 /** @license React v0.11.3
  * scheduler-tracing.development.js
@@ -64321,7 +63138,6 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Rob
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
->>>>>>> 76ba21cb7416a14891ce00b1665fa5452a84c631
 
 
 
@@ -64460,81 +63276,6 @@ function unstable_trace(name, timestamp, callback) {
       } finally {
         exports.__interactionsRef.current = prevInteractions;
 
-<<<<<<< HEAD
-    _createClass(Registro, [{
-        key: 'render',
-        value: function render() {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: ' row  d-flex justify-content-center  align-items-center' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: ' col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5  main-section  registro' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'modal-content registro' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'col-12' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { id: 'p1', className: ' form-group registro' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', className: 'form-control', onChange: this.handleImputChange, name: 'name', placeholder: 'Nombre Completo' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { id: 'dni', className: 'form-group registro' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'number', className: 'form-control', onChange: this.handleImputChange, name: 'cedula', placeholder: 'Cedula' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { id: 'tlf', className: 'form-group registro' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'number', className: 'form-control', onChange: this.handleImputChange, name: 'tlf', placeholder: 'Numero telefonico' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { id: 'divFile', className: 'form-group registro' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'file', id: 'file', className: 'form-control text-center center-block', onChange: this.fileChangedHandler, placeholder: 'imagen' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { id: 'email', className: 'form-group registro' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'email', className: 'form-control', onChange: this.handleImputChange, name: 'email', placeholder: 'Email' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'form-group registro pass_show' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'password', className: 'form-control', onChange: this.handleImputChange, name: 'password', placeholder: 'Contrase\xF1a' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'd-flex ' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: ' mr-auto' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'button',
-                                        { type: 'button', className: 'btn registro' },
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fas fa-ban ' }),
-                                        'Cancel'
-                                    )
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: ' ml-auto' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'button',
-                                        { onClick: this.registrar, type: 'submit', className: 'btn registro' },
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fas fa-check ' }),
-                                        'Registrar'
-                                    )
-                                )
-                            )
-                        )
-                    )
-                )
-            );
-=======
         try {
           if (subscriber !== null) {
             subscriber.onWorkStopped(interactions, threadID);
@@ -64547,7 +63288,6 @@ function unstable_trace(name, timestamp, callback) {
           if (subscriber !== null && interaction.__count === 0) {
             subscriber.onInteractionScheduledWorkCompleted(interaction);
           }
->>>>>>> 76ba21cb7416a14891ce00b1665fa5452a84c631
         }
       }
     }
@@ -64556,12 +63296,8 @@ function unstable_trace(name, timestamp, callback) {
   return returnValue;
 }
 
-<<<<<<< HEAD
-/* harmony default export */ __webpack_exports__["a"] = (Registro);
-=======
 function unstable_wrap(callback) {
   var threadID = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : DEFAULT_THREAD_ID;
->>>>>>> 76ba21cb7416a14891ce00b1665fa5452a84c631
 
   if (!enableSchedulerTracing) {
     return callback;
@@ -64679,44 +63415,16 @@ function unstable_unsubscribe(subscriber) {
   if (enableSchedulerTracing) {
     subscribers.delete(subscriber);
 
-<<<<<<< HEAD
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(8)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!./registro.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!./registro.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-=======
     if (subscribers.size === 0) {
       exports.__subscriberRef.current = null;
     }
   }
->>>>>>> 76ba21cb7416a14891ce00b1665fa5452a84c631
 }
 
 function onInteractionTraced(interaction) {
   var didCatchError = false;
   var caughtError = null;
 
-<<<<<<< HEAD
-exports = module.exports = __webpack_require__(7)(false);
-// imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto);", ""]);
-
-// module
-exports.push([module.i, "body.registro{\r\n    font-family: 'Roboto', sans-serif;\r\n}\r\n\r\ninput[type=number]::-webkit-inner-spin-button {\r\n    -webkit-appearance: none;\r\n  }\r\n\r\n  .btn.registro{\r\n      color: aliceblue;\r\n      background-color: #f36c01;\r\n  }\r\n\r\n.modal-content.registro{\r\n    height: 450px;\r\n    background-color: #0072ff;\r\n    opacity: 0.95;\r\n    box-shadow: 0px 0px 3px #848484;\r\n}\r\n\r\n.main-section.registro{\r\n    margin-top: 3.5rem;\r\n}\r\n\r\n#p1{\r\n    margin-top: 5%;\r\n}\r\n\r\n.form-group.registro input{\r\n    height: 42px;\r\n    border-radius: 5px;\r\n    border: 0;\r\n    font-size: 18px;\r\n    padding-left: 54px\r\n}\r\n#divFile.form-group.registro input{\r\n    height: 46px;\r\n    border-radius: 5px;\r\n    border: 0;\r\n    font-size: 18px;\r\n    padding-left: 12px\r\n}\r\n\r\n.form-group.registro::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\\F007\";\r\n    position: absolute;\r\n    font-size: 22px;\r\n    color: #f36c01;\r\n    left: 28px;\r\n    padding-top: 4px;\r\n}\r\n\r\n#divFile.form-group.registro::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\";\r\n}\r\n\r\n.form-group#email::before{\r\n    content: \"\\F1FA\";\r\n}\r\n.form-group#dni::before{\r\n    content: \"\\F2C2\";\r\n}\r\n.form-group#dni::before{\r\n    content: \"\\F2C2\";\r\n}\r\n\r\n/* boton show de las password */\r\n\r\n.form-group.pass_show::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\\F023\";\r\n    position: absolute;\r\n    font-size: 22px;\r\n    color: #f36c01;\r\n    left: 14px;\r\n    padding-top: 4px;\r\n}\r\n\r\n.pass_show{position: relative} \r\n\r\n.pass_show .ptxt { \r\n\r\nposition: absolute; \r\n\r\ntop: 50%; \r\n\r\nright: 10px; \r\n\r\nz-index: 1; \r\n\r\ncolor: #f36c01; \r\n\r\nmargin-top: -10px; \r\n\r\ncursor: pointer; \r\n\r\ntransition: .3s ease all; \r\n\r\n} \r\n\r\n.pass_show .ptxt:hover{color: #333333;} \r\n\r\n/* -------------------- */\r\n\r\n", ""]);
-=======
   subscribers.forEach(function (subscriber) {
     try {
       subscriber.onInteractionTraced(interaction);
@@ -64732,7 +63440,6 @@ exports.push([module.i, "body.registro{\r\n    font-family: 'Roboto', sans-serif
     throw caughtError;
   }
 }
->>>>>>> 76ba21cb7416a14891ce00b1665fa5452a84c631
 
 function onInteractionScheduledWorkCompleted(interaction) {
   var didCatchError = false;
@@ -64846,22 +63553,568 @@ exports.unstable_unsubscribe = unstable_unsubscribe;
 
 
 /***/ }),
-/* 109 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 110 */,
-/* 111 */
+/* 93 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ajustes_css__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__login_css__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__login_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__login_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__face_png__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__face_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__face_png__);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+var Login = function (_Component) {
+    _inherits(Login, _Component);
+
+    function Login() {
+        _classCallCheck(this, Login);
+
+        var _this = _possibleConstructorReturn(this, (Login.__proto__ || Object.getPrototypeOf(Login)).call(this));
+
+        _this.handlelogin = function (event) {
+            var userInfo = {
+                email: _this.state.Email,
+                password: _this.state.password
+            };
+            _this.props.handleLoginForUser(userInfo);
+        };
+
+        _this.handleImputChange = function (event) {
+            event.preventDefault();
+            var name = event.target.name;
+            _this.setState(_defineProperty({}, name, event.target.value));
+        };
+
+        _this.state = {
+            Email: '',
+            password: ''
+        };
+
+        return _this;
+    }
+
+    _createClass(Login, [{
+        key: 'render',
+        value: function render() {
+
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'row d-flex flex-column bodyLogin login' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'col-sm-12 col-lg-4 main-section login p-2 justify-content-center offset-lg-4' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'modal-content login' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'd-flex justify-content-center  user-img' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__face_png___default.a })
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'p-2 ' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { id: 'login', className: 'form-group login' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', name: 'Email', value: this.state.Email, onChange: this.handleImputChange, className: 'form-control', placeholder: 'Email' })
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { id: 'login', className: 'form-group login' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'password', name: 'password', value: this.state.password, onChange: this.handleImputChange, className: 'form-control', placeholder: 'Password' })
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { className: ' d-flex justify-content-center' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'button',
+                                    { className: 'btn login', onClick: this.handlelogin },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fas fa-sign-in-alt ' }),
+                                    'Login'
+                                )
+                            )
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'd-flex flex-column forgot p-2 justify-content-center' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { className: 'p-2 d-flex justify-content-center' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'a',
+                                    { href: '#' },
+                                    'Forgot Password?'
+                                )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { className: 'p-2 d-flex justify-content-center' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'a',
+                                    { href: '#' },
+                                    'Register'
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Login;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+/* unused harmony default export */ var _unused_webpack_default_export = (Login);
+
+/***/ }),
+/* 94 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(95);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(8)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!./login.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!./login.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 95 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(7)(false);
+// imports
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto);", ""]);
+
+// module
+exports.push([module.i, ".bodyLogin{\r\n    font-family: 'Roboto', sans-serif;\r\n}\r\n\r\n.main-section.login{\r\n\r\n    margin-top: 130px;\r\n    padding: 0\r\n}\r\n\r\n.modal-content.login{ \r\n    background-color: #0072ff;\r\n    opacity: 0.95;\r\n    box-shadow: 0px 0px 3px #848484;\r\n}\r\n\r\n.user-img{\r\n    margin-top: -50px;\r\n    margin-bottom: 35px;\r\n}\r\n\r\n.user-img img{\r\n    height: 150px;\r\n    width: 150px;\r\n    border-radius: 5px;\r\n    box-shadow: 0px 0px 2px #848484;\r\n}\r\n\r\n#login.form-group{\r\n    margin-bottom: 25px \r\n }\r\n\r\n .form-group.login input{\r\n    height: 42px;\r\n    border-radius: 5px;\r\n    border: 0;\r\n    font-size: 18px;\r\n    padding-left: 54px\r\n}\r\n\r\n.form-group.login::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\\F007\";\r\n    position: absolute;\r\n    font-size: 22px;\r\n    color: #ff7830;\r\n    left: 28px;\r\n    padding-top: 4px;\r\n    \r\n}\r\n\r\n.form-group.login:last-od-type::before{\r\n    content: \"\\F023\"\r\n}\r\n\r\n.button.login{\r\n    width: 80%;\r\n    margin: 5px 0 25px\r\n}\r\n\r\n.btn.login{\r\n    background-color: #ff7830;\r\n    color: #fff;\r\n    font-size: 19px;\r\n    border-radius: 5px;\r\n    padding: 7px 14px;\r\n    border-bottom: 4px solid #ad4d1900\r\n}\r\n\r\n.btn.login:hover, .btn.login:focus{\r\n    background-color: #b3480f ! important;\r\n    border-bottom: 4px solid #ff783000 ! important\r\n}\r\n\r\n.svg-inline.login--fa{\r\n    font-size: 20px;\r\n    margin-right: 7px\r\n}\r\n\r\n.forgot{\r\n    padding: 5px 0 25px\r\n}\r\n\r\n.forgot a {\r\n    color:#c2fbfe\r\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 96 */
+/***/ (function(module, exports) {
+
+
+/**
+ * When source maps are enabled, `style-loader` uses a link element with a data-uri to
+ * embed the css on the page. This breaks all relative urls because now they are relative to a
+ * bundle instead of the current page.
+ *
+ * One solution is to only use full urls, but that may be impossible.
+ *
+ * Instead, this function "fixes" the relative urls to be absolute according to the current page location.
+ *
+ * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.
+ *
+ */
+
+module.exports = function (css) {
+  // get current location
+  var location = typeof window !== "undefined" && window.location;
+
+  if (!location) {
+    throw new Error("fixUrls requires window.location");
+  }
+
+	// blank or null?
+	if (!css || typeof css !== "string") {
+	  return css;
+  }
+
+  var baseUrl = location.protocol + "//" + location.host;
+  var currentDir = baseUrl + location.pathname.replace(/\/[^\/]*$/, "/");
+
+	// convert each url(...)
+	/*
+	This regular expression is just a way to recursively match brackets within
+	a string.
+
+	 /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
+	   (  = Start a capturing group
+	     (?:  = Start a non-capturing group
+	         [^)(]  = Match anything that isn't a parentheses
+	         |  = OR
+	         \(  = Match a start parentheses
+	             (?:  = Start another non-capturing groups
+	                 [^)(]+  = Match anything that isn't a parentheses
+	                 |  = OR
+	                 \(  = Match a start parentheses
+	                     [^)(]*  = Match anything that isn't a parentheses
+	                 \)  = Match a end parentheses
+	             )  = End Group
+              *\) = Match anything and then a close parens
+          )  = Close non-capturing group
+          *  = Match anything
+       )  = Close capturing group
+	 \)  = Match a close parens
+
+	 /gi  = Get all matches, not the first.  Be case insensitive.
+	 */
+	var fixedCss = css.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function(fullMatch, origUrl) {
+		// strip quotes (if they exist)
+		var unquotedOrigUrl = origUrl
+			.trim()
+			.replace(/^"(.*)"$/, function(o, $1){ return $1; })
+			.replace(/^'(.*)'$/, function(o, $1){ return $1; });
+
+		// already a full url? no change
+		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/)/i.test(unquotedOrigUrl)) {
+		  return fullMatch;
+		}
+
+		// convert the url to a full url
+		var newUrl;
+
+		if (unquotedOrigUrl.indexOf("//") === 0) {
+		  	//TODO: should we add protocol?
+			newUrl = unquotedOrigUrl;
+		} else if (unquotedOrigUrl.indexOf("/") === 0) {
+			// path should be relative to the base url
+			newUrl = baseUrl + unquotedOrigUrl; // already starts with '/'
+		} else {
+			// path should be relative to current directory
+			newUrl = currentDir + unquotedOrigUrl.replace(/^\.\//, ""); // Strip leading './'
+		}
+
+		// send back the fixed url(...)
+		return "url(" + JSON.stringify(newUrl) + ")";
+	});
+
+	// send back the fixed css
+	return fixedCss;
+};
+
+
+/***/ }),
+/* 97 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/face.png?486275ea2f9332e5f637a0c6b3c16aaf";
+
+/***/ }),
+/* 98 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__registro_css__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__registro_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__registro_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+var Registro = function (_Component) {
+    _inherits(Registro, _Component);
+
+    function Registro() {
+        _classCallCheck(this, Registro);
+
+        var _this = _possibleConstructorReturn(this, (Registro.__proto__ || Object.getPrototypeOf(Registro)).call(this));
+
+        _this.handleImputChange = function (event) {
+            event.preventDefault();
+            var name = event.target.name;
+            _this.setState(_defineProperty({}, name, event.target.value));
+        };
+
+        _this.fileChangedHandler = function (event) {
+            _this.setState({ file: event.target.files[0] });
+            console.log(event.target.files);
+        };
+
+        _this.registrar = function (e) {
+            e.preventDefault();
+            console.log(_this.state.file);
+            var _this$state = _this.state,
+                file = _this$state.file,
+                name = _this$state.name,
+                cedula = _this$state.cedula,
+                email = _this$state.email,
+                password = _this$state.password;
+
+            console.log(file);
+            var data = new FormData();
+            data.append('file', file);
+            data.append('name', name);
+            data.append('cedula', cedula);
+            data.append('email', email);
+            data.append('password', password);
+            __WEBPACK_IMPORTED_MODULE_2_axios___default.a.post('http://127.0.0.1:8000/ajax/register', data).then(function (response) {
+                if (response.data) {
+                    location.href = "http://127.0.0.1:8000/login";
+                }
+            });
+        };
+
+        _this.State = {
+            file: null,
+            name: null,
+            cedula: null,
+            email: null,
+            password: null
+        };
+        return _this;
+    }
+
+    _createClass(Registro, [{
+        key: 'render',
+        value: function render() {
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: ' row  d-flex justify-content-center  align-items-center' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: ' col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5  main-section  registro' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'modal-content registro' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'col-12' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { id: 'p1', className: ' form-group registro' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', className: 'form-control', onChange: this.handleImputChange, name: 'name', placeholder: 'Nombre Completo' })
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { id: 'dni', className: 'form-group registro' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'number', className: 'form-control', onChange: this.handleImputChange, name: 'cedula', placeholder: 'Cedula' })
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { id: 'tlf', className: 'form-group registro' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'number', className: 'form-control', onChange: this.handleImputChange, name: 'tlf', placeholder: 'Numero telefonico' })
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { id: 'divFile', className: 'form-group registro' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'file', id: 'file', className: 'form-control text-center center-block', onChange: this.fileChangedHandler, placeholder: 'imagen' })
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { id: 'email', className: 'form-group registro' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'email', className: 'form-control', onChange: this.handleImputChange, name: 'email', placeholder: 'Email' })
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { className: 'form-group registro pass_show' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'password', className: 'form-control', onChange: this.handleImputChange, name: 'password', placeholder: 'Contrase\xF1a' })
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { className: 'd-flex ' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: ' mr-auto' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'button',
+                                        { type: 'button', className: 'btn registro' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fas fa-ban ' }),
+                                        'Cancel'
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: ' ml-auto' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'button',
+                                        { onClick: this.registrar, type: 'submit', className: 'btn registro' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fas fa-check ' }),
+                                        'Registrar'
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Registro;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+/* harmony default export */ __webpack_exports__["a"] = (Registro);
+
+/***/ }),
+/* 99 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(100);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(8)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!./registro.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!./registro.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 100 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(7)(false);
+// imports
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto);", ""]);
+
+// module
+exports.push([module.i, "body.registro{\r\n    font-family: 'Roboto', sans-serif;\r\n}\r\n\r\ninput[type=number]::-webkit-inner-spin-button {\r\n    -webkit-appearance: none;\r\n  }\r\n\r\n  .btn.registro{\r\n      color: aliceblue;\r\n      background-color: #f36c01;\r\n  }\r\n\r\n.modal-content.registro{\r\n    height: 450px;\r\n    background-color: #0072ff;\r\n    opacity: 0.95;\r\n    box-shadow: 0px 0px 3px #848484;\r\n}\r\n\r\n.main-section.registro{\r\n    margin-top: 3.5rem;\r\n}\r\n\r\n#p1{\r\n    margin-top: 5%;\r\n}\r\n\r\n.form-group.registro input{\r\n    height: 42px;\r\n    border-radius: 5px;\r\n    border: 0;\r\n    font-size: 18px;\r\n    padding-left: 54px\r\n}\r\n#divFile.form-group.registro input{\r\n    height: 46px;\r\n    border-radius: 5px;\r\n    border: 0;\r\n    font-size: 18px;\r\n    padding-left: 12px\r\n}\r\n\r\n.form-group.registro::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\\F007\";\r\n    position: absolute;\r\n    font-size: 22px;\r\n    color: #f36c01;\r\n    left: 28px;\r\n    padding-top: 4px;\r\n}\r\n\r\n#divFile.form-group.registro::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\";\r\n}\r\n\r\n.form-group#email::before{\r\n    content: \"\\F1FA\";\r\n}\r\n.form-group#dni::before{\r\n    content: \"\\F2C2\";\r\n}\r\n.form-group#dni::before{\r\n    content: \"\\F2C2\";\r\n}\r\n\r\n/* boton show de las password */\r\n\r\n.form-group.pass_show::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\\F023\";\r\n    position: absolute;\r\n    font-size: 22px;\r\n    color: #f36c01;\r\n    left: 14px;\r\n    padding-top: 4px;\r\n}\r\n\r\n.pass_show{position: relative} \r\n\r\n.pass_show .ptxt { \r\n\r\nposition: absolute; \r\n\r\ntop: 50%; \r\n\r\nright: 10px; \r\n\r\nz-index: 1; \r\n\r\ncolor: #f36c01; \r\n\r\nmargin-top: -10px; \r\n\r\ncursor: pointer; \r\n\r\ntransition: .3s ease all; \r\n\r\n} \r\n\r\n.pass_show .ptxt:hover{color: #333333;} \r\n\r\n/* -------------------- */\r\n\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 101 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Navbar__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CardsView__ = __webpack_require__(114);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+var App = function (_Component) {
+    _inherits(App, _Component);
+
+    function App(props) {
+        _classCallCheck(this, App);
+
+        var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
+
+        _this.state = {
+            user: _this.props.user
+        };
+        return _this;
+    }
+
+    _createClass(App, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            var _this2 = this;
+
+            var dato = null;
+            var uri = 'http://127.0.0.1:8000/ajax/usuario';
+            axios(uri).then(function (response) {
+                console.log(response.data);
+                if (response.data) {
+                    _this2.setState({
+                        user: response.data
+                    });
+                }
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var x = document.getElementsByTagName("META")[2].attributes.content.nodeValue;
+            console.log(x);
+            if (sessionStorage.getItem('user')) {
+                // { this.state.user && <img src={`/storage/${this.state.user.img}`}  alt=""/>}
+            }
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'container' },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Navbar__["a" /* default */], null),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__CardsView__["a" /* default */], null)
+            );
+        }
+    }]);
+
+    return App;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+/* unused harmony default export */ var _unused_webpack_default_export = (App);
+
+/***/ }),
+/* 102 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ajustes_css__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ajustes_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__ajustes_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -65047,13 +64300,13 @@ var Ajustes = function (_Component) {
 /* unused harmony default export */ var _unused_webpack_default_export = (Ajustes);
 
 /***/ }),
-/* 112 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(113);
+var content = __webpack_require__(104);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -65078,7 +64331,7 @@ if(false) {
 }
 
 /***/ }),
-/* 113 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(7)(false);
@@ -65092,7 +64345,6 @@ exports.push([module.i, ".bodyAjustes{\r\n    margin-top: 70px;\r\n    color:whi
 
 
 /***/ }),
-<<<<<<< HEAD
 /* 105 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -65354,7 +64606,7 @@ var Navbar = function (_Component) {
     return Navbar;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-/* unused harmony default export */ var _unused_webpack_default_export = (Navbar);
+/* harmony default export */ __webpack_exports__["a"] = (Navbar);
 
 /***/ }),
 /* 106 */
@@ -65403,19 +64655,12 @@ exports.push([module.i, ".body-navbar {\r\n    font-family: 'Roboto', sans-serif
 
 /***/ }),
 /* 108 */
-=======
-/* 114 */
->>>>>>> 76ba21cb7416a14891ce00b1665fa5452a84c631
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__AventonDetalles_css__ = __webpack_require__(109);
-=======
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__AventonDetalles_css__ = __webpack_require__(115);
->>>>>>> 76ba21cb7416a14891ce00b1665fa5452a84c631
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__AventonDetalles_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__AventonDetalles_css__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -65518,21 +64763,13 @@ var AventonDetalles = function (_Component) {
 /* unused harmony default export */ var _unused_webpack_default_export = (AventonDetalles);
 
 /***/ }),
-<<<<<<< HEAD
 /* 109 */
-=======
-/* 115 */
->>>>>>> 76ba21cb7416a14891ce00b1665fa5452a84c631
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-<<<<<<< HEAD
 var content = __webpack_require__(110);
-=======
-var content = __webpack_require__(116);
->>>>>>> 76ba21cb7416a14891ce00b1665fa5452a84c631
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -65557,11 +64794,7 @@ if(false) {
 }
 
 /***/ }),
-<<<<<<< HEAD
 /* 110 */
-=======
-/* 116 */
->>>>>>> 76ba21cb7416a14891ce00b1665fa5452a84c631
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(7)(false);
@@ -65579,6 +64812,274 @@ exports.push([module.i, ".card.detalles {\r\n    text-transform: uppercase;\r\n 
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 112 */,
+/* 113 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(116);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(8)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!./card.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!./card.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 114 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Card__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__card_css__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__card_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__card_css__);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+var petciones = [{
+    nombre: 'carlos',
+    destino: 'Campo a2 de ferrominera'
+}, {
+    nombre: 'javier',
+    destino: 'altavista norte'
+}, {
+    nombre: 'juan',
+    destino: 'Villa colombia'
+}];
+
+var CardsView = function (_Component) {
+    _inherits(CardsView, _Component);
+
+    function CardsView() {
+        _classCallCheck(this, CardsView);
+
+        return _possibleConstructorReturn(this, (CardsView.__proto__ || Object.getPrototypeOf(CardsView)).call(this));
+    }
+
+    _createClass(CardsView, [{
+        key: 'render',
+        value: function render() {
+
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                { className: 'container card-body' },
+                petciones.map(function (usuario) {
+                    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Card__["a" /* default */], { persona: usuario, key: usuario.nombre });
+                }),
+                ' '
+            );
+        }
+    }]);
+
+    return CardsView;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+/* harmony default export */ __webpack_exports__["a"] = (CardsView);
+
+/***/ }),
+/* 115 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router_dom__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__card_css__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__card_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__card_css__);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+var Card = function (_Component) {
+    _inherits(Card, _Component);
+
+    function Card(props) {
+        _classCallCheck(this, Card);
+
+        var _this = _possibleConstructorReturn(this, (Card.__proto__ || Object.getPrototypeOf(Card)).call(this, props));
+
+        _this.handleClick = function (e) {
+            _this.props.history.push('/registro');
+            console.log(_this.state.usuario);
+        };
+
+        _this.state = {
+            usuario: _this.props.persona
+        };
+        return _this;
+    }
+
+    _createClass(Card, [{
+        key: 'render',
+        value: function render() {
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'div',
+                null,
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'row justify-content-center' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { onClick: this.handleClick, className: 'card col-sm-12 col-xs-12 col-lg-8 col-md-8' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'cardimage' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'card-img', src: 'https://www.ngenespanol.com/wp-content/uploads/2018/08/La-primera-imagen-de-la-historia.jpg' })
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'cardbody' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'h6',
+                                { className: 'card-title' },
+                                this.props.persona.nombre
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'p',
+                                null,
+                                this.props.persona.destino
+                            )
+                        )
+                    )
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'modal fade navbar', id: 'exampleModal', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'exampleModalLabel', 'aria-hidden': 'true' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'modal-dialog', role: 'document' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'modal-content' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { className: 'modal-header' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'h5',
+                                    { className: 'modal-title', id: 'exampleModalLabel' },
+                                    'Aventon'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'button',
+                                    { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-label': 'Close' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'span',
+                                        { 'aria-hidden': 'true' },
+                                        '\xD7'
+                                    )
+                                )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { className: 'modal-body' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'form-group ' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'label',
+                                        { id: 'textPass', htmlFor: 'exampleFormControlSelect1' },
+                                        'Nombre Del Conductor'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', readOnly: true, className: 'form-control-plaintext', id: 'staticNombreConductor', value: 'Javier Gil' })
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'form-group ' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'label',
+                                        { id: 'textPass', htmlFor: 'exampleFormControlSelect1' },
+                                        'Zona Destino'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', readOnly: true, className: 'form-control-plaintext', id: 'staticzona', value: 'unare' })
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'label',
+                                    { id: 'textPass', htmlFor: 'exampleFormControlSelect1' },
+                                    'Direccion Destino'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'form-group formulario' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', readOnly: true, className: 'form-control-plaintext', id: 'staticdireccion', value: 'calle 23a' })
+                                )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { className: 'modal-footer' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'button',
+                                    { type: 'button', className: 'btn btn-danger', 'data-dismiss': 'modal' },
+                                    'Cancelar'
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'button',
+                                    { type: 'button', className: 'btn btn-danger' },
+                                    'Aceptar'
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Card;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["d" /* withRouter */])(Card));
+
+/***/ }),
+/* 116 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(7)(false);
+// imports
+
+
+// module
+exports.push([module.i, ".card-body{\r\n    padding-top: 50px;\r\n    position: relative;    \r\n}\r\n\r\npre {\r\n    tab-size: 8;\r\n}\r\n\r\n.card-img {\r\n    width: 100px ;\r\n    height: 100px;\r\n    margin-top: 10px;\r\n    border-radius:150px;\r\n}\r\n\r\n.card {\r\n    background-color: #fff;\r\n    margin-top: 10px;\r\n    box-shadow: 1px 1px 8px #999;\r\n    cursor: pointer;\r\n\r\n}\r\n.card-title {\r\n    margin-top: 10px;\r\n\ttext-transform: uppercase;\r\n    color: #E44424;\r\n    font-weight: 800;\r\n}\r\n\r\n.cardimage{\r\n    position: fixed;\r\n    display: inline-block;\r\n}\r\n.cardbody{\r\n    position: relative;\r\n    width: 50%;\r\n    left: 120px; \r\n    height: 120px;\r\n    display: inline-block;\r\n\r\n}", ""]);
+
+// exports
+
 
 /***/ })
 /******/ ]);
