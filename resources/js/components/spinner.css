@@ -1,0 +1,37 @@
+
+.lds-dual-ring {
+    display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+    width: 80px;
+    height: 80px;
+  }
+  /* DIOS PARA CENTRAR */
+  .padre{
+    display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+  }
+/* ----------------------- */
+
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+    border: 10px solid #0072ff;
+    border-color: #0072ff transparent #0072ff transparent;
+    animation: lds-dual-ring 1.4s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
