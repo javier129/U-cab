@@ -23,7 +23,9 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Ajustes from './components/ajustes';
 import Navbar from './components/Navbar';
+import Spinner from './components/Spinner';
 import AventonDetalles from './components/AventonDetalles';
+import CardAventon from './components/CardAventon';
 
 
 

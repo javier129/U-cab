@@ -41,3 +41,30 @@ hr {
     width:100%; 
     margin: 0 auto;
 }
+
+.aventonDetalles button.btn.btn-primary{
+    margin-top: 20px;    
+    position: absolute;
+    background-color: #0072df;
+    width: 45px ;
+    height: 40px;
+}
+
+div.card3 button.btn{
+    margin-top: 10px;
+    font-weight: bolder ;
+    color: white;
+    background-color: red; 
+    padding: 0.450rem 0.90rem;
+    width: 105px ;
+    height: 45px;
+}
+div.card3 button#aceptar.btn{
+    margin-top: 10px;
+    font-weight: bolder ;
+    color: white;
+    background-color: #0072ff; 
+    padding: 0.450rem 0.90rem;
+    width: 105px ;
+    height: 45px;
+}
