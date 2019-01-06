@@ -65135,7 +65135,7 @@ var AventonDetalles = function (_Component) {
                         { className: 'col-5 col-sm-5 col-xs-6 ' },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'button',
-                            { type: 'button', className: 'btn ' },
+                            { type: 'button', className: 'btn', 'data-toggle': 'modal', 'data-target': '#cancelarModal' },
                             'Cancelar'
                         )
                     ),
@@ -65146,6 +65146,63 @@ var AventonDetalles = function (_Component) {
                             'button',
                             { id: 'aceptar', type: 'button', className: 'btn ' },
                             'Completar'
+                        )
+                    )
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'container row ' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'div',
+                        { className: 'col-11 modal fade justify-content-center ', id: 'cancelarModal', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'exampleModalLabel', 'aria-hidden': 'true' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'modal-dialog', role: 'document' },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                { className: 'modal-content' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'modal-header' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'h5',
+                                        { className: 'modal-title', id: 'exampleModalLabel' },
+                                        'Cancelar '
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'button',
+                                        { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-label': 'Close' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'span',
+                                            { 'aria-hidden': 'true' },
+                                            '\xD7'
+                                        )
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'modal-body' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'p',
+                                        null,
+                                        'Se encuentra seguro que desea cancelar el aventon'
+                                    )
+                                ),
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'div',
+                                    { className: 'modal-footer' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'button',
+                                        { type: 'button', className: 'btn btn-danger', 'data-dismiss': 'modal' },
+                                        'Cancelar'
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'button',
+                                        { type: 'button', className: 'btn btn-pri' },
+                                        'aceptar'
+                                    )
+                                )
+                            )
                         )
                     )
                 )
@@ -65198,7 +65255,7 @@ exports = module.exports = __webpack_require__(5)(false);
 
 
 // module
-exports.push([module.i, ".card.detalles {\r\n    text-transform: uppercase;\r\n    font-weight: bolder ;\r\n    color:white;\r\n    background-color: #0072ff;\r\n    box-shadow: 1px 1px 8px #999;\r\n    cursor: pointer;\r\n}\r\n\r\n.card2.detalles {\r\n    text-transform: uppercase;\r\n    color:white;\r\n    font-weight: bolder ;\r\n    margin-top: 10px;\r\n    background-color: #14aa0093;\r\n    box-shadow: 1px 1px 8px #999;\r\n    cursor: pointer;\r\n}\r\n\r\n#foto.detalles img{\r\n    margin-top: 10px;\r\n    width: 100px ;\r\n    height: 100px;\r\n    border-radius:150px;\r\n}\r\n\r\n.detalles .form-control-plaintext{\r\n    color:white;\r\n\r\n}\r\n.detalles #textPass{\r\n    text-transform: uppercase;\r\n    margin-top: 10px\r\n}\r\n\r\nhr {\r\n    height:1px; \r\n    border:none; \r\n    color:#000; \r\n    background-color:#000; \r\n    width:100%; \r\n    margin: 0 auto;\r\n}\r\n\r\n.aventonDetalles button.btn.btn-primary{\r\n    margin-top: 20px;    \r\n    position: absolute;\r\n    background-color: #0072df;\r\n    width: 45px ;\r\n    height: 40px;\r\n}\r\n\r\ndiv.card3 button.btn{\r\n    margin-top: 10px;\r\n    font-weight: bolder ;\r\n    color: white;\r\n    background-color: red; \r\n    padding: 0.450rem 0.90rem;\r\n    width: 105px ;\r\n    height: 45px;\r\n}\r\ndiv.card3 button#aceptar.btn{\r\n    margin-top: 10px;\r\n    font-weight: bolder ;\r\n    color: white;\r\n    background-color: #0072ff; \r\n    padding: 0.450rem 0.90rem;\r\n    width: 105px ;\r\n    height: 45px;\r\n}", ""]);
+exports.push([module.i, ".card.detalles {\r\n    text-transform: uppercase;\r\n    font-weight: bolder ;\r\n    color:white;\r\n    background-color: #0072ff;\r\n    box-shadow: 1px 1px 8px #999;\r\n    cursor: pointer;\r\n}\r\n\r\n.card2.detalles {\r\n    text-transform: uppercase;\r\n    color:white;\r\n    font-weight: bolder ;\r\n    margin-top: 10px;\r\n    background-color: #14aa0093;\r\n    box-shadow: 1px 1px 8px #999;\r\n    cursor: pointer;\r\n}\r\n\r\n#foto.detalles img{\r\n    margin-top: 10px;\r\n    width: 100px ;\r\n    height: 100px;\r\n    border-radius:150px;\r\n}\r\n\r\n.detalles .form-control-plaintext{\r\n    color:white;\r\n\r\n}\r\n.detalles #textPass{\r\n    text-transform: uppercase;\r\n    margin-top: 10px\r\n}\r\n\r\nhr {\r\n    height:1px; \r\n    border:none; \r\n    color:#000; \r\n    background-color:#000; \r\n    width:100%; \r\n    margin: 0 auto;\r\n}\r\n\r\n.aventonDetalles button.btn.btn-primary{\r\n    margin-top: 20px;    \r\n    position: absolute;\r\n    background-color: #0072df;\r\n    width: 45px ;\r\n    height: 40px;\r\n}\r\n\r\ndiv.card3 button.btn{\r\n    margin-top: 10px;\r\n    font-weight: bolder ;\r\n    color: white;\r\n    background-color: red; \r\n    padding: 0.450rem 0.90rem;\r\n    width: 105px ;\r\n    height: 45px;\r\n}\r\ndiv.card3 button#aceptar.btn{\r\n    margin-top: 10px;\r\n    font-weight: bolder ;\r\n    color: white;\r\n    background-color: #14aa0093; \r\n    padding: 0.450rem 0.90rem;\r\n    width: 105px ;\r\n    height: 45px;\r\n}\r\n\r\ndiv.modal-footer button.btn.btn-pri{\r\n    \r\n    background-color: #14aa0093;   \r\n}", ""]);
 
 // exports
 

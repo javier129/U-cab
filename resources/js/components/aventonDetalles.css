@@ -63,8 +63,13 @@ div.card3 button#aceptar.btn{
     margin-top: 10px;
     font-weight: bolder ;
     color: white;
-    background-color: #0072ff; 
+    background-color: #14aa0093; 
     padding: 0.450rem 0.90rem;
     width: 105px ;
     height: 45px;
+}
+
+div.modal-footer button.btn.btn-pri{
+    
+    background-color: #14aa0093;   
 }

@@ -45,12 +45,34 @@ class AventonDetalles extends Component {
                     </div>
                     <div className="row justify-content-center  text-center card3">
                             <div className="col-5 col-sm-5 col-xs-6 ">
-                                <button type="button" className="btn ">Cancelar</button>
+                                <button type="button" className="btn" data-toggle="modal" data-target="#cancelarModal">Cancelar</button>
                             </div>
                             <div className="col-5 col-sm-5 col-xs-6 ">
                                 <button id="aceptar" type="button" className="btn ">Completar</button>
-                            </div>
+                            </div>    
                     </div>
+
+                     {/* <!-- Modal --> */}
+                     <div className="container row ">
+                     <div className="col-11 modal fade justify-content-center " id="cancelarModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div className="modal-dialog" role="document">
+                                <div className="modal-content">
+                                  <div className="modal-header">
+                                    <h5 className="modal-title" id="exampleModalLabel">Cancelar </h5>
+                                    <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div className="modal-body">
+                                    <p>Se encuentra seguro que desea cancelar el aventon</p>
+                                  </div>
+                                  <div className="modal-footer">
+                                    <button type="button" className="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                                    <button type="button" className="btn btn-pri">aceptar</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div></div>
             </div>       
 
         );
