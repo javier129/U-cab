@@ -27,6 +27,9 @@ Route::group(['prefix' => 'ajax'], function() {
     Route::get('/usuario', function () {
         return Auth::user();
     });
+    Route::post('/NewAventon','AventonController@store');
+    Route::get('/zonas','ZonaController@index');
+    Route::get('/aventones','AventonController@index');
 });
 
 Route::get('/{path?}', function () {

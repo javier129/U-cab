@@ -34,15 +34,16 @@ export default class Example extends Component {
         super();
         let login=false;
         console.log(sessionStorage.getItem('user'));
-        if(sessionStorage.getItem('user')){
+        if(sessionStorage.getItem('user')!='undefined'){
             login= true
+            console.log('safsafasfsafasfsafsafsafsafsafsaf');
         }
         this.state={
             loginSuscess:login,
             user: null
         }
     }
-     revisarStatus = ()=>{
+     /*revisarStatus = ()=>{
         let dato=null;
         let uri = 'http://127.0.0.1:8000/ajax/usuario';
         axios(uri).then(response=>{
@@ -52,7 +53,7 @@ export default class Example extends Component {
                })
             }
         })
-    }
+     }*/
     /*componentWillMount(){
         this.revisarStatus();
     }*/
@@ -60,12 +61,14 @@ export default class Example extends Component {
         let uri = 'http://127.0.0.1:8000/ajax/login';
         axios.post(uri, userInfo).then((response) => {
             console.log(response.data);
-            this.setState({
-                loginSuscess:true,
-                user:response.data.user
-            })
-            console.log(this.state.user);
-            sessionStorage.setItem('user', JSON.stringify(response.data.user));
+           if(response.data.user){
+                this.setState({
+                    loginSuscess:true,
+                    user:response.data.user
+                })
+                console.log(this.state.user);
+                sessionStorage.setItem('user', JSON.stringify(response.data.user));
+            }
         })
     }
     render() {
@@ -74,9 +77,12 @@ export default class Example extends Component {
       console.log(this.state.loginSuscess);
         return (
             <BrowserRouter>
-
-                <AventonDetalles></AventonDetalles>
-                
+                <div>
+                <Route exact path='/login' render={()=>
+                        !this.state.loginSuscess ? <Login handleLoginForUser={this.handleUserLogin}/> : <Redirect to={'/'}/>  }/> 
+                    <PrivateRoute user={this.state.user} userStatus={this.state.loginSuscess} exact path='/' component={App}/>
+                    <Route exact path='/Registro' component={Registro}/>
+                </div>
             </BrowserRouter>
         );
     }

@@ -12,6 +12,7 @@ class Registro extends Component {
             name:null,
             cedula: null,
             email:null,
+            tlf:null,
             password:null,
         }
     }
@@ -29,11 +30,12 @@ class Registro extends Component {
     registrar= (e)=>{
         e.preventDefault();
         console.log(this.state.file);
-        const {file,name,cedula,email,password}=this.state;
+        const {file,name,cedula,email,password,tlf}=this.state;
         console.log(file);
         let data = new FormData();
         data.append('file', file);
         data.append('name', name);
+        data.append('tlf', tlf);
         data.append('cedula', cedula);
         data.append('email', email);
         data.append('password', password);

@@ -1,7 +1,50 @@
 import React, { Component } from 'react';
 import './navbar.css';
 
+
 class Navbar extends Component {
+    zonas=()=>{
+        let dato=null;
+        let uri = 'http://127.0.0.1:8000/ajax/zonas';
+        axios(uri).then(response=>{
+            this.setState({
+                zonas:response.data.zonas
+            })
+        });
+    }
+    constructor(props){
+        super(props);
+        this.state={
+            zona:null,
+            destino: null,
+            pasajeroNum:null,
+            zonas:null
+        }
+        this.zonas();
+    }
+
+    handleImputChange = event=> {
+        event.preventDefault();
+        const name= event.target.name;
+        this.setState({
+            [name]: event.target.value
+        })
+        console.log(name);
+        console.log(event.target.value);
+    }
+
+    hadleNewAventon=(e)=>{
+        let data = new FormData();
+        const {zona,destino,pasajeroNum}=this.state;
+        data.append('zona', zona);
+        data.append('destino', destino);
+        data.append('pasajeroNum', pasajeroNum);
+        let uri = 'http://127.0.0.1:8000/ajax/NewAventon';
+        axios.post(uri, data).then((response) => {
+            alert('Se creo satifactoriamente el aventon');
+            $('#exampleModal').modal('hide'); 
+        })
+    }
     render() {
         return (
             <div className="bodyNavar">
@@ -61,18 +104,24 @@ class Navbar extends Component {
 
                              <div className="form-group ">
                                  <label id="textPass" htmlFor="exampleFormControlSelect1">Zona Destino</label>
-                                 <select className="form-control " id="FormControlSelect1">
-                                     <option>unare</option>
+                                 <select onChange={this.handleImputChange} className="form-control " name="zona">
+                                    {console.log(this.state.zonas)}
+                                    {
+                                      
+                                        this.state.zonas!=null && this.state.zonas.map((zona)=>{
+                                            return  <option key={zona.id} value={zona.id}>{zona.descripcion}</option>
+                                        })
+                                    }
 
                                  </select>
                              </div>
                              <label id="textPass" htmlFor="exampleFormControlSelect1">Direccion Destino</label>
                              <div className="form-group formulario">
-                                 <input type="text" className="form-control" id="formGroupExampleInput2" placeholder="Destino"/>
+                                 <input onChange={this.handleImputChange} type="text" className="form-control" name="destino" placeholder="Destino"/>
                              </div>   
                              <div className="form-group">
                                  <label id="textPass" htmlFor="exampleFormControlSelect1">Numero De Pasajeros</label>
-                                 <select className="form-control" id="FormControlSelect1">
+                                 <select onChange={this.handleImputChange} className="form-control" name="pasajeroNum">
                                      <option>1</option>
                                      <option>2</option>
                                      <option>3</option>
@@ -84,7 +133,7 @@ class Navbar extends Component {
                          </div>
                              <div className="modal-footer">
                                  <button type="button" className="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                                 <button type="button" className="btn btn-danger">Aceptar</button>
+                                 <button onClick={this.hadleNewAventon} type="button" className="btn btn-danger">Aceptar</button>
                              </div>
                          </div>
                      </div>
