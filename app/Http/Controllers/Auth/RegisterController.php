@@ -94,7 +94,9 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'cedula' => $data['cedula'],
             'img'=>   $nombre[1] ,
-            'direccion'=>'safsafas',
+            'direccion'=>'sfsafsaf',
+            'zonaId'=>1,
+            'tlf'=>$data['tlf'],
             'password' => Hash::make($data['password']),
         ]);
     }

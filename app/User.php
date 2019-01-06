@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password','img','cedula','direccion'
+        'name', 'email', 'password','img','cedula','direccion','tlf','zonaId'
     ];
 
     /**
@@ -28,7 +28,16 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function traslado(){
-        return $this->hasMany('App\Traslado','conductor','id');
+    public function aventon(){
+        return $this->hasmany('App\Aventon','conductorId','id');
     }
+    
+    public function zona(){
+        return $this->belongsTo('App\Zona','zonaId','id');
+    }
+
+    public function aventonPasajero(){
+        return $this->hasmany('App\Aventon_pasagero','pasageroId','id');
+    }
+    
 }

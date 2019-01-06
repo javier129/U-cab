@@ -21,6 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('tlf')->unique();
             $table->string('img');
             $table->text('direccion');
+            $table->integer('zonaId');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();

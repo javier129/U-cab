@@ -8,7 +8,7 @@ export default class App extends Component {
             user:this.props.user
         }
     }
-    componentDidMount(){
+   /* componentDidMount(){
             let dato=null;
             let uri = 'http://127.0.0.1:8000/ajax/usuario';
             axios(uri).then(response=>{
@@ -19,7 +19,9 @@ export default class App extends Component {
                    })
                 }
             })
-    }
+    }*/
+
+   
     render() {
        let x = document.getElementsByTagName("META")[2].attributes.content.nodeValue;
        console.log(x);
