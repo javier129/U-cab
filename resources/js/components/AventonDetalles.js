@@ -10,6 +10,10 @@ class AventonDetalles extends Component {
             <div>
                     <div className="row justify-content-center bodyDetalles">
                         <div className="col-10 col-sm-10 col-xs-10 col-lg-8 col-md-8 card detalles">
+
+                            <div className="aventonDetalles">
+                                <button type="button" className="btn btn-primary"><i className="fas fa-arrow-left"></i></button>
+                            </div>
                             <div id="foto" className="detalles form-group text-center">
                                 <img src="https://www.ngenespanol.com/wp-content/uploads/2018/08/La-primera-imagen-de-la-historia.jpg"/>
                             </div>
@@ -38,6 +42,14 @@ class AventonDetalles extends Component {
                                 <input type="text" readOnly className="form-control-plaintext" id="staticNContacto" value="04122060111"/>
                             </div>                            
                         </div>
+                    </div>
+                    <div className="row justify-content-center  text-center card3">
+                            <div className="col-5 col-sm-5 col-xs-6 ">
+                                <button type="button" className="btn ">Cancelar</button>
+                            </div>
+                            <div className="col-5 col-sm-5 col-xs-6 ">
+                                <button id="aceptar" type="button" className="btn ">Completar</button>
+                            </div>
                     </div>
             </div>       
 

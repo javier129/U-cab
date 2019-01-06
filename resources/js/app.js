@@ -25,6 +25,7 @@ import Ajustes from './components/ajustes';
 import Navbar from './components/Navbar';
 import Spinner from './components/Spinner';
 import AventonDetalles from './components/AventonDetalles';
+import CardAventon from './components/CardAventon';
 
 
 
@@ -74,7 +75,7 @@ export default class Example extends Component {
         return (
             <BrowserRouter>
 
-                <Spinner></Spinner>
+                <AventonDetalles></AventonDetalles>
                 
             </BrowserRouter>
         );
