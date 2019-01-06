@@ -548,36 +548,6 @@ module.exports = warning;
 
 /***/ }),
 /* 5 */
-<<<<<<< HEAD
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createBrowserHistory__ = __webpack_require__(65);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__createBrowserHistory__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__createHashHistory__ = __webpack_require__(68);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__createHashHistory__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__ = __webpack_require__(69);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__LocationUtils__ = __webpack_require__(10);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_3__LocationUtils__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_3__LocationUtils__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__PathUtils__ = __webpack_require__(8);
-/* unused harmony reexport parsePath */
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_4__PathUtils__["b"]; });
-
-
-
-
-
-
-
-
-
-
-/***/ }),
-/* 6 */
-=======
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 /***/ (function(module, exports) {
 
 /*
@@ -659,11 +629,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-<<<<<<< HEAD
-/* 7 */
-=======
 /* 6 */
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -1022,8 +988,6 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-<<<<<<< HEAD
-=======
 /* 7 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1051,7 +1015,6 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 /* 8 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -16043,7 +16006,6 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Navbar = function (_Component) {
     _inherits(Navbar, _Component);
 
-<<<<<<< HEAD
     function Navbar(props) {
         _classCallCheck(this, Navbar);
 
@@ -16328,245 +16290,6 @@ var Navbar = function (_Component) {
     return Navbar;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-=======
-    function Navbar() {
-        _classCallCheck(this, Navbar);
-
-        return _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).apply(this, arguments));
-    }
-
-    _createClass(Navbar, [{
-        key: 'render',
-        value: function render() {
-            var _React$createElement;
-
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'bodyNavar' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'nav',
-                    { className: 'navbar fixed-top navbar-expand-lg navbar-dark  fluid ' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'container' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'button',
-                            { className: 'navbar-toggler', id: 'logo', type: 'button', 'data-toggle': 'collapse', 'data-target': '#navbarTogglerDemo03', 'aria-controls': 'navbarTogglerDemo03', 'aria-expanded': 'false', 'aria-label': 'Toggle navigation' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', { className: 'navbar-toggler-icon' })
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'button',
-                            (_React$createElement = { type: 'button', id: 'plusbutton2', 'data-toggle': 'modal', 'data-target': '#exampleModal' }, _defineProperty(_React$createElement, 'data-toggle', 'modal'), _defineProperty(_React$createElement, 'data-target', '#exampleModal'), _defineProperty(_React$createElement, 'className', 'btn btn-danger'), _React$createElement),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'far fa-plus-square fa-lg ' })
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'collapse navbar-collapse', id: 'navbarTogglerDemo03' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'a',
-                                { className: 'navbar-brand', href: '#' },
-                                'Ucab'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'ul',
-                                { className: 'navbar-nav mr-auto mt-2 mt-lg-0' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    { className: 'nav-item active' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'a',
-                                        { className: 'nav-link', href: '#' },
-                                        'Tablero ',
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'span',
-                                            { className: 'sr-only' },
-                                            '(current)'
-                                        )
-                                    )
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    { className: 'nav-item active' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'a',
-                                        { className: 'nav-link', href: '#' },
-                                        'Pendiente'
-                                    )
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'li',
-                                    { className: 'nav-item active' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'a',
-                                        { className: 'nav-link', href: '#' },
-                                        'Completados'
-                                    )
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'button',
-                                { type: 'button', id: 'plusbutton', 'data-toggle': 'modal', 'data-target': '#exampleModal', className: 'btn btn-danger' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'far fa-plus-square fa-lg ' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'dropdown' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'button',
-                                    { className: 'btn btn-outline-light dropdown-toggle', type: 'button', id: 'dropdownMenuButton', 'data-toggle': 'dropdown', 'aria-haspopup': 'true', 'aria-expanded': 'false' },
-                                    'NombreUsuario'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'dropdown-menu', 'aria-labelledby': 'dropdownMenuButton' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'a',
-                                        { className: 'dropdown-item', href: '#' },
-                                        'Nombre'
-                                    ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'a',
-                                        { className: 'dropdown-item', href: '#' },
-                                        'Correo'
-                                    ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'a',
-                                        { className: 'dropdown-item', href: '#' },
-                                        'Perfil'
-                                    ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'dropdown-divider' }),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'button',
-                                        { id: 'cerrars', className: ' btn btn-danger', type: 'button' },
-                                        'Cerrar Sesion'
-                                    )
-                                )
-                            )
-                        )
-                    )
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'modal fade navbar', id: 'exampleModal', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'exampleModalLabel', 'aria-hidden': 'true' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'modal-dialog', role: 'document' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'modal-content' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'modal-header' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'h5',
-                                    { className: 'modal-title', id: 'exampleModalLabel' },
-                                    'Nuevo Aventon'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'button',
-                                    { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-label': 'Close' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'span',
-                                        { 'aria-hidden': 'true' },
-                                        '\xD7'
-                                    )
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'modal-body' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'form-group ' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'label',
-                                        { id: 'textPass', htmlFor: 'exampleFormControlSelect1' },
-                                        'Zona Destino'
-                                    ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'select',
-                                        { className: 'form-control ', id: 'FormControlSelect1' },
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'option',
-                                            null,
-                                            'unare'
-                                        )
-                                    )
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'label',
-                                    { id: 'textPass', htmlFor: 'exampleFormControlSelect1' },
-                                    'Direccion Destino'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'form-group formulario' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', className: 'form-control', id: 'formGroupExampleInput2', placeholder: 'Destino' })
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'form-group' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'label',
-                                        { id: 'textPass', htmlFor: 'exampleFormControlSelect1' },
-                                        'Numero De Pasajeros'
-                                    ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'select',
-                                        { className: 'form-control', id: 'FormControlSelect1' },
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'option',
-                                            null,
-                                            '1'
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'option',
-                                            null,
-                                            '2'
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'option',
-                                            null,
-                                            '3'
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'option',
-                                            null,
-                                            '4'
-                                        ),
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            'option',
-                                            null,
-                                            '5'
-                                        )
-                                    )
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'modal-footer' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'button',
-                                    { type: 'button', className: 'btn btn-danger', 'data-dismiss': 'modal' },
-                                    'Cancelar'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'button',
-                                    { type: 'button', className: 'btn btn-danger' },
-                                    'Aceptar'
-                                )
-                            )
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Navbar;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 /* harmony default export */ __webpack_exports__["a"] = (Navbar);
 
 /***/ }),
@@ -16584,11 +16307,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-<<<<<<< HEAD
-var update = __webpack_require__(7)(content, options);
-=======
 var update = __webpack_require__(6)(content, options);
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -16609,11 +16328,7 @@ if(false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(38);
-<<<<<<< HEAD
-module.exports = __webpack_require__(115);
-=======
 module.exports = __webpack_require__(121);
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 
 
 /***/ }),
@@ -16633,13 +16348,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_react_dom__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_ajustes__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_Navbar__ = __webpack_require__(35);
-<<<<<<< HEAD
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_AventonDetalles__ = __webpack_require__(112);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_Spinner__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_AventonDetalles__ = __webpack_require__(115);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_CardAventon__ = __webpack_require__(118);
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -16738,7 +16449,6 @@ var Example = function (_Component) {
             return __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
                 __WEBPACK_IMPORTED_MODULE_0_react_router_dom__["a" /* BrowserRouter */],
                 null,
-<<<<<<< HEAD
                 __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
                     'div',
                     null,
@@ -16748,9 +16458,6 @@ var Example = function (_Component) {
                     __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__components_PrivateRoute__["a" /* default */], { user: this.state.user, userStatus: this.state.loginSuscess, exact: true, path: '/', component: __WEBPACK_IMPORTED_MODULE_4__components_app__["a" /* default */] }),
                     __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react_router_dom__["c" /* Route */], { exact: true, path: '/Registro', component: __WEBPACK_IMPORTED_MODULE_3__components_Registro__["a" /* default */] })
                 )
-=======
-                __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_10__components_AventonDetalles__["a" /* default */], null)
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
             );
         }
     }]);
@@ -39002,11 +38709,7 @@ module.exports = function spread(callback) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-<<<<<<< HEAD
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(5);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(7);
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(18);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -42394,11 +42097,7 @@ var createMemoryHistory = function createMemoryHistory() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-<<<<<<< HEAD
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(5);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(7);
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(18);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -42474,11 +42173,7 @@ HashRouter.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-<<<<<<< HEAD
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(5);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history__ = __webpack_require__(7);
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(19);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -42894,11 +42589,7 @@ Redirect.contextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
-<<<<<<< HEAD
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history__ = __webpack_require__(5);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history__ = __webpack_require__(7);
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Router__ = __webpack_require__(19);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -43471,11 +43162,7 @@ var Login = function (_Component) {
     return Login;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-<<<<<<< HEAD
 /* harmony default export */ __webpack_exports__["a"] = (Login);
-=======
-/* unused harmony default export */ var _unused_webpack_default_export = (Login);
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 
 /***/ }),
 /* 90 */
@@ -43492,11 +43179,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-<<<<<<< HEAD
-var update = __webpack_require__(7)(content, options);
-=======
 var update = __webpack_require__(6)(content, options);
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -43516,11 +43199,7 @@ if(false) {
 /* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
-exports = module.exports = __webpack_require__(6)(false);
-=======
 exports = module.exports = __webpack_require__(5)(false);
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 // imports
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto);", ""]);
 
@@ -43560,979 +43239,6 @@ module.exports = function (css) {
 	if (!css || typeof css !== "string") {
 	  return css;
   }
-<<<<<<< HEAD
-=======
-
-  var baseUrl = location.protocol + "//" + location.host;
-  var currentDir = baseUrl + location.pathname.replace(/\/[^\/]*$/, "/");
-
-	// convert each url(...)
-	/*
-	This regular expression is just a way to recursively match brackets within
-	a string.
-
-	 /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
-	   (  = Start a capturing group
-	     (?:  = Start a non-capturing group
-	         [^)(]  = Match anything that isn't a parentheses
-	         |  = OR
-	         \(  = Match a start parentheses
-	             (?:  = Start another non-capturing groups
-	                 [^)(]+  = Match anything that isn't a parentheses
-	                 |  = OR
-	                 \(  = Match a start parentheses
-	                     [^)(]*  = Match anything that isn't a parentheses
-	                 \)  = Match a end parentheses
-	             )  = End Group
-              *\) = Match anything and then a close parens
-          )  = Close non-capturing group
-          *  = Match anything
-       )  = Close capturing group
-	 \)  = Match a close parens
-
-	 /gi  = Get all matches, not the first.  Be case insensitive.
-	 */
-	var fixedCss = css.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function(fullMatch, origUrl) {
-		// strip quotes (if they exist)
-		var unquotedOrigUrl = origUrl
-			.trim()
-			.replace(/^"(.*)"$/, function(o, $1){ return $1; })
-			.replace(/^'(.*)'$/, function(o, $1){ return $1; });
-
-		// already a full url? no change
-		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/)/i.test(unquotedOrigUrl)) {
-		  return fullMatch;
-		}
-
-		// convert the url to a full url
-		var newUrl;
-
-		if (unquotedOrigUrl.indexOf("//") === 0) {
-		  	//TODO: should we add protocol?
-			newUrl = unquotedOrigUrl;
-		} else if (unquotedOrigUrl.indexOf("/") === 0) {
-			// path should be relative to the base url
-			newUrl = baseUrl + unquotedOrigUrl; // already starts with '/'
-		} else {
-			// path should be relative to current directory
-			newUrl = currentDir + unquotedOrigUrl.replace(/^\.\//, ""); // Strip leading './'
-		}
-
-		// send back the fixed url(...)
-		return "url(" + JSON.stringify(newUrl) + ")";
-	});
-
-	// send back the fixed css
-	return fixedCss;
-};
-
-
-/***/ }),
-/* 93 */
-/***/ (function(module, exports) {
-
-module.exports = "/images/face.png?486275ea2f9332e5f637a0c6b3c16aaf";
-
-/***/ }),
-/* 94 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__registro_css__ = __webpack_require__(95);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__registro_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__registro_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-var Registro = function (_Component) {
-    _inherits(Registro, _Component);
-
-    function Registro() {
-        _classCallCheck(this, Registro);
-
-        var _this = _possibleConstructorReturn(this, (Registro.__proto__ || Object.getPrototypeOf(Registro)).call(this));
-
-        _this.handleImputChange = function (event) {
-            event.preventDefault();
-            var name = event.target.name;
-            _this.setState(_defineProperty({}, name, event.target.value));
-        };
-
-        _this.fileChangedHandler = function (event) {
-            _this.setState({ file: event.target.files[0] });
-            console.log(event.target.files);
-        };
-
-        _this.registrar = function (e) {
-            e.preventDefault();
-            console.log(_this.state.file);
-            var _this$state = _this.state,
-                file = _this$state.file,
-                name = _this$state.name,
-                cedula = _this$state.cedula,
-                email = _this$state.email,
-                password = _this$state.password;
-
-            console.log(file);
-            var data = new FormData();
-            data.append('file', file);
-            data.append('name', name);
-            data.append('cedula', cedula);
-            data.append('email', email);
-            data.append('password', password);
-            __WEBPACK_IMPORTED_MODULE_2_axios___default.a.post('http://127.0.0.1:8000/ajax/register', data).then(function (response) {
-                if (response.data) {
-                    location.href = "http://127.0.0.1:8000/login";
-                }
-            });
-        };
-
-        _this.State = {
-            file: null,
-            name: null,
-            cedula: null,
-            email: null,
-            password: null
-        };
-        return _this;
-    }
-
-    _createClass(Registro, [{
-        key: 'render',
-        value: function render() {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: ' row  d-flex justify-content-center  align-items-center' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: ' col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5  main-section  registro' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'modal-content registro' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'col-12' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { id: 'p1', className: ' form-group registro' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', className: 'form-control', onChange: this.handleImputChange, name: 'name', placeholder: 'Nombre Completo' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { id: 'dni', className: 'form-group registro' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'number', className: 'form-control', onChange: this.handleImputChange, name: 'cedula', placeholder: 'Cedula' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { id: 'tlf', className: 'form-group registro' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'number', className: 'form-control', onChange: this.handleImputChange, name: 'tlf', placeholder: 'Numero telefonico' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { id: 'divFile', className: 'form-group registro' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'file', id: 'file', className: 'form-control text-center center-block', onChange: this.fileChangedHandler, placeholder: 'imagen' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { id: 'email', className: 'form-group registro' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'email', className: 'form-control', onChange: this.handleImputChange, name: 'email', placeholder: 'Email' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'form-group registro pass_show' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'password', className: 'form-control', onChange: this.handleImputChange, name: 'password', placeholder: 'Contrase\xF1a' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'd-flex ' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: ' mr-auto' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'button',
-                                        { type: 'button', className: 'btn registro' },
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fas fa-ban ' }),
-                                        'Cancel'
-                                    )
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: ' ml-auto' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'button',
-                                        { onClick: this.registrar, type: 'submit', className: 'btn registro' },
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fas fa-check ' }),
-                                        'Registrar'
-                                    )
-                                )
-                            )
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Registro;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-
-/* unused harmony default export */ var _unused_webpack_default_export = (Registro);
-
-/***/ }),
-/* 95 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(96);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(6)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!./registro.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!./registro.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 96 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(5)(false);
-// imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto);", ""]);
-
-// module
-exports.push([module.i, "body.registro{\r\n    font-family: 'Roboto', sans-serif;\r\n}\r\n\r\ninput[type=number]::-webkit-inner-spin-button {\r\n    -webkit-appearance: none;\r\n  }\r\n\r\n  .btn.registro{\r\n      color: aliceblue;\r\n      background-color: #f36c01;\r\n  }\r\n\r\n.modal-content.registro{\r\n    height: 450px;\r\n    background-color: #0072ff;\r\n    opacity: 0.95;\r\n    box-shadow: 0px 0px 3px #848484;\r\n}\r\n\r\n.main-section.registro{\r\n    margin-top: 3.5rem;\r\n}\r\n\r\n#p1{\r\n    margin-top: 5%;\r\n}\r\n\r\n.form-group.registro input{\r\n    height: 42px;\r\n    border-radius: 5px;\r\n    border: 0;\r\n    font-size: 18px;\r\n    padding-left: 54px\r\n}\r\n#divFile.form-group.registro input{\r\n    height: 46px;\r\n    border-radius: 5px;\r\n    border: 0;\r\n    font-size: 18px;\r\n    padding-left: 12px\r\n}\r\n\r\n.form-group.registro::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\\F007\";\r\n    position: absolute;\r\n    font-size: 22px;\r\n    color: #f36c01;\r\n    left: 28px;\r\n    padding-top: 4px;\r\n}\r\n\r\n#divFile.form-group.registro::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\";\r\n}\r\n\r\n.form-group#email::before{\r\n    content: \"\\F1FA\";\r\n}\r\n.form-group#dni::before{\r\n    content: \"\\F2C2\";\r\n}\r\n.form-group#dni::before{\r\n    content: \"\\F2C2\";\r\n}\r\n\r\n/* boton show de las password */\r\n\r\n.form-group.pass_show::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\\F023\";\r\n    position: absolute;\r\n    font-size: 22px;\r\n    color: #f36c01;\r\n    left: 14px;\r\n    padding-top: 4px;\r\n}\r\n\r\n.pass_show{position: relative} \r\n\r\n.pass_show .ptxt { \r\n\r\nposition: absolute; \r\n\r\ntop: 50%; \r\n\r\nright: 10px; \r\n\r\nz-index: 1; \r\n\r\ncolor: #f36c01; \r\n\r\nmargin-top: -10px; \r\n\r\ncursor: pointer; \r\n\r\ntransition: .3s ease all; \r\n\r\n} \r\n\r\n.pass_show .ptxt:hover{color: #333333;} \r\n\r\n/* -------------------- */\r\n\r\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 97 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Navbar__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CardsView__ = __webpack_require__(100);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-var App = function (_Component) {
-    _inherits(App, _Component);
-
-    function App(props) {
-        _classCallCheck(this, App);
-
-        var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
-
-        _this.state = {
-            user: _this.props.user
-        };
-        return _this;
-    }
-
-    _createClass(App, [{
-        key: 'componentDidMount',
-        value: function componentDidMount() {
-            var _this2 = this;
-
-            var dato = null;
-            var uri = 'http://127.0.0.1:8000/ajax/usuario';
-            axios(uri).then(function (response) {
-                console.log(response.data);
-                if (response.data) {
-                    _this2.setState({
-                        user: response.data
-                    });
-                }
-            });
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            var x = document.getElementsByTagName("META")[2].attributes.content.nodeValue;
-            console.log(x);
-            if (sessionStorage.getItem('user')) {
-                // { this.state.user && <img src={`/storage/${this.state.user.img}`}  alt=""/>}
-            }
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'container' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Navbar__["a" /* default */], null),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__CardsView__["a" /* default */], null)
-            );
-        }
-    }]);
-
-    return App;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-
-/* unused harmony default export */ var _unused_webpack_default_export = (App);
-
-/***/ }),
-/* 98 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(99);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(6)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!./navbar.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!./navbar.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 99 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(5)(false);
-// imports
-
-
-// module
-exports.push([module.i, ".body-navbar {\r\n    font-family: 'Roboto', sans-serif;\r\n    padding-top: 50px;\r\n    position: relative;\r\n}\r\n\r\n#plusbutton{\r\n    margin-right: 30px;\r\n    height: 36px;\r\n}\r\n\r\nnav {\r\n    background-color: #0072ff;\r\n}\r\n\r\n#cerrars{\r\n    position: relative;\r\n    margin-left: 20px;\r\n}\r\n\r\n\r\npre {\r\n    tab-size: 8;\r\n}\r\n\r\n.card-img {\r\n    width: 100px ;\r\n    height: 100px;\r\n    margin-top: 10px;\r\n    border-radius:150px;\r\n}\r\n\r\n.card {\r\n    background-color: #fff;\r\n    margin-top: 10px;\r\n    box-shadow: 1px 1px 8px #999;\r\n    cursor: pointer;\r\n\r\n}\r\n.card-title {\r\n\ttext-transform: uppercase;\r\n\tcolor: #E44424;\r\n}\r\n\r\n.cardimage{\r\n    position: fixed;\r\n    display: inline-block;\r\n}\r\n.cardbody{\r\n    position: relative;\r\n    width: 50%;\r\n    left: 120px; \r\n    height: 12rem;\r\n    display: inline-block;\r\n\r\n}\r\n\r\n.modal-title{\r\n    font-weight: 800;\r\n}\r\n\r\n.modal.navbar{\r\n    color: #0072ff;\r\n    font-weight: bold;\r\n}\r\n\r\n@media screen and (max-width: 990px) {\r\n    #plusbutton{\r\n        visibility: hidden;    \r\n    }\r\n}\r\n@media screen and (min-width: 990px) {\r\n    #plusbutton2{\r\n        visibility: hidden;    \r\n    }\r\n}\r\n\r\n\r\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 100 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Card__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__card_css__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__card_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__card_css__);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-var petciones = [{
-    nombre: 'carlos',
-    destino: 'Campo a2 de ferrominera'
-}, {
-    nombre: 'javier',
-    destino: 'altavista norte'
-}, {
-    nombre: 'juan',
-    destino: 'Villa colombia'
-}];
-
-var CardsView = function (_Component) {
-    _inherits(CardsView, _Component);
-
-    function CardsView() {
-        _classCallCheck(this, CardsView);
-
-        return _possibleConstructorReturn(this, (CardsView.__proto__ || Object.getPrototypeOf(CardsView)).call(this));
-    }
-
-    _createClass(CardsView, [{
-        key: 'render',
-        value: function render() {
-
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'container card-body' },
-                petciones.map(function (usuario) {
-                    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Card__["a" /* default */], { persona: usuario, key: usuario.nombre });
-                }),
-                ' '
-            );
-        }
-    }]);
-
-    return CardsView;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-
-/* harmony default export */ __webpack_exports__["a"] = (CardsView);
-
-/***/ }),
-/* 101 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router_dom__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__card_css__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__card_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__card_css__);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-var Card = function (_Component) {
-    _inherits(Card, _Component);
-
-    function Card(props) {
-        _classCallCheck(this, Card);
-
-        var _this = _possibleConstructorReturn(this, (Card.__proto__ || Object.getPrototypeOf(Card)).call(this, props));
-
-        _this.handleClick = function (e) {
-            _this.props.history.push('/registro');
-            console.log(_this.state.usuario);
-        };
-
-        _this.state = {
-            usuario: _this.props.persona
-        };
-        return _this;
-    }
-
-    _createClass(Card, [{
-        key: 'render',
-        value: function render() {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                null,
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'row justify-content-center' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { onClick: this.handleClick, className: 'card col-sm-12 col-xs-12 col-lg-8 col-md-8' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'cardimage' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'card-img', src: 'https://www.ngenespanol.com/wp-content/uploads/2018/08/La-primera-imagen-de-la-historia.jpg' })
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'cardbody' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'h6',
-                                { className: 'card-title' },
-                                this.props.persona.nombre
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'p',
-                                null,
-                                this.props.persona.destino
-                            )
-                        )
-                    )
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'modal fade navbar', id: 'exampleModal', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'exampleModalLabel', 'aria-hidden': 'true' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'modal-dialog', role: 'document' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'modal-content' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'modal-header' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'h5',
-                                    { className: 'modal-title', id: 'exampleModalLabel' },
-                                    'Aventon'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'button',
-                                    { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-label': 'Close' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'span',
-                                        { 'aria-hidden': 'true' },
-                                        '\xD7'
-                                    )
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'modal-body' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'form-group ' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'label',
-                                        { id: 'textPass', htmlFor: 'exampleFormControlSelect1' },
-                                        'Nombre Del Conductor'
-                                    ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', readOnly: true, className: 'form-control-plaintext', id: 'staticNombreConductor', value: 'Javier Gil' })
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'form-group ' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'label',
-                                        { id: 'textPass', htmlFor: 'exampleFormControlSelect1' },
-                                        'Zona Destino'
-                                    ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', readOnly: true, className: 'form-control-plaintext', id: 'staticzona', value: 'unare' })
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'label',
-                                    { id: 'textPass', htmlFor: 'exampleFormControlSelect1' },
-                                    'Direccion Destino'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'form-group formulario' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', readOnly: true, className: 'form-control-plaintext', id: 'staticdireccion', value: 'calle 23a' })
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'modal-footer' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'button',
-                                    { type: 'button', className: 'btn btn-danger', 'data-dismiss': 'modal' },
-                                    'Cancelar'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'button',
-                                    { type: 'button', className: 'btn btn-danger' },
-                                    'Aceptar'
-                                )
-                            )
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Card;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-
-/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["d" /* withRouter */])(Card));
-
-/***/ }),
-/* 102 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(5)(false);
-// imports
-
-
-// module
-exports.push([module.i, ".card-body{\r\n    padding-top: 50px;\r\n    position: relative;    \r\n}\r\n\r\npre {\r\n    tab-size: 8;\r\n}\r\n\r\n.card-img {\r\n    width: 100px ;\r\n    height: 100px;\r\n    margin-top: 10px;\r\n    border-radius:150px;\r\n}\r\n\r\n.card {\r\n    background-color: #fff;\r\n    margin-top: 10px;\r\n    box-shadow: 1px 1px 8px #999;\r\n    cursor: pointer;\r\n\r\n}\r\n.card-title {\r\n    margin-top: 10px;\r\n\ttext-transform: uppercase;\r\n    color: #E44424;\r\n    font-weight: 800;\r\n}\r\n\r\n.cardimage{\r\n    position: fixed;\r\n    display: inline-block;\r\n}\r\n.cardbody{\r\n    position: relative;\r\n    width: 50%;\r\n    left: 120px; \r\n    height: 120px;\r\n    display: inline-block;\r\n\r\n}", ""]);
-
-// exports
-
-
-/***/ }),
-/* 103 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-function checkDCE() {
-  /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */
-  if (
-    typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === 'undefined' ||
-    typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== 'function'
-  ) {
-    return;
-  }
-  if (true) {
-    // This branch is unreachable because this function is only called
-    // in production, but the condition is true only in development.
-    // Therefore if the branch is still here, dead code elimination wasn't
-    // properly applied.
-    // Don't change the message. React DevTools relies on it. Also make sure
-    // this message doesn't occur elsewhere in this function, or it will cause
-    // a false positive.
-    throw new Error('^_^');
-  }
-  try {
-    // Verify that the code above has been dead code eliminated (DCE'd).
-    __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE(checkDCE);
-  } catch (err) {
-    // DevTools shouldn't crash React, no matter what.
-    // We should still report in case we break this code.
-    console.error(err);
-  }
-}
-
-if (false) {
-  // DCE check should happen before ReactDOM bundle executes so that
-  // DevTools can report bad minification during injection.
-  checkDCE();
-  module.exports = require('./cjs/react-dom.production.min.js');
-} else {
-  module.exports = __webpack_require__(104);
-}
-
-
-/***/ }),
-/* 104 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/** @license React v16.6.1
- * react-dom.development.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-
-
-if (true) {
-  (function() {
-'use strict';
-
-var React = __webpack_require__(0);
-var _assign = __webpack_require__(15);
-var checkPropTypes = __webpack_require__(16);
-var scheduler = __webpack_require__(105);
-var tracing = __webpack_require__(107);
-
-/**
- * Use invariant() to assert state which your program assumes to be true.
- *
- * Provide sprintf-style format (only %s is supported) and arguments
- * to provide information about what broke and what you were
- * expecting.
- *
- * The invariant message will be stripped in production, but the invariant
- * will remain to ensure logic does not differ in production.
- */
-
-var validateFormat = function () {};
-
-{
-  validateFormat = function (format) {
-    if (format === undefined) {
-      throw new Error('invariant requires an error message argument');
-    }
-  };
-}
-
-function invariant(condition, format, a, b, c, d, e, f) {
-  validateFormat(format);
-
-  if (!condition) {
-    var error = void 0;
-    if (format === undefined) {
-      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');
-    } else {
-      var args = [a, b, c, d, e, f];
-      var argIndex = 0;
-      error = new Error(format.replace(/%s/g, function () {
-        return args[argIndex++];
-      }));
-      error.name = 'Invariant Violation';
-    }
-
-    error.framesToPop = 1; // we don't care about invariant's own frame
-    throw error;
-  }
-}
-
-// Relying on the `invariant()` implementation lets us
-// preserve the format and params in the www builds.
-
-!React ? invariant(false, 'ReactDOM was loaded before React. Make sure you load the React package before loading ReactDOM.') : void 0;
-
-var invokeGuardedCallbackImpl = function (name, func, context, a, b, c, d, e, f) {
-  var funcArgs = Array.prototype.slice.call(arguments, 3);
-  try {
-    func.apply(context, funcArgs);
-  } catch (error) {
-    this.onError(error);
-  }
-};
-
-{
-  // In DEV mode, we swap out invokeGuardedCallback for a special version
-  // that plays more nicely with the browser's DevTools. The idea is to preserve
-  // "Pause on exceptions" behavior. Because React wraps all user-provided
-  // functions in invokeGuardedCallback, and the production version of
-  // invokeGuardedCallback uses a try-catch, all user exceptions are treated
-  // like caught exceptions, and the DevTools won't pause unless the developer
-  // takes the extra step of enabling pause on caught exceptions. This is
-  // untintuitive, though, because even though React has caught the error, from
-  // the developer's perspective, the error is uncaught.
-  //
-  // To preserve the expected "Pause on exceptions" behavior, we don't use a
-  // try-catch in DEV. Instead, we synchronously dispatch a fake event to a fake
-  // DOM node, and call the user-provided callback from inside an event handler
-  // for that fake event. If the callback throws, the error is "captured" using
-  // a global event handler. But because the error happens in a different
-  // event loop context, it does not interrupt the normal program flow.
-  // Effectively, this gives us try-catch behavior without actually using
-  // try-catch. Neat!
-
-  // Check that the browser supports the APIs we need to implement our special
-  // DEV version of invokeGuardedCallback
-  if (typeof window !== 'undefined' && typeof window.dispatchEvent === 'function' && typeof document !== 'undefined' && typeof document.createEvent === 'function') {
-    var fakeNode = document.createElement('react');
-
-    var invokeGuardedCallbackDev = function (name, func, context, a, b, c, d, e, f) {
-      // If document doesn't exist we know for sure we will crash in this method
-      // when we call document.createEvent(). However this can cause confusing
-      // errors: https://github.com/facebookincubator/create-react-app/issues/3482
-      // So we preemptively throw with a better message instead.
-      !(typeof document !== 'undefined') ? invariant(false, 'The `document` global was defined when React was initialized, but is not defined anymore. This can happen in a test environment if a component schedules an update from an asynchronous callback, but the test has already finished running. To solve this, you can either unmount the component at the end of your test (and ensure that any asynchronous operations get canceled in `componentWillUnmount`), or you can change the test itself to be asynchronous.') : void 0;
-      var evt = document.createEvent('Event');
-
-      // Keeps track of whether the user-provided callback threw an error. We
-      // set this to true at the beginning, then set it to false right after
-      // calling the function. If the function errors, `didError` will never be
-      // set to false. This strategy works even if the browser is flaky and
-      // fails to call our global error handler, because it doesn't rely on
-      // the error event at all.
-      var didError = true;
-
-      // Keeps track of the value of window.event so that we can reset it
-      // during the callback to let user code access window.event in the
-      // browsers that support it.
-      var windowEvent = window.event;
-
-      // Keeps track of the descriptor of window.event to restore it after event
-      // dispatching: https://github.com/facebook/react/issues/13688
-      var windowEventDescriptor = Object.getOwnPropertyDescriptor(window, 'event');
-
-      // Create an event handler for our fake event. We will synchronously
-      // dispatch our fake event using `dispatchEvent`. Inside the handler, we
-      // call the user-provided callback.
-      var funcArgs = Array.prototype.slice.call(arguments, 3);
-      function callCallback() {
-        // We immediately remove the callback from event listeners so that
-        // nested `invokeGuardedCallback` calls do not clash. Otherwise, a
-        // nested call would trigger the fake event handlers of any call higher
-        // in the stack.
-        fakeNode.removeEventListener(evtType, callCallback, false);
-
-        // We check for window.hasOwnProperty('event') to prevent the
-        // window.event assignment in both IE <= 10 as they throw an error
-        // "Member not found" in strict mode, and in Firefox which does not
-        // support window.event.
-        if (typeof window.event !== 'undefined' && window.hasOwnProperty('event')) {
-          window.event = windowEvent;
-        }
-
-        func.apply(context, funcArgs);
-        didError = false;
-      }
-
-      // Create a global error event handler. We use this to capture the value
-      // that was thrown. It's possible that this error handler will fire more
-      // than once; for example, if non-React code also calls `dispatchEvent`
-      // and a handler for that event throws. We should be resilient to most of
-      // those cases. Even if our error event handler fires more than once, the
-      // last error event is always used. If the callback actually does error,
-      // we know that the last error event is the correct one, because it's not
-      // possible for anything else to have happened in between our callback
-      // erroring and the code that follows the `dispatchEvent` call below. If
-      // the callback doesn't error, but the error event was fired, we know to
-      // ignore it because `didError` will be false, as described above.
-      var error = void 0;
-      // Use this to track whether the error event is ever called.
-      var didSetError = false;
-      var isCrossOriginError = false;
-
-      function handleWindowError(event) {
-        error = event.error;
-        didSetError = true;
-        if (error === null && event.colno === 0 && event.lineno === 0) {
-          isCrossOriginError = true;
-        }
-        if (event.defaultPrevented) {
-          // Some other error handler has prevented default.
-          // Browsers silence the error report if this happens.
-          // We'll remember this to later decide whether to log it or not.
-          if (error != null && typeof error === 'object') {
-            try {
-              error._suppressLogging = true;
-            } catch (inner) {
-              // Ignore.
-            }
-          }
-        }
-      }
-
-      // Create a fake event type.
-      var evtType = 'react-' + (name ? name : 'invokeguardedcallback');
-
-      // Attach our event handlers
-      window.addEventListener('error', handleWindowError);
-      fakeNode.addEventListener(evtType, callCallback, false);
-
-      // Synchronously dispatch our fake event. If the user-provided function
-      // errors, it will trigger our global error handler.
-      evt.initEvent(evtType, false, false);
-      fakeNode.dispatchEvent(evt);
-
-      if (windowEventDescriptor) {
-        Object.defineProperty(window, 'event', windowEventDescriptor);
-      }
-
-      if (didError) {
-        if (!didSetError) {
-          // The callback errored, but the error event never fired.
-          error = new Error('An error was thrown inside one of your components, but React ' + "doesn't know what it was. This is likely due to browser " + 'flakiness. React does its best to preserve the "Pause on ' + 'exceptions" behavior of the DevTools, which requires some ' + "DEV-mode only tricks. It's possible that these don't work in " + 'your browser. Try triggering the error in production mode, ' + 'or switching to a modern browser. If you suspect that this is ' + 'actually an issue with React, please file an issue.');
-        } else if (isCrossOriginError) {
-          error = new Error("A cross-origin error was thrown. React doesn't have access to " + 'the actual error object in development. ' + 'See https://fb.me/react-crossorigin-error for more information.');
-        }
-        this.onError(error);
-      }
-
-      // Remove our event listeners
-      window.removeEventListener('error', handleWindowError);
-    };
-
-    invokeGuardedCallbackImpl = invokeGuardedCallbackDev;
-  }
-}
-
-var invokeGuardedCallbackImpl$1 = invokeGuardedCallbackImpl;
-
-// Used by Fiber to simulate a try-catch.
-var hasError = false;
-var caughtError = null;
-
-// Used by event system to capture/rethrow the first error.
-var hasRethrowError = false;
-var rethrowError = null;
-
-var reporter = {
-  onError: function (error) {
-    hasError = true;
-    caughtError = error;
-  }
-};
-
-/**
- * Call a function while guarding against errors that happens within it.
- * Returns an error if it throws, otherwise null.
- *
- * In production, this is implemented using a try-catch. The reason we don't
- * use a try-catch directly is so that we can swap out a different
- * implementation in DEV mode.
- *
- * @param {String} name of the guard to use for logging or debugging
- * @param {Function} func The function to invoke
- * @param {*} context The context to use when calling the function
- * @param {...*} args Arguments for function
- */
-function invokeGuardedCallback(name, func, context, a, b, c, d, e, f) {
-  hasError = false;
-  caughtError = null;
-  invokeGuardedCallbackImpl$1.apply(reporter, arguments);
-}
-
-/**
- * Same as invokeGuardedCallback, but instead of returning an error, it stores
- * it in a global so it can be rethrown by `rethrowCaughtError` later.
- * TODO: See if caughtError and rethrowError can be unified.
- *
- * @param {String} name of the guard to use for logging or debugging
- * @param {Function} func The function to invoke
- * @param {*} context The context to use when calling the function
- * @param {...*} args Arguments for function
- */
-function invokeGuardedCallbackAndCatchFirstError(name, func, context, a, b, c, d, e, f) {
-  invokeGuardedCallback.apply(this, arguments);
-  if (hasError) {
-    var error = clearCaughtError();
-    if (!hasRethrowError) {
-      hasRethrowError = true;
-      rethrowError = error;
-    }
-  }
-}
-
-/**
- * During execution of guarded functions we will capture the first error which
- * we will rethrow to be handled by the top level error handler.
- */
-function rethrowCaughtError() {
-  if (hasRethrowError) {
-    var error = rethrowError;
-    hasRethrowError = false;
-    rethrowError = null;
-    throw error;
-  }
-}
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 
   var baseUrl = location.protocol + "//" + location.host;
   var currentDir = baseUrl + location.pathname.replace(/\/[^\/]*$/, "/");
@@ -44781,7 +43487,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(7)(content, options);
+var update = __webpack_require__(6)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -44801,7 +43507,7 @@ if(false) {
 /* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(6)(false);
+exports = module.exports = __webpack_require__(5)(false);
 // imports
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto);", ""]);
 
@@ -44895,7 +43601,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(7)(content, options);
+var update = __webpack_require__(6)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -44915,7 +43621,7 @@ if(false) {
 /* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(6)(false);
+exports = module.exports = __webpack_require__(5)(false);
 // imports
 
 
@@ -45174,7 +43880,7 @@ var Card = function (_Component) {
 /* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(6)(false);
+exports = module.exports = __webpack_require__(5)(false);
 // imports
 
 
@@ -65624,67 +64330,6 @@ exports.unstable_shouldYield = unstable_shouldYield;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-<<<<<<< HEAD
-
-
-if (false) {
-  module.exports = require('./cjs/scheduler-tracing.production.min.js');
-} else {
-  module.exports = __webpack_require__(108);
-}
-
-
-/***/ }),
-/* 108 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/** @license React v0.11.3
- * scheduler-tracing.development.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-
-
-if (true) {
-  (function() {
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-// Helps identify side effects in begin-phase lifecycle hooks and setState reducers:
-
-
-// In some cases, StrictMode should also double-render lifecycles.
-// This can be confusing for tests though,
-// And it can be bad for performance in production.
-// This feature flag can be used to control the behavior:
-
-
-// To preserve the "Pause on caught exceptions" behavior of the debugger, we
-// replay the begin phase of a failed component inside invokeGuardedCallback.
-
-
-// Warn about deprecated, async-unsafe lifecycles; relates to RFC #6:
-
-
-// Gather advanced timing metrics for Profiler subtrees.
-
-
-// Trace which interactions trigger each commit.
-var enableSchedulerTracing = true;
-
-// Only used in www builds.
-
-
-// Only used in www builds.
-=======
 
 
 if (false) {
@@ -65746,82 +64391,6 @@ var enableSchedulerTracing = true;
 // Only used in www builds.
 
 
-// React Fire: prevent the value and checked attributes from syncing
-// with their related DOM properties
-
-
-// These APIs will no longer be "unstable" in the upcoming 16.7 release,
-// Control this behavior with a flag to support 16.6 minor releases in the meanwhile.
-
-var DEFAULT_THREAD_ID = 0;
-
-// Counters used to generate unique IDs.
-var interactionIDCounter = 0;
-var threadIDCounter = 0;
-
-// Set of currently traced interactions.
-// Interactions "stack"–
-// Meaning that newly traced interactions are appended to the previously active set.
-// When an interaction goes out of scope, the previous set (if any) is restored.
-exports.__interactionsRef = null;
-
-// Listener(s) to notify when interactions begin and end.
-exports.__subscriberRef = null;
-
-if (enableSchedulerTracing) {
-  exports.__interactionsRef = {
-    current: new Set()
-  };
-  exports.__subscriberRef = {
-    current: null
-  };
-}
-
-function unstable_clear(callback) {
-  if (!enableSchedulerTracing) {
-    return callback();
-  }
-
-  var prevInteractions = exports.__interactionsRef.current;
-  exports.__interactionsRef.current = new Set();
-
-  try {
-    return callback();
-  } finally {
-    exports.__interactionsRef.current = prevInteractions;
-  }
-}
-
-function unstable_getCurrent() {
-  if (!enableSchedulerTracing) {
-    return null;
-  } else {
-    return exports.__interactionsRef.current;
-  }
-}
-
-function unstable_getThreadID() {
-  return ++threadIDCounter;
-}
-
-function unstable_trace(name, timestamp, callback) {
-  var threadID = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : DEFAULT_THREAD_ID;
-
-  if (!enableSchedulerTracing) {
-    return callback();
-  }
-
-  var interaction = {
-    __count: 1,
-    id: interactionIDCounter++,
-    name: name,
-    timestamp: timestamp
-  };
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
-
-  var prevInteractions = exports.__interactionsRef.current;
-
-<<<<<<< HEAD
 // React Fire: prevent the value and checked attributes from syncing
 // with their related DOM properties
 
@@ -66067,178 +64636,6 @@ function unstable_unsubscribe(subscriber) {
 }
 
 function onInteractionTraced(interaction) {
-=======
-  // Traced interactions should stack/accumulate.
-  // To do that, clone the current interactions.
-  // The previous set will be restored upon completion.
-  var interactions = new Set(prevInteractions);
-  interactions.add(interaction);
-  exports.__interactionsRef.current = interactions;
-
-  var subscriber = exports.__subscriberRef.current;
-  var returnValue = void 0;
-
-  try {
-    if (subscriber !== null) {
-      subscriber.onInteractionTraced(interaction);
-    }
-  } finally {
-    try {
-      if (subscriber !== null) {
-        subscriber.onWorkStarted(interactions, threadID);
-      }
-    } finally {
-      try {
-        returnValue = callback();
-      } finally {
-        exports.__interactionsRef.current = prevInteractions;
-
-        try {
-          if (subscriber !== null) {
-            subscriber.onWorkStopped(interactions, threadID);
-          }
-        } finally {
-          interaction.__count--;
-
-          // If no async work was scheduled for this interaction,
-          // Notify subscribers that it's completed.
-          if (subscriber !== null && interaction.__count === 0) {
-            subscriber.onInteractionScheduledWorkCompleted(interaction);
-          }
-        }
-      }
-    }
-  }
-
-  return returnValue;
-}
-
-function unstable_wrap(callback) {
-  var threadID = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : DEFAULT_THREAD_ID;
-
-  if (!enableSchedulerTracing) {
-    return callback;
-  }
-
-  var wrappedInteractions = exports.__interactionsRef.current;
-
-  var subscriber = exports.__subscriberRef.current;
-  if (subscriber !== null) {
-    subscriber.onWorkScheduled(wrappedInteractions, threadID);
-  }
-
-  // Update the pending async work count for the current interactions.
-  // Update after calling subscribers in case of error.
-  wrappedInteractions.forEach(function (interaction) {
-    interaction.__count++;
-  });
-
-  var hasRun = false;
-
-  function wrapped() {
-    var prevInteractions = exports.__interactionsRef.current;
-    exports.__interactionsRef.current = wrappedInteractions;
-
-    subscriber = exports.__subscriberRef.current;
-
-    try {
-      var returnValue = void 0;
-
-      try {
-        if (subscriber !== null) {
-          subscriber.onWorkStarted(wrappedInteractions, threadID);
-        }
-      } finally {
-        try {
-          returnValue = callback.apply(undefined, arguments);
-        } finally {
-          exports.__interactionsRef.current = prevInteractions;
-
-          if (subscriber !== null) {
-            subscriber.onWorkStopped(wrappedInteractions, threadID);
-          }
-        }
-      }
-
-      return returnValue;
-    } finally {
-      if (!hasRun) {
-        // We only expect a wrapped function to be executed once,
-        // But in the event that it's executed more than once–
-        // Only decrement the outstanding interaction counts once.
-        hasRun = true;
-
-        // Update pending async counts for all wrapped interactions.
-        // If this was the last scheduled async work for any of them,
-        // Mark them as completed.
-        wrappedInteractions.forEach(function (interaction) {
-          interaction.__count--;
-
-          if (subscriber !== null && interaction.__count === 0) {
-            subscriber.onInteractionScheduledWorkCompleted(interaction);
-          }
-        });
-      }
-    }
-  }
-
-  wrapped.cancel = function cancel() {
-    subscriber = exports.__subscriberRef.current;
-
-    try {
-      if (subscriber !== null) {
-        subscriber.onWorkCanceled(wrappedInteractions, threadID);
-      }
-    } finally {
-      // Update pending async counts for all wrapped interactions.
-      // If this was the last scheduled async work for any of them,
-      // Mark them as completed.
-      wrappedInteractions.forEach(function (interaction) {
-        interaction.__count--;
-
-        if (subscriber && interaction.__count === 0) {
-          subscriber.onInteractionScheduledWorkCompleted(interaction);
-        }
-      });
-    }
-  };
-
-  return wrapped;
-}
-
-var subscribers = null;
-if (enableSchedulerTracing) {
-  subscribers = new Set();
-}
-
-function unstable_subscribe(subscriber) {
-  if (enableSchedulerTracing) {
-    subscribers.add(subscriber);
-
-    if (subscribers.size === 1) {
-      exports.__subscriberRef.current = {
-        onInteractionScheduledWorkCompleted: onInteractionScheduledWorkCompleted,
-        onInteractionTraced: onInteractionTraced,
-        onWorkCanceled: onWorkCanceled,
-        onWorkScheduled: onWorkScheduled,
-        onWorkStarted: onWorkStarted,
-        onWorkStopped: onWorkStopped
-      };
-    }
-  }
-}
-
-function unstable_unsubscribe(subscriber) {
-  if (enableSchedulerTracing) {
-    subscribers.delete(subscriber);
-
-    if (subscribers.size === 0) {
-      exports.__subscriberRef.current = null;
-    }
-  }
-}
-
-function onInteractionTraced(interaction) {
   var didCatchError = false;
   var caughtError = null;
 
@@ -66259,17 +64656,12 @@ function onInteractionTraced(interaction) {
 }
 
 function onInteractionScheduledWorkCompleted(interaction) {
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
   var didCatchError = false;
   var caughtError = null;
 
   subscribers.forEach(function (subscriber) {
     try {
-<<<<<<< HEAD
-      subscriber.onInteractionTraced(interaction);
-=======
       subscriber.onInteractionScheduledWorkCompleted(interaction);
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
     } catch (error) {
       if (!didCatchError) {
         didCatchError = true;
@@ -66283,21 +64675,13 @@ function onInteractionScheduledWorkCompleted(interaction) {
   }
 }
 
-<<<<<<< HEAD
-function onInteractionScheduledWorkCompleted(interaction) {
-=======
 function onWorkScheduled(interactions, threadID) {
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
   var didCatchError = false;
   var caughtError = null;
 
   subscribers.forEach(function (subscriber) {
     try {
-<<<<<<< HEAD
-      subscriber.onInteractionScheduledWorkCompleted(interaction);
-=======
       subscriber.onWorkScheduled(interactions, threadID);
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
     } catch (error) {
       if (!didCatchError) {
         didCatchError = true;
@@ -66311,21 +64695,13 @@ function onWorkScheduled(interactions, threadID) {
   }
 }
 
-<<<<<<< HEAD
-function onWorkScheduled(interactions, threadID) {
-=======
 function onWorkStarted(interactions, threadID) {
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
   var didCatchError = false;
   var caughtError = null;
 
   subscribers.forEach(function (subscriber) {
     try {
-<<<<<<< HEAD
-      subscriber.onWorkScheduled(interactions, threadID);
-=======
       subscriber.onWorkStarted(interactions, threadID);
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
     } catch (error) {
       if (!didCatchError) {
         didCatchError = true;
@@ -66339,35 +64715,6 @@ function onWorkStarted(interactions, threadID) {
   }
 }
 
-<<<<<<< HEAD
-function onWorkStarted(interactions, threadID) {
-=======
-function onWorkStopped(interactions, threadID) {
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
-  var didCatchError = false;
-  var caughtError = null;
-
-  subscribers.forEach(function (subscriber) {
-    try {
-<<<<<<< HEAD
-      subscriber.onWorkStarted(interactions, threadID);
-=======
-      subscriber.onWorkStopped(interactions, threadID);
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
-    } catch (error) {
-      if (!didCatchError) {
-        didCatchError = true;
-        caughtError = error;
-      }
-    }
-  });
-
-  if (didCatchError) {
-    throw caughtError;
-  }
-}
-
-<<<<<<< HEAD
 function onWorkStopped(interactions, threadID) {
   var didCatchError = false;
   var caughtError = null;
@@ -66408,28 +64755,6 @@ function onWorkCanceled(interactions, threadID) {
   }
 }
 
-=======
-function onWorkCanceled(interactions, threadID) {
-  var didCatchError = false;
-  var caughtError = null;
-
-  subscribers.forEach(function (subscriber) {
-    try {
-      subscriber.onWorkCanceled(interactions, threadID);
-    } catch (error) {
-      if (!didCatchError) {
-        didCatchError = true;
-        caughtError = error;
-      }
-    }
-  });
-
-  if (didCatchError) {
-    throw caughtError;
-  }
-}
-
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 exports.unstable_clear = unstable_clear;
 exports.unstable_getCurrent = unstable_getCurrent;
 exports.unstable_getThreadID = unstable_getThreadID;
@@ -66517,11 +64842,6 @@ var Ajustes = function (_Component) {
             password: null
         };
         return _this;
-<<<<<<< HEAD
-    }
-
-    _createClass(Ajustes, [{
-=======
     }
 
     _createClass(Ajustes, [{
@@ -66715,134 +65035,20 @@ var Spinner = function (_Component) {
     }
 
     _createClass(Spinner, [{
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
         key: 'render',
         value: function render() {
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
-<<<<<<< HEAD
-                { className: ' row justify-content-center bodyAjustes text-center' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: ' col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5  main-section  ajustes' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'modal-content ajustes' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'col-12' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { id: 'foto', className: 'form-group ajustes' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: 'https://www.ngenespanol.com/wp-content/uploads/2018/08/La-primera-imagen-de-la-historia.jpg' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                null,
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'label',
-                                    null,
-                                    'Cambiar imagen'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { id: 'divFile', className: 'form-group ajustes' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'file', id: 'file', className: 'form-control text-center center-block', onChange: this.fileChangedHandler, placeholder: 'imagen' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                null,
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'label',
-                                    null,
-                                    'Registre direccion de domicilio'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'form-group ' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'select',
-                                    { className: 'form-control ', id: 'FormControlSelect1' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'option',
-                                        null,
-                                        'unare'
-                                    )
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                null,
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', className: 'form-control', name: 'direccion', placeholder: 'Direccion' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'p-2' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'label',
-                                    null,
-                                    'si desea cambiar su Contrase\xF1a:'
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'form-group ajustes pass_show' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'password', className: 'form-control', onChange: this.handleImputChange, name: 'password', placeholder: 'Nueva Contrase\xF1a' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'form-group ajustes pass_show' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'password', className: 'form-control', name: 'passwordR', placeholder: 'Repita Contrase\xF1a' })
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'd-flex ' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'p-2 mr-auto' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'button',
-                                        { type: 'button', className: 'btn ajustes' },
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fas fa-ban ' }),
-                                        'Cancel'
-                                    )
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'p-2 ml-auto' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'button',
-                                        { onClick: this.registrar, type: 'submit', className: 'btn ajustes' },
-                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fas fa-check ' }),
-                                        'Aplicar'
-                                    )
-                                )
-                            )
-                        )
-                    )
-=======
                 { className: 'container-fluid ' },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     { className: 'padre' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'lds-dual-ring ' })
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
                 )
             );
         }
     }]);
 
-<<<<<<< HEAD
-    return Ajustes;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-
-/* unused harmony default export */ var _unused_webpack_default_export = (Ajustes);
-
-/***/ }),
-/* 110 */
-=======
     return Spinner;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
@@ -66850,17 +65056,12 @@ var Spinner = function (_Component) {
 
 /***/ }),
 /* 113 */
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-<<<<<<< HEAD
-var content = __webpack_require__(111);
-=======
 var content = __webpack_require__(114);
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -66868,23 +65069,14 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-<<<<<<< HEAD
-var update = __webpack_require__(7)(content, options);
-=======
 var update = __webpack_require__(6)(content, options);
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-<<<<<<< HEAD
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!./ajustes.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!./ajustes.css");
-=======
 		module.hot.accept("!!../../../node_modules/css-loader/index.js!./spinner.css", function() {
 			var newContent = require("!!../../../node_modules/css-loader/index.js!./spinner.css");
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -66894,46 +65086,27 @@ if(false) {
 }
 
 /***/ }),
-<<<<<<< HEAD
-/* 111 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(6)(false);
-=======
 /* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(5)(false);
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 // imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto);", ""]);
+
 
 // module
-<<<<<<< HEAD
-exports.push([module.i, ".bodyAjustes{\r\n    margin-top: 70px;\r\n    color:white;\r\n}\r\n\r\n#foto.ajustes img{\r\n    width: 140px ;\r\n    height: 140px;\r\n    margin-top: -50px;\r\n    border-radius:150px;\r\n}\r\n\r\nbody.ajustes{\r\n    font-family: 'Roboto', sans-serif;\r\n}\r\n\r\ninput[type=number]::-webkit-inner-spin-button {\r\n    -webkit-appearance: none;\r\n  }\r\n\r\n.modal-content.ajustes{\r\n    background-color: #0072ff;\r\n    opacity: 0.95;\r\n    box-shadow: 0px 0px 3px #848484;\r\n}\r\n\r\n.form-group.ajustes input{\r\n    height: 42px;\r\n    border-radius: 5px;\r\n    border: 0;\r\n    font-size: 18px;\r\n    padding-left: 54px\r\n}\r\n#divFile.form-group.ajustes input{\r\n    height: 46px;\r\n    border-radius: 5px;\r\n    border: 0;\r\n    font-size: 18px;\r\n    padding-left: 12px\r\n}\r\n\r\n.form-group.ajustes::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\\F007\";\r\n    position: absolute;\r\n    font-size: 22px;\r\n    color: #f36c01;\r\n    left: 28px;\r\n    padding-top: 4px;\r\n}\r\n\r\n#divFile.form-group.ajustes::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\";\r\n}\r\n#foto.form-group.ajustes::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\";\r\n}\r\n\r\n.form-group#email::before{\r\n    content: \"\\F1FA\";\r\n}\r\n.form-group#dni::before{\r\n    content: \"\\F2C2\";\r\n}\r\n.form-group#dni::before{\r\n    content: \"\\F2C2\";\r\n}\r\n\r\n/* boton show de las password */\r\n\r\n.form-group.pass_show::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\\F023\";\r\n    position: absolute;\r\n    font-size: 22px;\r\n    color: #f36c01;\r\n    left: 14px;\r\n    padding-top: 4px;\r\n}\r\n\r\n.pass_show{position: relative} \r\n\r\n.pass_show .ptxt { \r\n\r\nposition: absolute; \r\n\r\ntop: 50%; \r\n\r\nright: 10px; \r\n\r\nz-index: 1; \r\n\r\ncolor: #f36c01; \r\n\r\nmargin-top: -10px; \r\n\r\ncursor: pointer; \r\n\r\ntransition: .3s ease all; \r\n\r\n} \r\n\r\n.pass_show .ptxt:hover{color: #333333;} \r\n\r\n.btn.ajustes{\r\n    width: 120px;\r\n    background-color:#f36c01;\r\n    color: aliceblue;\r\n}\r\n\r\n\r\n/* -------------------- */", ""]);
-=======
 exports.push([module.i, "\r\n.lds-dual-ring {\r\n    display: flex;\r\n     align-items: center;\r\n     justify-content: center;\r\n     height: 100vh;\r\n    width: 80px;\r\n    height: 80px;\r\n  }\r\n  /* DIOS PARA CENTRAR */\r\n  .padre{\r\n    display: flex;\r\n     align-items: center;\r\n     justify-content: center;\r\n     height: 100vh;\r\n  }\r\n/* ----------------------- */\r\n\r\n  .lds-dual-ring:after {\r\n    content: \" \";\r\n    display: block;\r\n    width: 80px;\r\n    height: 80px;\r\n\r\n    border-radius: 50%;\r\n    border: 10px solid #0072ff;\r\n    border-color: #0072ff transparent #0072ff transparent;\r\n    animation: lds-dual-ring 1.4s linear infinite;\r\n  }\r\n  @keyframes lds-dual-ring {\r\n    0% {\r\n      transform: rotate(0deg);\r\n    }\r\n    100% {\r\n      transform: rotate(360deg);\r\n    }\r\n  }", ""]);
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 
 // exports
 
 
 /***/ }),
-<<<<<<< HEAD
-/* 112 */
-=======
 /* 115 */
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-<<<<<<< HEAD
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__AventonDetalles_css__ = __webpack_require__(113);
-=======
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__AventonDetalles_css__ = __webpack_require__(116);
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__AventonDetalles_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__AventonDetalles_css__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -67121,24 +65294,16 @@ var AventonDetalles = function (_Component) {
     return AventonDetalles;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-/* harmony default export */ __webpack_exports__["a"] = (AventonDetalles);
+/* unused harmony default export */ var _unused_webpack_default_export = (AventonDetalles);
 
 /***/ }),
-<<<<<<< HEAD
-/* 113 */
-=======
 /* 116 */
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-<<<<<<< HEAD
-var content = __webpack_require__(114);
-=======
 var content = __webpack_require__(117);
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -67146,11 +65311,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-<<<<<<< HEAD
-var update = __webpack_require__(7)(content, options);
-=======
 var update = __webpack_require__(6)(content, options);
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -67167,17 +65328,10 @@ if(false) {
 }
 
 /***/ }),
-<<<<<<< HEAD
-/* 114 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(6)(false);
-=======
 /* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(5)(false);
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 // imports
 
 
@@ -67188,9 +65342,6 @@ exports.push([module.i, ".card.detalles {\r\n    text-transform: uppercase;\r\n 
 
 
 /***/ }),
-<<<<<<< HEAD
-/* 115 */
-=======
 /* 118 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -67363,7 +65514,6 @@ exports.push([module.i, ".bodyAventon{\r\n    margin-top: 90px\r\n}\r\n\r\n.card
 
 /***/ }),
 /* 121 */
->>>>>>> d1acf9d7ea499bb64cd55d49e43d86a0d8d27d58
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
