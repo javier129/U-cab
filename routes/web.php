@@ -30,6 +30,7 @@ Route::group(['prefix' => 'ajax'], function() {
     Route::post('/NewAventon','AventonController@store');
     Route::get('/zonas','ZonaController@index');
     Route::get('/aventones','AventonController@index');
+    Route::get('/aventones/{aventonId}','AventonController@show');
 });
 
 Route::get('/{path?}', function () {

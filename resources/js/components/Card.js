@@ -15,6 +15,16 @@ class Card extends Component {
        // this.props.history.push('/registro')
         console.log( document.getElementById('exampleModal').style.display);
         $(`#aceptarAventon${this.props.aventon.id}`).modal('show'); 
+       //this.props.history.push('/AventonDetalles');
+    }
+    handleAcept=(e)=>{
+        //this.props.history.push(`/AventonDetalles/:${this.state.aventon.id}`);
+        $(`#aceptarAventon${this.props.aventon.id}`).modal('hide'); 
+        this.props.history.push({
+            pathname: '/AventonDetalles',
+            search: `?${this.state.aventon.id}`,
+            state: { aventonId: this.state.aventon.id}
+          })
     }
 
     render() {
@@ -60,7 +70,7 @@ class Card extends Component {
                         </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                                <button type="button" className="btn btn-danger">Aceptar</button>
+                                <button type="button" onClick={this.handleAcept} className="btn btn-danger">Aceptar</button>
                             </div>
                         </div>
                     </div>

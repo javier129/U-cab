@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar';
 import CardsView from './CardsView';
+//import AventonDetalles from './AventonDetalles'
+import { Route, Redirect } from 'react-router-dom'
 export default class App extends Component {
     constructor(props){
         super(props);
@@ -25,6 +27,7 @@ export default class App extends Component {
     render() {
        let x = document.getElementsByTagName("META")[2].attributes.content.nodeValue;
        console.log(x);
+       console.log(this.props.match.path);
        if(sessionStorage.getItem('user')){
             // { this.state.user && <img src={`/storage/${this.state.user.img}`}  alt=""/>}
        }

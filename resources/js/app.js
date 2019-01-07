@@ -82,6 +82,8 @@ export default class Example extends Component {
                         !this.state.loginSuscess ? <Login handleLoginForUser={this.handleUserLogin}/> : <Redirect to={'/'}/>  }/> 
                     <PrivateRoute user={this.state.user} userStatus={this.state.loginSuscess} exact path='/' component={App}/>
                     <Route exact path='/Registro' component={Registro}/>
+                    <Route  exact path='/AventonDetalles' render={(props)=>
+                         <AventonDetalles {...props}></AventonDetalles> } />
                 </div>
             </BrowserRouter>
         );

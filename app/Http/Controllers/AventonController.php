@@ -64,9 +64,13 @@ class AventonController extends Controller
      * @param  \App\Aventon  $aventon
      * @return \Illuminate\Http\Response
      */
-    public function show(Aventon $aventon)
+    public function show(Request $request)
     {
-        //
+        $aventonDatalle= Aventon::with('user','zona')->where('id',$request->aventonId)->get();
+        return response()->json([
+           'aventon'=>$aventonDatalle,
+            'id'=>$request->aventonId
+        ]);
     }
 
     /**
