@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './login.css';
-import logo from './face.png';
+import logo from './logo.png';
 class Login extends Component {
 
     
@@ -35,9 +35,9 @@ class Login extends Component {
         
         return (            
 
-                <div className="row d-flex flex-column bodyLogin login">
+                <div className="row d-flex flex-column bodyLogin login align-items-center text-center">
                   
-                    <div className="col-sm-12 col-lg-4 main-section login p-2 justify-content-center offset-lg-4">
+                    <div className="col-10 col-sm-10 col-md-10 col-lg-4 main-section login justify-content-center ">
                         
                         <div className="modal-content login">
                             <div className="d-flex justify-content-center  user-img" >

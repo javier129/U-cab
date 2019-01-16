@@ -59,9 +59,13 @@ pre {
     font-weight: 800;
 }
 
-.modal.navbar{
+.modal.fade.navbar.mod{
     color: #0072ff;
     font-weight: bold;
+}
+#textPass#mod{
+    color: #0072ff;
+    font-weight: bolder;
 }
 
 @media screen and (max-width: 990px) {

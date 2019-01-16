@@ -91,7 +91,7 @@ class Navbar extends Component {
 
                 {/* Modal */}
  
-                 <div className="modal fade navbar" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                 <div className="modal fade navbar mod" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                      <div className="modal-dialog" role="document">
                          <div className="modal-content">
                              <div className="modal-header">
@@ -102,8 +102,8 @@ class Navbar extends Component {
                              </div>
                          <div className="modal-body">
 
-                             <div className="form-group ">
-                                 <label id="textPass" htmlFor="exampleFormControlSelect1">Zona Destino</label>
+                             <div className="form-group mod">
+                                 <label id="textPass mod" htmlFor="exampleFormControlSelect1">Zona Destino</label>
                                  <select onChange={this.handleImputChange} className="form-control " name="zona">
                                     {console.log(this.state.zonas)}
                                     <option  value=''>Seleccione una opción</option>
@@ -116,12 +116,12 @@ class Navbar extends Component {
 
                                  </select>
                              </div>
-                             <label id="textPass" htmlFor="exampleFormControlSelect1">Direccion Destino</label>
+                             <label id="textPass mod" htmlFor="exampleFormControlSelect1">Direccion Destino</label>
                              <div className="form-group formulario">
                                  <input onChange={this.handleImputChange} type="text" className="form-control" name="destino" placeholder="Destino"/>
                              </div>   
-                             <div className="form-group">
-                                 <label id="textPass" htmlFor="exampleFormControlSelect1">Numero De Pasajeros</label>
+                             <div className="form-group mod">
+                                 <label id="textPass mod" htmlFor="exampleFormControlSelect1">Numero De Pasajeros</label>
                                  <select onChange={this.handleImputChange} className="form-control" name="pasajeroNum">
                                      <option>1</option>
                                      <option>2</option>
