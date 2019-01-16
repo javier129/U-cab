@@ -58,7 +58,7 @@ class Card extends Component {
 
                     {/* Modal */}
 
-                    <div className="row modal fade navbar mod text-center justify-content-center" id={`aceptarAventon${this.props.aventon.id}`} tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                     <div className="row modal fade navbar mod text-center justify-content-center" id={`aceptarAventon${this.props.aventon.id}`} tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className=" col-10 modal-dialog" role="document">
                         <div className="modal-content">
                             <div className="modal-header">
@@ -90,9 +90,47 @@ class Card extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> 
                 {/* ------- */}
-            </div>       
+
+                                    {/* Modal 2 */}
+                <div className="row modal fade navbar mod text-center justify-content-center" id={`aceptarAventon${this.props.aventon.id}`} tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className=" col-10 modal-dialog" role="document">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <h5 className="modal-title" id="exampleModalLabel">Aventon</h5>
+                                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        <div className="modal-body">
+
+                            <div className="row justify-content-center">
+                            <div className="col-11 cardModal">
+                            <div className="row">                        
+                            <div className="col-5 form-group text-left">
+                                <label id="textPass mod" htmlFor="exampleFormControlSelect1">Nombre Del Pasajero</label>
+                                <input type="text" readOnly className="form-control-plaintext" id="staticNombrePasajero" value={this.state.aventon.id}/>
+                            </div>
+                            <div className="col-6 form-group text-left">
+                                <label id="textPass mod" htmlFor="exampleFormControlSelect1">Numero De Contacto</label>
+                                <input type="text" readOnly className="form-control-plaintext" id="nContacto" value={this.state.aventon.zona.descripcion}/>
+                            </div> 
+                            </div>
+                            
+                        </div>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-danger" data-dismiss="modal">Cerrar Aventon</button>
+                            <button type="button" className="btn btn-success">Aventon Completado</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+  
+
+                </div>  
 
         );
     }

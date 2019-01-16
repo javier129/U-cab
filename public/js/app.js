@@ -43102,7 +43102,10 @@ var PrivateRoute = function PrivateRoute(_ref) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__login_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__login_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__logo_png__ = __webpack_require__(94);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__logo_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__logo_png__);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_router_dom__ = __webpack_require__(8);
+=======
+>>>>>>> f67fe9b8d6a2ce57d4037d73ac635946292367ac
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -43923,6 +43926,7 @@ var Card = function (_Component) {
                                 { className: 'modal-body' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
+<<<<<<< HEAD
                                     { className: 'form-group text-left' },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         'label',
@@ -43968,6 +43972,51 @@ var Card = function (_Component) {
                                     'button',
                                     { type: 'button', onClick: this.handleAcept, className: 'btn btn-danger' },
                                     'Aceptar'
+=======
+                                    { className: 'row justify-content-center' },
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'col-11 cardModal' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'div',
+                                            { className: 'row' },
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'div',
+                                                { className: 'col-5 form-group text-left' },
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'label',
+                                                    { id: 'textPass mod', htmlFor: 'exampleFormControlSelect1' },
+                                                    'Nombre Del Pasajero'
+                                                ),
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', readOnly: true, className: 'form-control-plaintext', id: 'staticNombrePasajero', value: this.state.aventon.id })
+                                            ),
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'div',
+                                                { className: 'col-6 form-group text-left' },
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'label',
+                                                    { id: 'textPass mod', htmlFor: 'exampleFormControlSelect1' },
+                                                    'Numero De Contacto'
+                                                ),
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', readOnly: true, className: 'form-control-plaintext', id: 'nContacto', value: this.state.aventon.zona.descripcion })
+                                            )
+                                        )
+                                    ),
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        'div',
+                                        { className: 'modal-footer' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'button',
+                                            { type: 'button', className: 'btn btn-danger', 'data-dismiss': 'modal' },
+                                            'Cerrar Aventon'
+                                        ),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'button',
+                                            { type: 'button', className: 'btn btn-success' },
+                                            'Aventon Completado'
+                                        )
+                                    )
+>>>>>>> f67fe9b8d6a2ce57d4037d73ac635946292367ac
                                 )
                             )
                         )
@@ -43991,7 +44040,11 @@ exports = module.exports = __webpack_require__(5)(false);
 
 
 // module
+<<<<<<< HEAD
 exports.push([module.i, ".card-body{\r\n    padding-top: 50px;\r\n    position: relative;\r\n}\r\n\r\npre {\r\n    tab-size: 8;\r\n}\r\n\r\n.card-img {\r\n    width: 100px ;\r\n    height: 100px;\r\n    margin-top: 10px;\r\n    border-radius:150px;\r\n}\r\n\r\n.card {\r\n    background-color: #00C3FF;\r\n    margin-top: 10px;\r\n    box-shadow: 1px 1px 8px #999;\r\n    cursor: pointer;\r\n\r\n\r\n}\r\n.card-title {\r\n    font-size: 20px;\r\n    margin-top: 15px;\r\n\ttext-transform: uppercase;\r\n    color: white;\r\n    font-weight: bolder;\r\n}\r\n\r\n.cardimage{\r\n    position: fixed;\r\n    display: inline-block;\r\n}\r\n\r\n#textPass#mod{\r\n    color: #0072ff;\r\n    font-weight: bolder;\r\n}\r\n\r\nhr#cardhr {\r\n    margin-top: -10px;\r\n    margin-bottom: 15px; \r\n    height:0.8px; \r\n    border:none; \r\n    color:whitesmoke; \r\n    background-color:whitesmoke; \r\n    width:150%; \r\n\r\n}\r\n\r\n.cardbody{\r\n    position: relative;\r\n    width: 50%;\r\n    left: 120px; \r\n    height: 120px;\r\n    display: inline-block;\r\n    color: white;\r\n    font-size: 17px;\r\n}\r\n", ""]);
+=======
+exports.push([module.i, ".card-body{\r\n    padding-top: 50px;\r\n    position: relative;\r\n}\r\n\r\npre {\r\n    tab-size: 8;\r\n}\r\n\r\n.card-img {\r\n    width: 100px ;\r\n    height: 100px;\r\n    margin-top: 10px;\r\n    border-radius:150px;\r\n}\r\n\r\n.card {\r\n    background-color: #00C3FF;\r\n    margin-top: 10px;\r\n    box-shadow: 1px 1px 8px #999;\r\n    cursor: pointer;\r\n\r\n\r\n}\r\n.cardModal {\r\n    padding-top: 10px;\r\n    box-shadow: 1px 1px 8px #999;\r\n    border-radius:10px;\r\n}\r\n.card-title {\r\n    font-size: 20px;\r\n    margin-top: 15px;\r\n\ttext-transform: uppercase;\r\n    color: white;\r\n    font-weight: bolder;\r\n}\r\n\r\n.cardimage{\r\n    position: fixed;\r\n    display: inline-block;\r\n}\r\n\r\n#textPass#mod{\r\n    color: #0072ff;\r\n    font-weight: bolder;\r\n}\r\n\r\nhr#cardhr {\r\n    margin-top: -10px;\r\n    margin-bottom: 15px; \r\n    height:0.8px; \r\n    border:none; \r\n    color:whitesmoke; \r\n    background-color:whitesmoke; \r\n    width:150%; \r\n\r\n}\r\n\r\n.cardbody{\r\n    position: relative;\r\n    width: 50%;\r\n    left: 120px; \r\n    height: 120px;\r\n    display: inline-block;\r\n    color: white;\r\n    font-size: 17px;\r\n}\r\n", ""]);
+>>>>>>> f67fe9b8d6a2ce57d4037d73ac635946292367ac
 
 // exports
 
