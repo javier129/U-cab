@@ -62,17 +62,35 @@ class AventonController extends Controller
     
     public function historial(Request $request)
     {
-
-        $aventon= Aventon::with('user','zona')->where('conductorId',Auth::id())->where('status',1)->get();
-        if($aventon){
-           $pasageros= $aventon[0]->aventonPasagero;
+        $pasajeros=[];
+        $aventonConductor= Aventon::with('user','zona')->where('conductorId',Auth::id())->where('status',1)->get();
+        if(count($aventonConductor)>0){
+            foreach ($aventonConductor[0]->aventonPasagero as $value) {
+                $pasajeros[]=$value->pasajero;
+            }
+            $aventonConductor[0]['pasageros']=$pasajeros;
            return response()->json([
-            'pasageros'=> $pasageros
+            'aventon'=>$aventonConductor,
+            'tipo'=>1
          ]);
         }else{
-            $pasagero= Aventon_pasagero::where('pasageroId',Auth::id())->where('status',1)->get();
+            $pasageroA=[];
+            $aventonPasagero=[];
+            $pasagero= Aventon_pasagero::where('pasageroId',Auth::id())->where('status_pasagero',1)->get();
+            if(count($pasagero)>0){
+                $aux=$pasagero[0]->aventon;
+                $aux['user']->user;
+                $aux['zona']=$pasagero[0]->aventon->zona;
+                $aventonPasagero[] = $aux;
+                $pasageroA[]= $pasagero;
+                return response()->json([
+                    'pasagero'=>$pasageroA,
+                    'aventon'=>$aventonPasagero,
+                    'tipo'=>2
+                 ]);
+            }
             return response()->json([
-                'pasagero'=>$pasagero
+               "error"=>'no hay ninguna pendiente'
              ]);
         }
        // $pasagero= Aventon_pasagero::where('pasageroId',Auth::id())->where('status_pasagero',1)->get();
@@ -180,6 +198,14 @@ class AventonController extends Controller
     public function CancelarAventon(Request $request){
         $aventonPagero = Aventon_pasagero::where('aventonId',$request->aventonId)->where('pasageroId',Auth::id());
         $aventonPagero->update(['status_pasagero'=>3]);
+        return response()->json([ 
+            'updated'=> 'true',
+        ]);
+
+    }
+    public function CancelarAventonConductor(Request $request){
+        $Aventon = Aventon::where('id',$request->aventonId);
+        $Aventon->update(['status'=>3]);
         return response()->json([ 
             'updated'=> 'true',
         ]);

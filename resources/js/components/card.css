@@ -26,6 +26,7 @@ pre {
     padding-top: 10px;
     box-shadow: 1px 1px 8px #999;
     border-radius:10px;
+    margin-bottom: 15px;
 }
 .card-title {
     font-size: 20px;
@@ -64,4 +65,14 @@ hr#cardhr {
     display: inline-block;
     color: white;
     font-size: 17px;
+}
+
+.cardModalGreen{
+    background: lightgreen;
+}
+.cardModalRed{
+    background: lightpink;
+}
+.cardModalwhite{
+    background: white;
 }

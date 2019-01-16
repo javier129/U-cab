@@ -10,7 +10,8 @@ export default class App extends Component {
         axios(uri).then(response=>{
             if(response.data){
                this.setState({
-                aventones :response.data.aventones
+                aventones :response.data.aventones,
+                tipoUsuario:null
                })
             }
         })
@@ -19,11 +20,13 @@ export default class App extends Component {
         let dato=null;
         let uri2 = 'http://127.0.0.1:8000/ajax/aventon/pendientes';
         axios(uri2).then(response=>{
-            if(response.data){
+            if(response.data.aventon){
+                console.log('esto es pendientesmkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk');
                 console.log(response.data);
-              /* this.setState({
-                aventones :response.data.aventones
-               })*/
+               this.setState({
+                aventones :response.data.aventon,
+                tipoUsuario: response.data.tipo
+               })
             }
         })
     }
@@ -31,10 +34,11 @@ export default class App extends Component {
         super(props);
         this.state={
             user:this.props.user,
-            aventones:null
+            aventones:null,
+            tipoUsuario:null
         }
         this.aventones();
-        this.halndlePendiente();
+        //this.halndlePendiente();
     }
     
    /* componentDidMount(){
@@ -60,8 +64,8 @@ export default class App extends Component {
        }
         return (
             <div className="container">
-                <Navbar/>
-                <CardsView aventones={this.state.aventones}/>
+                <Navbar tablero={this.aventones} pendiente={this.halndlePendiente}/>
+                <CardsView tipoU={this.state.tipoUsuario} aventones={this.state.aventones}/>
             </div>
         );
     }

@@ -60,10 +60,10 @@ class Navbar extends Component {
                             <a className="navbar-brand" href="#">Ucab</a>
                             <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                                 <li className="nav-item active">
-                                    <a className="nav-link" href="#">Tablero <span className="sr-only">(current)</span></a>
+                                    <a onClick={this.props.tablero} className="nav-link" href="#">Tablero <span className="sr-only">(current)</span></a>
                                 </li>
                                 <li className="nav-item active">
-                                    <a className="nav-link" href="#">Pendiente</a>
+                                    <a onClick={this.props.pendiente} className="nav-link" href="#">Pendiente</a>
                                 </li>
                                 <li className="nav-item active">
                                     <a className="nav-link" href="#">Completados</a>
