@@ -20,6 +20,10 @@ class Aventon extends Model
         return $this->belongsTo('App\Zona','zonaId','id');
     }
 
+    public function aventonPasagero(){
+        return $this->hasMany('App\Aventon_pasagero','aventonId','id');
+    }
+
 
 }
 

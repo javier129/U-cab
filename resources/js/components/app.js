@@ -15,6 +15,18 @@ export default class App extends Component {
             }
         })
     }
+    halndlePendiente=(e)=>{
+        let dato=null;
+        let uri2 = 'http://127.0.0.1:8000/ajax/aventon/pendientes';
+        axios(uri2).then(response=>{
+            if(response.data){
+                console.log(response.data);
+              /* this.setState({
+                aventones :response.data.aventones
+               })*/
+            }
+        })
+    }
     constructor(props){
         super(props);
         this.state={
@@ -22,6 +34,7 @@ export default class App extends Component {
             aventones:null
         }
         this.aventones();
+        this.halndlePendiente();
     }
     
    /* componentDidMount(){

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './registro.css';
+import  {withRouter } from "react-router-dom";
 import Axios from 'axios';
 
 
@@ -15,6 +16,9 @@ class Registro extends Component {
             tlf:null,
             password:null,
         }
+    }
+    handleCancel=(e)=>{
+     this.props.history.goBack();
     }
     handleImputChange = event=> {
         event.preventDefault();
@@ -80,7 +84,7 @@ class Registro extends Component {
                     
                                 <div className="d-flex ">
                                     <div className=" mr-auto">
-                                        <button type="button" className="btn registro">
+                                        <button onClick={this.handleCancel} type="button" className="btn registro">
                                             <i className="fas fa-ban "></i>
                                             Cancel
                                         </button>
@@ -108,4 +112,4 @@ class Registro extends Component {
 
 
 
-export default Registro;
+export default withRouter(Registro);

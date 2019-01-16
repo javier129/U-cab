@@ -59,6 +59,29 @@ class AventonController extends Controller
            'create'=>true
         ],200);
     }
+    
+    public function historial(Request $request)
+    {
+
+        $aventon= Aventon::with('user','zona')->where('conductorId',Auth::id())->where('status',1)->get();
+        if($aventon){
+           $pasageros= $aventon[0]->aventonPasagero;
+           return response()->json([
+            'pasageros'=> $pasageros
+         ]);
+        }else{
+            $pasagero= Aventon_pasagero::where('pasageroId',Auth::id())->where('status',1)->get();
+            return response()->json([
+                'pasagero'=>$pasagero
+             ]);
+        }
+       // $pasagero= Aventon_pasagero::where('pasageroId',Auth::id())->where('status_pasagero',1)->get();
+       /* foreach ($aventon as $aventonaux) {
+            $aventon['pasagero']=$aventonaux->aventonPasagero;
+        }*/
+       // $aventonDatalle->aventonPasagero;
+       
+    }
 
     /**
      * Display the specified resource.
@@ -71,9 +94,14 @@ class AventonController extends Controller
         $aventonDatalle= Aventon::with('user','zona')->where('id',$request->aventonId)->get();
         return response()->json([
            'aventon'=>$aventonDatalle,
-            'id'=>$request->aventonId
+            'id'=>$request->aventonId,
+            'ff'=>'njbjb'
         ]);
     }
+
+
+
+
 
     /**
      * Show the form for editing the specified resource.

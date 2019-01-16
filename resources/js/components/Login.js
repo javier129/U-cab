@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './login.css';
 import logo from './logo.png';
+import { Link } from 'react-router-dom'
 class Login extends Component {
 
     
@@ -11,7 +12,6 @@ class Login extends Component {
             Email: '',
             password:''
         }
-
     }  
     
     handlelogin = event =>{
@@ -64,7 +64,7 @@ class Login extends Component {
                                     <a href="#">Forgot Password?</a>  
                                 </div>
                                 <div className="p-2 d-flex justify-content-center">  
-                                        <a href="#">Register</a> 
+                                <Link to="/registro">Registro</Link>
                                     </div>
                             </div>
                         </div>

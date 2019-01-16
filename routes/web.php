@@ -34,6 +34,7 @@ Route::group(['prefix' => 'ajax'], function() {
     Route::post('/aventones/aceptarAventon','AventonController@AceptarAventon');
     Route::post('/aventones/completar','AventonController@TerminarAventon');
     Route::post('/aventones/CancelarAventon','AventonController@CancelarAventon');
+    Route::get('/aventon/pendientes','AventonController@historial');
 });
 
 Route::get('/{path?}', function () {

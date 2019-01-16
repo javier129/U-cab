@@ -68,15 +68,9 @@ class Card extends Component {
                                 </button>
                             </div>
                         <div className="modal-body">
-<<<<<<< HEAD
-                            <div className="form-group ">
-                                <label id="textPass" htmlFor="exampleFormControlSelect1">Nombre Del Conductor</label>
-                                <input type="text" readOnly className="form-control-plaintext" id="staticNombreConductor" value={this.state.aventon.user.name}/>
-=======
                             <div className="form-group text-left">
                                 <label id="textPass mod" htmlFor="exampleFormControlSelect1">Nombre Del Conductor</label>
                                 <input type="text" readOnly className="form-control-plaintext" id="staticNombreConductor" value={this.state.aventon.id}/>
->>>>>>> 9c93d841822fcb56d01fadb87d7e17bbaa3bb504
                             </div>
                             <div className="form-group text-left">
                                 <label id="textPass mod" htmlFor="exampleFormControlSelect1">Zona Destino</label>

@@ -14,4 +14,8 @@ class Aventon_pasagero extends Model
     public function pasajeros(){
         return $this->hasMany('App\User','id','pasageroId');
     }
+
+    public function aventon(){
+        return $this->belongsTo('App\Aventon','aventonId','id');
+    }
 }
