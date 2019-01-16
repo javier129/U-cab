@@ -16168,7 +16168,7 @@ var Navbar = function (_Component) {
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
-                    { className: 'modal fade navbar', id: 'exampleModal', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'exampleModalLabel', 'aria-hidden': 'true' },
+                    { className: 'modal fade navbar mod', id: 'exampleModal', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'exampleModalLabel', 'aria-hidden': 'true' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'div',
                         { className: 'modal-dialog', role: 'document' },
@@ -16198,10 +16198,10 @@ var Navbar = function (_Component) {
                                 { className: 'modal-body' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
-                                    { className: 'form-group ' },
+                                    { className: 'form-group mod' },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         'label',
-                                        { id: 'textPass', htmlFor: 'exampleFormControlSelect1' },
+                                        { id: 'textPass mod', htmlFor: 'exampleFormControlSelect1' },
                                         'Zona Destino'
                                     ),
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -16224,7 +16224,7 @@ var Navbar = function (_Component) {
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'label',
-                                    { id: 'textPass', htmlFor: 'exampleFormControlSelect1' },
+                                    { id: 'textPass mod', htmlFor: 'exampleFormControlSelect1' },
                                     'Direccion Destino'
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -16234,10 +16234,10 @@ var Navbar = function (_Component) {
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
-                                    { className: 'form-group' },
+                                    { className: 'form-group mod' },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         'label',
-                                        { id: 'textPass', htmlFor: 'exampleFormControlSelect1' },
+                                        { id: 'textPass mod', htmlFor: 'exampleFormControlSelect1' },
                                         'Numero De Pasajeros'
                                     ),
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -43100,8 +43100,8 @@ var PrivateRoute = function PrivateRoute(_ref) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__login_css__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__login_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__login_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__face_png__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__face_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__face_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__logo_png__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__logo_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__logo_png__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -43152,17 +43152,17 @@ var Login = function (_Component) {
 
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
-                { className: 'row d-flex flex-column bodyLogin login' },
+                { className: 'row d-flex flex-column bodyLogin login align-items-center text-center' },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
-                    { className: 'col-sm-12 col-lg-4 main-section login p-2 justify-content-center offset-lg-4' },
+                    { className: 'col-10 col-sm-10 col-md-10 col-lg-4 main-section login justify-content-center ' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'div',
                         { className: 'modal-content login' },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'div',
                             { className: 'd-flex justify-content-center  user-img' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__face_png___default.a })
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: __WEBPACK_IMPORTED_MODULE_2__logo_png___default.a })
                         ),
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'div',
@@ -43261,7 +43261,7 @@ exports = module.exports = __webpack_require__(5)(false);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto);", ""]);
 
 // module
-exports.push([module.i, ".bodyLogin{\r\n    font-family: 'Roboto', sans-serif;\r\n}\r\n\r\n.main-section.login{\r\n\r\n    margin-top: 130px;\r\n    padding: 0\r\n}\r\n\r\n.modal-content.login{ \r\n    background-color: #0072ff;\r\n    opacity: 0.95;\r\n    box-shadow: 0px 0px 3px #848484;\r\n}\r\n\r\n.user-img{\r\n    margin-top: -50px;\r\n    margin-bottom: 35px;\r\n}\r\n\r\n.user-img img{\r\n    height: 150px;\r\n    width: 150px;\r\n    border-radius: 5px;\r\n    box-shadow: 0px 0px 2px #848484;\r\n}\r\n\r\n#login.form-group{\r\n    margin-bottom: 25px \r\n }\r\n\r\n .form-group.login input{\r\n    height: 42px;\r\n    border-radius: 5px;\r\n    border: 0;\r\n    font-size: 18px;\r\n    padding-left: 54px\r\n}\r\n\r\n.form-group.login::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\\F007\";\r\n    position: absolute;\r\n    font-size: 22px;\r\n    color: #ff7830;\r\n    left: 28px;\r\n    padding-top: 4px;\r\n    \r\n}\r\n\r\n.form-group.login:last-od-type::before{\r\n    content: \"\\F023\"\r\n}\r\n\r\n.button.login{\r\n    width: 80%;\r\n    margin: 5px 0 25px\r\n}\r\n\r\n.btn.login{\r\n    background-color: #ff7830;\r\n    color: #fff;\r\n    font-size: 19px;\r\n    border-radius: 5px;\r\n    padding: 7px 14px;\r\n    border-bottom: 4px solid #ad4d1900\r\n}\r\n\r\n.btn.login:hover, .btn.login:focus{\r\n    background-color: #b3480f ! important;\r\n    border-bottom: 4px solid #ff783000 ! important\r\n}\r\n\r\n.svg-inline.login--fa{\r\n    font-size: 20px;\r\n    margin-right: 7px\r\n}\r\n\r\n.forgot{\r\n    padding: 5px 0 25px\r\n}\r\n\r\n.forgot a {\r\n    color:#c2fbfe\r\n}\r\n", ""]);
+exports.push([module.i, ".bodyLogin{\r\n    font-family: 'Roboto', sans-serif;\r\n}\r\n\r\n.main-section.login{\r\n\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    height: 100vh;\r\n}\r\n\r\n.modal-content.login{ \r\n    background-color: #0072ff;\r\n    opacity: 0.95;\r\n    box-shadow: 0px 0px 3px #848484;\r\n}\r\n\r\n.user-img{\r\n    margin-top: -50px;\r\n    margin-bottom: 35px;\r\n}\r\n\r\n.user-img img{\r\n    height: 150px;\r\n    width: 150px;\r\n    border-radius: 20px;\r\n    box-shadow: 0px 0px 2px #848484;\r\n}\r\n\r\n#login.form-group{\r\n    margin-bottom: 25px \r\n }\r\n\r\n .form-group.login input{\r\n    height: 42px;\r\n    border-radius: 5px;\r\n    border: 0;\r\n    font-size: 18px;\r\n    padding-left: 54px\r\n}\r\n\r\n.form-group.login::before{\r\n    font-family:  'Font Awesome 5 Free';\r\n    content: \"\\F007\";\r\n    position: absolute;\r\n    font-size: 22px;\r\n    color: #ff7830;\r\n    left: 28px;\r\n    padding-top: 4px;\r\n    \r\n}\r\n\r\n.form-group.login:last-od-type::before{\r\n    content: \"\\F023\"\r\n}\r\n\r\n.button.login{\r\n    width: 80%;\r\n    margin: 5px 0 25px\r\n}\r\n\r\n.btn.login{\r\n    background-color: #ff7830;\r\n    color: #fff;\r\n    font-size: 19px;\r\n    border-radius: 5px;\r\n    padding: 7px 14px;\r\n    border-bottom: 4px solid #ad4d1900\r\n}\r\n\r\n.btn.login:hover, .btn.login:focus{\r\n    background-color: #b3480f ! important;\r\n    border-bottom: 4px solid #ff783000 ! important\r\n}\r\n\r\n.svg-inline.login--fa{\r\n    font-size: 20px;\r\n    margin-right: 7px\r\n}\r\n\r\n.forgot{\r\n    padding: 5px 0 25px\r\n}\r\n\r\n.forgot a {\r\n    color:#c2fbfe\r\n}\r\n", ""]);
 
 // exports
 
@@ -43365,7 +43365,7 @@ module.exports = function (css) {
 /* 94 */
 /***/ (function(module, exports) {
 
-module.exports = "/images/face.png?486275ea2f9332e5f637a0c6b3c16aaf";
+module.exports = "/images/logo.png?36b92ab5fbf8886a21834c7a4c4078d9";
 
 /***/ }),
 /* 95 */
@@ -43702,7 +43702,7 @@ exports = module.exports = __webpack_require__(5)(false);
 
 
 // module
-exports.push([module.i, ".body-navbar {\r\n    font-family: 'Roboto', sans-serif;\r\n    padding-top: 50px;\r\n    position: relative;\r\n}\r\n\r\n#plusbutton{\r\n    margin-right: 30px;\r\n    height: 36px;\r\n}\r\n\r\nnav {\r\n    background-color: #0072ff;\r\n}\r\n\r\n#cerrars{\r\n    position: relative;\r\n    margin-left: 20px;\r\n}\r\n\r\n\r\npre {\r\n    tab-size: 8;\r\n}\r\n\r\n.card-img {\r\n    width: 100px ;\r\n    height: 100px;\r\n    margin-top: 10px;\r\n    border-radius:150px;\r\n}\r\n\r\n.card {\r\n    background-color: #fff;\r\n    margin-top: 10px;\r\n    box-shadow: 1px 1px 8px #999;\r\n    cursor: pointer;\r\n\r\n}\r\n.card-title {\r\n\ttext-transform: uppercase;\r\n\tcolor: #E44424;\r\n}\r\n\r\n.cardimage{\r\n    position: fixed;\r\n    display: inline-block;\r\n}\r\n.cardbody{\r\n    position: relative;\r\n    width: 50%;\r\n    left: 120px; \r\n    height: 12rem;\r\n    display: inline-block;\r\n\r\n}\r\n\r\n.modal-title{\r\n    font-weight: 800;\r\n}\r\n\r\n.modal.navbar{\r\n    color: #0072ff;\r\n    font-weight: bold;\r\n}\r\n\r\n@media screen and (max-width: 990px) {\r\n    #plusbutton{\r\n        visibility: hidden;    \r\n    }\r\n}\r\n@media screen and (min-width: 990px) {\r\n    #plusbutton2{\r\n        visibility: hidden;    \r\n    }\r\n}\r\n\r\n\r\n", ""]);
+exports.push([module.i, ".body-navbar {\r\n    font-family: 'Roboto', sans-serif;\r\n    padding-top: 50px;\r\n    position: relative;\r\n}\r\n\r\n#plusbutton{\r\n    margin-right: 30px;\r\n    height: 36px;\r\n}\r\n\r\nnav {\r\n    background-color: #0072ff;\r\n}\r\n\r\n#cerrars{\r\n    position: relative;\r\n    margin-left: 20px;\r\n}\r\n\r\n\r\npre {\r\n    tab-size: 8;\r\n}\r\n\r\n.card-img {\r\n    width: 100px ;\r\n    height: 100px;\r\n    margin-top: 10px;\r\n    border-radius:150px;\r\n}\r\n\r\n.card {\r\n    background-color: #fff;\r\n    margin-top: 10px;\r\n    box-shadow: 1px 1px 8px #999;\r\n    cursor: pointer;\r\n\r\n}\r\n.card-title {\r\n\ttext-transform: uppercase;\r\n\tcolor: #E44424;\r\n}\r\n\r\n.cardimage{\r\n    position: fixed;\r\n    display: inline-block;\r\n}\r\n.cardbody{\r\n    position: relative;\r\n    width: 50%;\r\n    left: 120px; \r\n    height: 12rem;\r\n    display: inline-block;\r\n\r\n}\r\n\r\n.modal-title{\r\n    font-weight: 800;\r\n}\r\n\r\n.modal.fade.navbar.mod{\r\n    color: #0072ff;\r\n    font-weight: bold;\r\n}\r\n#textPass#mod{\r\n    color: #0072ff;\r\n    font-weight: bolder;\r\n}\r\n\r\n@media screen and (max-width: 990px) {\r\n    #plusbutton{\r\n        visibility: hidden;    \r\n    }\r\n}\r\n@media screen and (min-width: 990px) {\r\n    #plusbutton2{\r\n        visibility: hidden;    \r\n    }\r\n}\r\n\r\n\r\n", ""]);
 
 // exports
 
@@ -43847,7 +43847,7 @@ var Card = function (_Component) {
                     { className: 'row justify-content-center' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'div',
-                        { onClick: this.handleClick, className: 'card col-sm-12 col-xs-12 col-lg-8 col-md-8' },
+                        { onClick: this.handleClick, className: 'card col-sm-12 col-xs-12 col-lg-7 col-md-7' },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'div',
                             { className: 'cardimage' },
@@ -43861,6 +43861,7 @@ var Card = function (_Component) {
                                 { className: 'card-title' },
                                 this.props.aventon.usuario.name
                             ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('hr', { id: 'cardhr' }),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'p',
                                 null,
@@ -43871,10 +43872,10 @@ var Card = function (_Component) {
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
-                    { className: 'modal fade navbar', id: 'aceptarAventon' + this.props.aventon.id, tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'exampleModalLabel', 'aria-hidden': 'true' },
+                    { className: 'row modal fade navbar mod text-center justify-content-center', id: 'aceptarAventon' + this.props.aventon.id, tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'exampleModalLabel', 'aria-hidden': 'true' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'div',
-                        { className: 'modal-dialog', role: 'document' },
+                        { className: ' col-10 modal-dialog', role: 'document' },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'div',
                             { className: 'modal-content' },
@@ -43901,47 +43902,49 @@ var Card = function (_Component) {
                                 { className: 'modal-body' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',
-                                    { className: 'form-group ' },
+                                    { className: 'row justify-content-center' },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'label',
-                                        { id: 'textPass', htmlFor: 'exampleFormControlSelect1' },
-                                        'Nombre Del Conductor'
+                                        'div',
+                                        { className: 'col-11 cardModal' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'div',
+                                            { className: 'row' },
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'div',
+                                                { className: 'col-5 form-group text-left' },
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'label',
+                                                    { id: 'textPass mod', htmlFor: 'exampleFormControlSelect1' },
+                                                    'Nombre Del Pasajero'
+                                                ),
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', readOnly: true, className: 'form-control-plaintext', id: 'staticNombrePasajero', value: this.state.aventon.id })
+                                            ),
+                                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                'div',
+                                                { className: 'col-6 form-group text-left' },
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                                    'label',
+                                                    { id: 'textPass mod', htmlFor: 'exampleFormControlSelect1' },
+                                                    'Numero De Contacto'
+                                                ),
+                                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', readOnly: true, className: 'form-control-plaintext', id: 'nContacto', value: this.state.aventon.zona.descripcion })
+                                            )
+                                        )
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', readOnly: true, className: 'form-control-plaintext', id: 'staticNombreConductor', value: this.state.aventon.user.name })
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'form-group ' },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                        'label',
-                                        { id: 'textPass', htmlFor: 'exampleFormControlSelect1' },
-                                        'Zona Destino'
-                                    ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', readOnly: true, className: 'form-control-plaintext', id: 'staticzona', value: this.state.aventon.zona.descripcion })
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'label',
-                                    { id: 'textPass', htmlFor: 'exampleFormControlSelect1' },
-                                    'Direccion Destino'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'div',
-                                    { className: 'form-group formulario' },
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', readOnly: true, className: 'form-control-plaintext', id: 'staticdireccion', value: this.state.aventon.direcion })
-                                )
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'modal-footer' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'button',
-                                    { type: 'button', className: 'btn btn-danger', 'data-dismiss': 'modal' },
-                                    'Cancelar'
-                                ),
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    'button',
-                                    { type: 'button', onClick: this.handleAcept, className: 'btn btn-danger' },
-                                    'Aceptar'
+                                        'div',
+                                        { className: 'modal-footer' },
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'button',
+                                            { type: 'button', className: 'btn btn-danger', 'data-dismiss': 'modal' },
+                                            'Cerrar Aventon'
+                                        ),
+                                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                            'button',
+                                            { type: 'button', className: 'btn btn-success' },
+                                            'Aventon Completado'
+                                        )
+                                    )
                                 )
                             )
                         )
@@ -43965,7 +43968,7 @@ exports = module.exports = __webpack_require__(5)(false);
 
 
 // module
-exports.push([module.i, ".card-body{\r\n    padding-top: 50px;\r\n    position: relative;    \r\n}\r\n\r\npre {\r\n    tab-size: 8;\r\n}\r\n\r\n.card-img {\r\n    width: 100px ;\r\n    height: 100px;\r\n    margin-top: 10px;\r\n    border-radius:150px;\r\n}\r\n\r\n.card {\r\n    background-color: #fff;\r\n    margin-top: 10px;\r\n    box-shadow: 1px 1px 8px #999;\r\n    cursor: pointer;\r\n\r\n}\r\n.card-title {\r\n    margin-top: 10px;\r\n\ttext-transform: uppercase;\r\n    color: #E44424;\r\n    font-weight: 800;\r\n}\r\n\r\n.cardimage{\r\n    position: fixed;\r\n    display: inline-block;\r\n}\r\n.cardbody{\r\n    position: relative;\r\n    width: 50%;\r\n    left: 120px; \r\n    height: 120px;\r\n    display: inline-block;\r\n\r\n}", ""]);
+exports.push([module.i, ".card-body{\r\n    padding-top: 50px;\r\n    position: relative;\r\n}\r\n\r\npre {\r\n    tab-size: 8;\r\n}\r\n\r\n.card-img {\r\n    width: 100px ;\r\n    height: 100px;\r\n    margin-top: 10px;\r\n    border-radius:150px;\r\n}\r\n\r\n.card {\r\n    background-color: #00C3FF;\r\n    margin-top: 10px;\r\n    box-shadow: 1px 1px 8px #999;\r\n    cursor: pointer;\r\n\r\n\r\n}\r\n.cardModal {\r\n    padding-top: 10px;\r\n    box-shadow: 1px 1px 8px #999;\r\n    border-radius:10px;\r\n}\r\n.card-title {\r\n    font-size: 20px;\r\n    margin-top: 15px;\r\n\ttext-transform: uppercase;\r\n    color: white;\r\n    font-weight: bolder;\r\n}\r\n\r\n.cardimage{\r\n    position: fixed;\r\n    display: inline-block;\r\n}\r\n\r\n#textPass#mod{\r\n    color: #0072ff;\r\n    font-weight: bolder;\r\n}\r\n\r\nhr#cardhr {\r\n    margin-top: -10px;\r\n    margin-bottom: 15px; \r\n    height:0.8px; \r\n    border:none; \r\n    color:whitesmoke; \r\n    background-color:whitesmoke; \r\n    width:150%; \r\n\r\n}\r\n\r\n.cardbody{\r\n    position: relative;\r\n    width: 50%;\r\n    left: 120px; \r\n    height: 120px;\r\n    display: inline-block;\r\n    color: white;\r\n    font-size: 17px;\r\n}\r\n", ""]);
 
 // exports
 
@@ -65471,10 +65474,10 @@ var CardAventon = function (_Component) {
                 { className: 'container bodyAventon' },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
-                    { className: 'row d-flex flex-column justify-content-center align-items-center ' },
+                    { className: 'row d-flex flex-column justify-content-center align-items-center cAventon' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'div',
-                        { className: 'card col-11 col-sm-11 col-xs-11 col-lg-5 col-md-5 align-self-center p-2 text-center' },
+                        { className: 'card col-11 col-sm-11 col-xs-11 col-lg-5 col-md-5 align-self-center p-2 text-center cAventon' },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'h5',
                             { className: 'centro' },
@@ -65485,15 +65488,15 @@ var CardAventon = function (_Component) {
                             null,
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { className: 'form-group formulario' },
+                                { className: 'form-group formulario cAventon' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', className: 'form-control', id: 'formGroupExampleInput2', placeholder: 'Destino' })
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 'div',
-                                { className: 'form-group' },
+                                { className: 'form-group cAventon' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'label',
-                                    { id: 'textPass', htmlFor: 'exampleFormControlSelect1' },
+                                    { id: 'textPass ', htmlFor: 'exampleFormControlSelect1' },
                                     'Numero De Pasajeros'
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -65600,7 +65603,7 @@ exports = module.exports = __webpack_require__(5)(false);
 
 
 // module
-exports.push([module.i, ".bodyAventon{\r\n    margin-top: 90px\r\n}\r\n\r\n.card {\r\n    background-color: #fff;\r\n    margin-top: 10px;\r\n    box-shadow: 1px 1px 8px #999;\r\n    cursor: pointer;\r\n    background-color: #f8333c;\r\n}\r\n.centro{\r\n    font-weight: bold;\r\n    margin-top: 20px;\r\n    color: rgba(255, 255, 0, 0.876);\r\n    text-align: center;\r\n}\r\n.formulario{\r\n    margin-top: 30px\r\n}\r\n.btnAceptar{\r\n    width: 100%;\r\n    margin-top: 20px;\r\n}\r\n#textPass{\r\n    color: rgba(255, 255, 0, 0.876)\r\n}", ""]);
+exports.push([module.i, ".bodyAventon{\r\n    margin-top: 90px\r\n}\r\n\r\n.card.cAventon{\r\n    background-color: #fff;\r\n    margin-top: 10px;\r\n    box-shadow: 1px 1px 8px #999;\r\n    cursor: pointer;\r\n    background-color: #f8333c;\r\n}\r\n.centro{\r\n    font-weight: bold;\r\n    margin-top: 20px;\r\n    color: rgba(255, 255, 0, 0.876);\r\n    text-align: center;\r\n}\r\n.formulario{\r\n    margin-top: 30px\r\n}\r\n.btnAceptar{\r\n    width: 100%;\r\n    margin-top: 20px;\r\n}\r\n#textPass{\r\n    color: rgba(255, 255, 0, 0.876)\r\n}", ""]);
 
 // exports
 

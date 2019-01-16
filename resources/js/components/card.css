@@ -22,6 +22,11 @@ pre {
 
 
 }
+.cardModal {
+    padding-top: 10px;
+    box-shadow: 1px 1px 8px #999;
+    border-radius:10px;
+}
 .card-title {
     font-size: 20px;
     margin-top: 15px;
