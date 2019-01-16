@@ -43606,11 +43606,26 @@ var App = function (_Component) {
 
         var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
 
-        _this.state = {
-            user: _this.props.user
+        _this.aventones = function () {
+            var dato = null;
+            var uri = 'http://127.0.0.1:8000/ajax/aventones';
+            axios(uri).then(function (response) {
+                if (response.data) {
+                    _this.setState({
+                        aventones: response.data.aventones
+                    });
+                }
+            });
         };
+
+        _this.state = {
+            user: _this.props.user,
+            aventones: null
+        };
+        _this.aventones();
         return _this;
     }
+
     /* componentDidMount(){
              let dato=null;
              let uri = 'http://127.0.0.1:8000/ajax/usuario';
@@ -43637,7 +43652,7 @@ var App = function (_Component) {
                 'div',
                 { className: 'container' },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Navbar__["a" /* default */], null),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__CardsView__["a" /* default */], null)
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__CardsView__["a" /* default */], { aventones: this.state.aventones })
             );
         }
     }]);
@@ -43727,39 +43742,20 @@ var petciones = [{
 var CardsView = function (_Component) {
     _inherits(CardsView, _Component);
 
-    function CardsView() {
+    function CardsView(props) {
         _classCallCheck(this, CardsView);
 
-        var _this = _possibleConstructorReturn(this, (CardsView.__proto__ || Object.getPrototypeOf(CardsView)).call(this));
-
-        _this.aventones = function () {
-            var dato = null;
-            var uri = 'http://127.0.0.1:8000/ajax/aventones';
-            axios(uri).then(function (response) {
-                console.log(response.data);
-                if (response.data) {
-                    _this.setState({
-                        aventones: response.data.aventones
-                    });
-                }
-            });
-        };
-
-        _this.state = {
-            aventones: null
-        };
-        _this.aventones();
-        return _this;
+        return _possibleConstructorReturn(this, (CardsView.__proto__ || Object.getPrototypeOf(CardsView)).call(this, props));
     }
 
     _createClass(CardsView, [{
         key: 'render',
         value: function render() {
 
-            return this.state.aventones && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            return this.props.aventones && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
                 { className: 'container card-body' },
-                this.state.aventones.map(function (aventon) {
+                this.props.aventones.map(function (aventon) {
                     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Card__["a" /* default */], { aventon: aventon, key: aventon.id });
                 }),
                 ' '
@@ -43819,11 +43815,15 @@ var Card = function (_Component) {
 
             axios.post(uri, data).then(function (response) {
                 $('#aceptarAventon' + _this.props.aventon.id).modal('hide');
-                _this.props.history.push({
-                    pathname: '/AventonDetalles',
-                    search: '?' + _this.state.aventon.id,
-                    state: { aventonId: _this.state.aventon.id }
-                });
+                if (response.data.create == "false") {
+                    alert('No hay mas cupos');
+                } else {
+                    _this.props.history.push({
+                        pathname: '/AventonDetalles',
+                        search: '?' + _this.state.aventon.id,
+                        state: { aventonId: _this.state.aventon.id }
+                    });
+                }
             });
         };
 
@@ -43907,7 +43907,7 @@ var Card = function (_Component) {
                                         { id: 'textPass', htmlFor: 'exampleFormControlSelect1' },
                                         'Nombre Del Conductor'
                                     ),
-                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', readOnly: true, className: 'form-control-plaintext', id: 'staticNombreConductor', value: this.state.aventon.id })
+                                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', readOnly: true, className: 'form-control-plaintext', id: 'staticNombreConductor', value: this.state.aventon.user.name })
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     'div',

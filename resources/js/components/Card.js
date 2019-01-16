@@ -27,11 +27,15 @@ class Card extends Component {
        
         axios.post(uri,data).then(response=>{
             $(`#aceptarAventon${this.props.aventon.id}`).modal('hide'); 
-            this.props.history.push({
-                pathname: '/AventonDetalles',
-                search: `?${this.state.aventon.id}`,
-                state: { aventonId: this.state.aventon.id}
-              })
+            if(response.data.create=="false"){
+                alert('No hay mas cupos');
+            }else{
+                this.props.history.push({
+                    pathname: '/AventonDetalles',
+                    search: `?${this.state.aventon.id}`,
+                    state: { aventonId: this.state.aventon.id}
+                })
+            }
         })
       
     }
@@ -65,7 +69,7 @@ class Card extends Component {
                         <div className="modal-body">
                             <div className="form-group ">
                                 <label id="textPass" htmlFor="exampleFormControlSelect1">Nombre Del Conductor</label>
-                                <input type="text" readOnly className="form-control-plaintext" id="staticNombreConductor" value={this.state.aventon.id}/>
+                                <input type="text" readOnly className="form-control-plaintext" id="staticNombreConductor" value={this.state.aventon.user.name}/>
                             </div>
                             <div className="form-group ">
                                 <label id="textPass" htmlFor="exampleFormControlSelect1">Zona Destino</label>

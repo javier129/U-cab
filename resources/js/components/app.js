@@ -4,12 +4,26 @@ import CardsView from './CardsView';
 //import AventonDetalles from './AventonDetalles'
 import { Route, Redirect } from 'react-router-dom'
 export default class App extends Component {
+    aventones=()=>{
+        let dato=null;
+        let uri = 'http://127.0.0.1:8000/ajax/aventones';
+        axios(uri).then(response=>{
+            if(response.data){
+               this.setState({
+                aventones :response.data.aventones
+               })
+            }
+        })
+    }
     constructor(props){
         super(props);
         this.state={
-            user:this.props.user
+            user:this.props.user,
+            aventones:null
         }
+        this.aventones();
     }
+    
    /* componentDidMount(){
             let dato=null;
             let uri = 'http://127.0.0.1:8000/ajax/usuario';
@@ -34,7 +48,7 @@ export default class App extends Component {
         return (
             <div className="container">
                 <Navbar/>
-                <CardsView/>
+                <CardsView aventones={this.state.aventones}/>
             </div>
         );
     }
