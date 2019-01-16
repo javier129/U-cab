@@ -34,7 +34,7 @@ export default class Example extends Component {
         super();
         let login=false;
         console.log(sessionStorage.getItem('user'));
-        if(sessionStorage.getItem('user')!='undefined'){
+        if(sessionStorage.getItem('user')!='undefined' && sessionStorage.getItem('user')!=null ){
             login= true
             console.log('safsafasfsafasfsafsafsafsafsafsaf');
         }

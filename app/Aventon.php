@@ -9,7 +9,7 @@ class Aventon extends Model
     protected $table ="Aventones";
 
     protected $fillable = [
-        'n_pasageros', 'zonaId', 'direccion','conductorId'
+        'n_pasageros', 'zonaId', 'direccion','conductorId','status'
     ];
 
     public function user(){

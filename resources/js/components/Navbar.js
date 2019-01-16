@@ -106,6 +106,7 @@ class Navbar extends Component {
                                  <label id="textPass" htmlFor="exampleFormControlSelect1">Zona Destino</label>
                                  <select onChange={this.handleImputChange} className="form-control " name="zona">
                                     {console.log(this.state.zonas)}
+                                    <option  value=''>Seleccione una opción</option>
                                     {
                                       
                                         this.state.zonas!=null && this.state.zonas.map((zona)=>{

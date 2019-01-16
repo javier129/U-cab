@@ -19,6 +19,18 @@ class AventonDetalles extends Component {
     haldbleGoBack=()=>{
         this.props.history.goBack();
     }
+    handleCompletar=(e)=>{
+        const data = {
+            aventonId: this.props.location.state.aventonId
+        };
+        let uri = `http://127.0.0.1:8000/ajax/aventones/completar`;
+        axios.post(uri,data).then(response=>{
+            console.log('llega desde el servidor');
+            if(response.data){
+                this.props.history.goBack();
+            }
+        })
+    };
     constructor(props){
         super(props);
         this.state={
@@ -74,7 +86,7 @@ class AventonDetalles extends Component {
                              <button type="button" className="btn" data-toggle="modal" data-target="#cancelarModal">Cancelar</button>
                          </div>
                          <div className="col-5 col-sm-5 col-xs-6 ">
-                             <button id="aceptar" type="button" className="btn ">Completar</button>
+                             <button id="aceptar" onClick={this.handleCompletar} type="button" className="btn ">Completar</button>
                          </div>    
                  </div>
 

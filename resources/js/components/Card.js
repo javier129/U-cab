@@ -19,12 +19,21 @@ class Card extends Component {
     }
     handleAcept=(e)=>{
         //this.props.history.push(`/AventonDetalles/:${this.state.aventon.id}`);
-        $(`#aceptarAventon${this.props.aventon.id}`).modal('hide'); 
-        this.props.history.push({
-            pathname: '/AventonDetalles',
-            search: `?${this.state.aventon.id}`,
-            state: { aventonId: this.state.aventon.id}
-          })
+
+        let uri = 'http://127.0.0.1:8000/ajax/aventones/aceptarAventon';
+        let data = new FormData();
+        let avetonid= this.state.aventon.id;
+        data.append('avetonId', avetonid);
+       
+        axios.post(uri,data).then(response=>{
+            $(`#aceptarAventon${this.props.aventon.id}`).modal('hide'); 
+            this.props.history.push({
+                pathname: '/AventonDetalles',
+                search: `?${this.state.aventon.id}`,
+                state: { aventonId: this.state.aventon.id}
+              })
+        })
+      
     }
 
     render() {

@@ -19,6 +19,7 @@ class CreateAventonesTable extends Migration
             $table->string('zonaId');
             $table->text('direcion');
             $table->integer('conductorId');
+            $table->integer('status');
             $table->timestamps();
         });
     }

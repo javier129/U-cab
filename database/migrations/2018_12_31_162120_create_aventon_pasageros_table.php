@@ -17,8 +17,7 @@ class CreateAventonPasagerosTable extends Migration
             $table->increments('id');
             $table->integer('pasageroId');
             $table->integer('aventonId');
-            $table->boolean('status_pasagero');
-            $table->boolean('status_aventon');
+            $table->integer('status_pasagero');
             $table->timestamps();
         });
     }

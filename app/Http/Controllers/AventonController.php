@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Aventon;
+use App\Aventon_pasagero;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -52,6 +53,7 @@ class AventonController extends Controller
         $aventon->direcion=$destino;
         $aventon->zonaId=$zona;
         $aventon->conductorId=Auth::id();
+        $aventon->status=1;
         $aventon->save();
         return response()->json([
            'create'=>true
@@ -105,5 +107,25 @@ class AventonController extends Controller
     public function destroy(Aventon $aventon)
     {
         //
+    }
+
+    public function AceptarAventon(Request $request){
+        $aventonPagero= new Aventon_pasagero;
+        $aventonPagero->pasageroId= Auth::id();
+        $aventonPagero->aventonId=$request->avetonId;
+        $aventonPagero->status_pasagero=0;
+        $aventonPagero->save();
+       return response()->json([
+            'create' => 'true'
+        ]);
+    }
+
+    public function TerminarAventon(Request $request){
+        $aventonPagero = Aventon_pasagero::where('pasageroId',Auth::id())->where('pasageroId',Auth::id());
+        if($aventonPagero->update(['status_pasagero'=>1])){ 
+            return response()->json([ 
+                'updated'=> 'true'
+            ]);
+        }
     }
 }
