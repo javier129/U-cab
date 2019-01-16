@@ -1,6 +1,6 @@
 .card-body{
     padding-top: 50px;
-    position: relative;    
+    position: relative;
 }
 
 pre {
@@ -15,28 +15,48 @@ pre {
 }
 
 .card {
-    background-color: #fff;
+    background-color: #00C3FF;
     margin-top: 10px;
     box-shadow: 1px 1px 8px #999;
     cursor: pointer;
 
+
 }
 .card-title {
-    margin-top: 10px;
+    font-size: 20px;
+    margin-top: 15px;
 	text-transform: uppercase;
-    color: #E44424;
-    font-weight: 800;
+    color: white;
+    font-weight: bolder;
 }
 
 .cardimage{
     position: fixed;
     display: inline-block;
 }
+
+#textPass#mod{
+    color: #0072ff;
+    font-weight: bolder;
+}
+
+hr#cardhr {
+    margin-top: -10px;
+    margin-bottom: 15px; 
+    height:0.8px; 
+    border:none; 
+    color:whitesmoke; 
+    background-color:whitesmoke; 
+    width:150%; 
+
+}
+
 .cardbody{
     position: relative;
     width: 50%;
     left: 120px; 
     height: 120px;
     display: inline-block;
-
+    color: white;
+    font-size: 17px;
 }

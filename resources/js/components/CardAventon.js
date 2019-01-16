@@ -5,15 +5,15 @@ class CardAventon extends Component {
     render() {
         return (
             <div className="container bodyAventon">
-                <div className="row d-flex flex-column justify-content-center align-items-center ">
-                    <div className="card col-11 col-sm-11 col-xs-11 col-lg-5 col-md-5 align-self-center p-2 text-center">
+                <div className="row d-flex flex-column justify-content-center align-items-center cAventon">
+                    <div className="card col-11 col-sm-11 col-xs-11 col-lg-5 col-md-5 align-self-center p-2 text-center cAventon">
                         <h5 className="centro">Nuevo Aventon</h5>
                         <div>
-                            <div className="form-group formulario">
+                            <div className="form-group formulario cAventon">
                                 <input type="text" className="form-control" id="formGroupExampleInput2" placeholder="Destino"/>
                             </div>   
-                            <div className="form-group">
-                                <label id="textPass" htmlFor="exampleFormControlSelect1">Numero De Pasajeros</label>
+                            <div className="form-group cAventon">
+                                <label id="textPass " htmlFor="exampleFormControlSelect1">Numero De Pasajeros</label>
                                 <select className="form-control" id="FormControlSelect1">
                                     <option>1</option>
                                     <option>2</option>
