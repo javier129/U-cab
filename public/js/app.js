@@ -65193,6 +65193,21 @@ var AventonDetalles = function (_Component) {
             });
         };
 
+        _this.handleCancelar = function (e) {
+            var data = {
+                aventonId: _this.props.location.state.aventonId
+            };
+            var uri = 'http://127.0.0.1:8000/ajax/aventones/CancelarAventon';
+            axios.post(uri, data).then(function (response) {
+                console.log('llega desde el servidor');
+                if (response.data) {
+                    alert('Se ha cancelado el aventon');
+                    $('#cancelarModal').modal('hide');
+                    _this.props.history.goBack();
+                }
+            });
+        };
+
         _this.state = {
             aventon: null
         };
@@ -65356,7 +65371,7 @@ var AventonDetalles = function (_Component) {
                                         ),
                                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                             'button',
-                                            { type: 'button', className: 'btn btn-pri' },
+                                            { type: 'button', onClick: this.handleCancelar, className: 'btn btn-pri' },
                                             'aceptar'
                                         )
                                     )

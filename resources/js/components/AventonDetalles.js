@@ -19,6 +19,7 @@ class AventonDetalles extends Component {
     haldbleGoBack=()=>{
         this.props.history.goBack();
     }
+    
     handleCompletar=(e)=>{
         const data = {
             aventonId: this.props.location.state.aventonId
@@ -31,6 +32,21 @@ class AventonDetalles extends Component {
             }
         })
     };
+    handleCancelar=(e)=>{
+        const data = {
+            aventonId: this.props.location.state.aventonId
+        };
+        let uri = `http://127.0.0.1:8000/ajax/aventones/CancelarAventon`;
+        axios.post(uri,data).then(response=>{
+            console.log('llega desde el servidor');
+            if(response.data){
+                alert('Se ha cancelado el aventon');
+                $('#cancelarModal').modal('hide'); 
+                this.props.history.goBack();
+            }
+        })
+    };
+
     constructor(props){
         super(props);
         this.state={
@@ -106,7 +122,7 @@ class AventonDetalles extends Component {
                                </div>
                                <div className="modal-footer">
                                  <button type="button" className="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                                 <button type="button" className="btn btn-pri">aceptar</button>
+                                 <button type="button" onClick={this.handleCancelar} className="btn btn-pri">aceptar</button>
                                </div>
                              </div>
                            </div>
